@@ -1,0 +1,32 @@
+\section{1m triangle cut}
+1-mass triangle cut with cut at the massive external leg $K^2 \neq 0$.
+Internal lines are massless. 
+Computed in $D=4-2\epsilon$ dimension.
+The cut momenta are $l$ and $l-K$.
+The uncut internal leg carries momentum $l + K_2$. 
+We choose all external momenta to be incoming and we will work in the center-of-mass frame of the massive leg.
+
+\begin{equation*}
+\begin{split}
+\int\dd \Pi_{\textrm{LIPS}}(l, l-K) \frac{1}{(l+K_2)^2} & =
+\int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}}\int\frac{\dd^{D-1}l_2}{(2\pi)^{D-1}}
+\frac{\delta^{D}(l_1 + l_2 - K)}{8(l\cdot K_2)l_1^0 l_2^0}
+\\
+& = \int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}}\frac{\delta(l_1^0 + l_2^0 - K^0)}{2(l\cdot K_2)K^2} 
+\\
+& = \int\frac{|\vec{l}|^{D-2}\dd |\vec{l}|}{(2\pi)^{D-1}} \frac{\dd\Omega_{D-1}\delta(l_1^0 + l_2^0 - K^0)}{2 ( l \cdot K_2)K^2}
+\\
+& = \frac{\Omega_{D-2}(K^2)^{(D-6)/2}}{(2\pi)^{D-1}2K_2^0} \int_{-1}^1\dd z (1-z)^{-1-\epsilon}(1+z)^{-\epsilon}
+\end{split} 
+\end{equation*}
+
+The last integral gives a beta-function
+
+\begin{equation*}
+\begin{split}
+\int^1_{-1} (1-z)^{-1-\epsilon}(1+z)^{-\epsilon} \dd z & = 
+\int^2_{0} z^{-\epsilon}(2-z)^{-1-\epsilon} \dd z 
+=\int^1_0(2z)^{-\epsilon} 2^{-1-\epsilon} (1-z)^{-1-\epsilon} 2 \dd z
+=2^{-2\epsilon}\frac{\Gamma(-\epsilon)\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}
+\end{split}
+\end{equation*}

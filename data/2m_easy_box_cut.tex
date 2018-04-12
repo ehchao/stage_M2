@@ -1,0 +1,62 @@
+\section{2m easy box cut}
+Consider an 2m easy box.
+The massive external legs are $K_1$ and $K_3$.
+The cut momenta are denoted $l_1 = l$ and $l_2 = -( l-K_1-K_2)$.
+We work in the center-of-mass frame of $K_{12}$
+The cut diagram is given by
+
+\begin{equation*}
+\begin{split}
+\int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}} &
+ \int\frac{\dd^{D-1}l_2}{(2\pi)^{D-1}}
+\frac{\delta^{D}(l_1 + l_2 - K_1- K_2)}{8(l_1\cdot K_2)(2l_1\cdot K_3 + K_3^2)l_1^0 l_2^0} 
+ = 
+\int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}} 
+\frac{\delta(l_1^0 + l_2^0 - K_1^0 - K_2^0)}{8 l_1^0 l_2^0 (2l_1\cdot K_3 + K_3^2)(l_1\cdot K_2)}
+\\
+& = \int\frac{|\vec{l}_1|^{D-2} \dd |\vec{l}_1|}{(2\pi)^{D-1}(2l_0 K_2^0)(K_{12}^0)^2}
+\frac{\dd \Omega_{D-1} \delta(l_1^0 - \frac{K^0_{12}}{2})}{(2l_1^0 K_3^0 - 2l_1^0 \hat{l}\cdot\vec{K_3} + K_3^2)(1-\hat{l}\cdot \hat{K}_2)}
+\end{split}
+\end{equation*}
+
+Let us now focus on the second piece of the above integral, which involves scalar products. 
+The integration can be done in using a Feynman parametrization.
+Taking into account the contraint due to the $\delta$-function, 
+it becomes
+
+\begin{equation*}
+\frac{\dd \Omega_{D-1}}{(K_{12}^0 K_3^0 - K_{12}^0 |\vec{K}_3| \hat{l}\cdot \hat{K}_3 + (K_3)^2)(1-\hat{l}\hat{K}_2)}
+= \frac{1}{(K_3)^2 + K_{12}^0 K_3^0}\int \dd \Omega_{D-1}\int_0^1\frac{\dd x}{\Big(1-\hat{l}\cdot\big(ax \hat{K}_3 + (1-x)\hat{K}_2\big)\Big)^2}
+\end{equation*}
+
+where 
+\begin{equation*}
+a := \frac{|\vec{K}_3|K_{12}^0}{(K_3)^2 + K_{12}^0 K_3^0}
+\end{equation*}
+
+Using $\dd\Omega_{D-1} = \dd \Omega_{D-2}(1-z^2)^{\frac{D-4}{2}}\dd z$, where $z = \cos\theta$ takes into account the angular dependence of the denominator, the two pieces of integral read
+
+\begin{equation*}
+\begin{split}
+\int \dd \Omega_{D-1} &
+\int_0^1\frac{\dd x}{\Big(1-\hat{l}\cdot\big(ax \hat{K}_3 + (1-x)\hat{K}_2\big)\Big)^2}
+= \Omega_{D-2}\int_0^1\dd x \int_{-1}^1 \dd z (1-z)^{-\epsilon}(1+z)^{-\epsilon} (1-bz)^{-2}
+\\
+& = 
+\Omega_{D-2}\int\dd x \int^1_0\dd u 2^{1-2\epsilon}(1-u)^{-\epsilon}(1+b)^{-2}\big(1-\frac{b}{1+b}\big)^{-2}
+\\
+& = 
+\Omega_{D-2}\int^1_0 \dd x 2^{1-2\epsilon}(1+b)^{-2} (_2F_1)\big(2,1-\epsilon, 2-2\epsilon, \frac{b}{1+b}\big)
+\frac{\Gamma^2(1-\epsilon)}{\Gamma(2-2\epsilon)} 
+\end{split}
+\end{equation*}
+
+where 
+\begin{equation*}
+b := \big| ax \hat{K_3} + (1-x)\hat{K}_2\big|
+\end{equation*}
+
+
+
+
+

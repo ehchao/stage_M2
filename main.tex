@@ -1,0 +1,83 @@
+\documentclass[11pt, oneside]{report}   	% use "amsart" instead of "article" for AMSLaTeX format
+%notitlepage puts the abstracts in different languages on the same page
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex	
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}	
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+%\usepackage{bbold}
+%\usepackage{hyperref}
+%\usepackage{cleveref}
+%\usepackage{stmaryrd}
+%\usepackage{slashed}
+%\usepackage{color}
+%\usepackage[ngerman,french,english]{babel}
+
+\graphicspath{{images/}}
+
+%\usepackage[numbers,sort]{natbib}
+
+
+%\newcommand{\cref}[1]{Eq.(\ref{#1})}
+\newcommand{\ie}{\textit{i.e., }}
+\newcommand{\eg}{\textit{e.g. }}
+\newcommand{\wrt}{w.r.t. }
+\newcommand{\rhs}{r.h.s. }
+\newcommand{\lhs}{l.h.s. }
+\newcommand{\eval}[1]{\bigg\rvert_{#1}}
+\newcommand{\dd}{\textrm{d}}
+%\newcommand{\de}{\textrm{e}}
+\newcommand{\im}{\mathrm{Im}}
+\newcommand{\ran}{\mathrm{Ran}}
+\newcommand{\rank}{\mathrm{Rank}}
+\newcommand{\dom}{\mathrm{Dom}}
+\newcommand{\en}{\mathrm{End}}
+\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\grad}{\mathrm{grad}}
+
+%equation with split DOESN'T WORK...
+%\def\sequation#1#2{\begin{equation}\label{#2}\begin{split}{#1} \end{split} \end{equation} }
+%\def\sequationstr#1{\begin{equation*}\begin{split}{#1} \end{split} \end{equation*}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\title{M2 internship}
+\author{En-hung CHAO}
+%\date{}							% Activate to display a given date or no date
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+
+%\maketitle
+%title page
+\include{data/titlepage}
+
+
+\tableofcontents
+\include{data/1m_triangle_cut}
+\include{data/2m_easy_box_cut}
+\include{data/formulae}
+
+
+%\appendix
+%\include{data/chap-appendix/appendix}
+
+%\addcontentsline{toc}{chapter}{Bibliography} 
+%\bibliography{biblio}
+%\bibliographystyle{unsrt}
+
+\end{document}

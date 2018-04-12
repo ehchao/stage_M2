@@ -1,0 +1,33 @@
+\section{Forumlae}
+
+\paragraph{Beta function}
+\begin{equation*}
+B(a,b) = \int_0^1 \dd x (1-x)^{a-1}x^{b-1} = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}
+\end{equation*}
+
+\paragraph{Hypergeometric function}
+\begin{equation*}
+_2F_1(a,b,c;z) = \frac{\Gamma(c)}{\Gamma(b)\Gamma(c-b)}\int_0^1\frac{t^{b-1} (1-t)^{c-b-1}}{(1-tz)^a} \dd t
+\end{equation*}
+
+\paragraph{$D$-dimensional sphere ($(D-1)$-sphere) measure }
+\begin{equation*}
+\int \dd \Omega_{D} = \int^\pi_0 \dd \theta_{D-1}\sin^{D-2} \theta_{D-1} \times \ldots \times \int^\pi_0 \dd \theta_2 \sin\theta_2 \int^{2\pi}_0 \dd \theta_1
+\end{equation*}
+
+\begin{equation*}
+\Omega_D = \int \dd \Omega_D = \frac{2\pi^{D/2}}{\Gamma(\frac{D}{2})}
+\end{equation*}
+%wrong....different notations
+%\begin{equation*}
+%\int\dd \Omega_{D+1} = 2\pi^{D-2}\frac{1}{\Gamma(\frac{1}{2}D)}\int^{\pi}_0\dd \theta_D \sin^{D-1}\theta_D
+%\end{equation*}
+
+%\begin{equation*}
+%\Omega_{D+1} = 2^D \pi^{D/2} \frac{\Gamma(\frac{1}{2}D)}{\Gamma(D)}
+%\end{equation*}
+
+\paragraph{Gamma function}
+\begin{equation*}
+\Gamma(\epsilon) = \frac{1}{\epsilon} - \gamma_E + \mathcal{O}(\epsilon)
+\end{equation*}
