@@ -1,0 +1,60 @@
+\section{BCFW on-shell recursion}
+Tree-level amplitudes can be computed in using the singularities which appear when a propagator is put on-shell. 
+Due to Britto, Cachazo, Feng and Witten~\cite{BRITTO2005499}~\cite{PhysRevLett.94.181602}, one can establish a recursion relation for tree-level amplitudes by complex analysis (Cauchy's theorem).
+The main idea is to take the external momenta to be complex and apply well chosen shifts to them.
+This method does not require the knowledge of individual contribution of each diagram.
+Let us see how this work in following~\cite{Elvang:2013cua}.
+%\subsection{Complex analysis}
+Consider a tree-level n-point amplitude $A_n$ with massless external momenta.
+The momenta of the external particles are $p_i$ for $i=1, \cdot, n$ with $p^2_i = 0$. 
+Momentum conservation implies $\sum_i^n p_i^\mu = 0$. 
+Introduce $n$ complex vectors $r^{\mu}_i$ such that
+\begin{enumerate}
+\item $\sum_{i=1}^{\mu} = 0$
+\item $r_i\cdot r_j = 0 \quad\forall i,j$
+\item $p_i \cdot r_i = 0 \quad i$
+\end{enumerate}
+We define the shifted momenta
+\begin{equation*}
+\hat{p}^\mu_i = p_i^{\mu} + z r_i^{\mu} \quad z\in\mathbb{C}
+\end{equation*} 
+It is easy to check that the momentum conservation holds for the shifted momenta and that the shifted momenta are themselves also null vectors.
+We denote by $\hat{A}_n(z)$ the n-point amplitude computed in replacing the external momenta $p_i$'s in $A_n$ by the shifted ones. 
+Note that $\hat{A}_n(z)$ is holomorphic and contains only simple poles $z_I$ in $z$.
+Then, by Cauchy's theorem, the unshifted amplitude $A_n = \hat{A}_n(z=0)$ is related to the shifted one by
+\begin{equation}\label{residue}
+A_n = - \sum_{z = z_I}\res\frac{\hat{A}_n(z)}{z} + B_n
+\end{equation} 
+where $B_n$ is the residue of the pole at $z = \infty$.
+There some particular choices of shift such that $B_n = 0$.
+Under these shifts, it suffices to compute only the first term of the above equation. 
+\\
+Singularities appear when propagators are put on-shell. 
+In the terms of the shifted momenta, they correspond to the poles of $\hat{A}(z)$.
+Therefore, at tree-level, the poles of $\hat{A}(z)$ are the points where, for a non-trivial subset of generic momenta $\{p_i\}_{i\in I}$, 
+\begin{equation*}
+\hat{P}_I^2 := \big( \sum_{i\in I} \hat{p}_i \big)^2 = 0
+\end{equation*}   
+%
+Then, one can check that
+\begin{equation*}
+\res_{z=z_I}\frac{\hat{A}_n(z)}{z} = - \hat{A}_L(z_I)\frac{1}{P_I^2}\hat{A}_R(z_I)
+\end{equation*}
+where $P_I := \sum_{i\in I}p_i$ and $\hat{A}_{L,R}$ are two on-shell amplitudes with less external momenta.
+We will illustrate this by considering a concrete example later.
+%
+%
+\\
+The BCFW recursion consists in applying the $[i,j\rangle$-shift and using the holomorphic property that we just reviewed:
+in terms of the spinors,
+\begin{equation}
+|\hat{i}] = |i] + z |j], \quad |\hat{j}] = |j], \quad|\hat{i}\rangle = |i\rangle, \quad |\hat{j}\rangle = |j\rangle - z|i\rangle
+\end{equation}  
+The other spinors remain the same. 
+The term $B_n$ in~\cref{residue} will disappear when the shift is apply to ajacent lines $i,j$ for the following helicities
+
+
+
+
+
+
