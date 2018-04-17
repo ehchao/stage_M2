@@ -26,7 +26,7 @@
 %\usepackage[numbers,sort]{natbib}
 
 
-%\newcommand{\cref}[1]{Eq.(\ref{#1})}
+\newcommand{\cref}[1]{Eq.(\ref{#1})}
 \newcommand{\ie}{\textit{i.e., }}
 \newcommand{\eg}{\textit{e.g. }}
 \newcommand{\wrt}{w.r.t. }
@@ -42,6 +42,7 @@
 \newcommand{\en}{\mathrm{End}}
 \newcommand{\tr}{\mathrm{Tr}}
 \newcommand{\grad}{\mathrm{grad}}
+\newcommand{\res}{\mathrm{Res}}
 
 %equation with split DOESN'T WORK...
 %\def\sequation#1#2{\begin{equation}\label{#2}\begin{split}{#1} \end{split} \end{equation} }
@@ -68,6 +69,7 @@
 
 
 \tableofcontents
+\include{data/bcfw}
 \include{data/1m_triangle_cut}
 \include{data/2m_easy_box_cut}
 \include{data/formulae}
@@ -77,7 +79,7 @@
 %\include{data/chap-appendix/appendix}
 
 %\addcontentsline{toc}{chapter}{Bibliography} 
-%\bibliography{biblio}
-%\bibliographystyle{unsrt}
+\bibliography{biblio}
+\bibliographystyle{unsrt}
 
 \end{document}
