@@ -1,0 +1,73 @@
+\section{Triangle and bubble coefficients in $D=4$}
+Forde proposed a method using triple cut to determine the triangle and bubble coefficients in one-loop in four-dimension~\cite{Forde:2007mi}.
+%
+\subsection*{Triangle coefficient} 
+Upon applying a triple cut, the three delta functions leave only one degree of freedom in four-dimension. 
+Let us denote it by $t$.
+The most general cut expression takes the form 
+\begin{equation}\label{tricut}
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2) A_1A_2A_3 = 
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2)\Big(\mathrm{Inf}_t(A_1A_2A_3)(t) + \sum_{\textrm{$t_j$ poles}}\frac{\res_{t = t_j}A_1 A_2 A_3}{t-t_j}\Big)
+\end{equation}
+where the $A$'s are tree amplitudes and the first term on the right-hand side is defined by
+\begin{equation*}
+\lim_{t\rightarrow\infty}\big([\mathrm{Inf}_tA_1A_2A_3](t) - A_1A_2A_3(t)\big)
+\end{equation*}
+In general, $\mathrm{Inf}_tA_1A_2A_3$ is some polynomial in $t$. 
+In most of cases, the propagators of the type $\frac{1}{(l-P)^2}$ contain two poles that can be expressed in terms of $t$. 
+The second part of~\cref{tricut} can hence be considered as contributions of cut boxes. 
+As a result, the information on the bubble and triangle contributions is only contained in the first term on the \rhs of~\cref{tricut}.
+According to Forde, we can choose a parametrization such that only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to the integral. 
+We will see how this works in the next paragraph.
+%
+\\\\
+Consider a triple cut leading to the constraints
+\begin{equation*}
+l^2 = (l-K_1)^2 = (l-K_2)^2 = 0
+\end{equation*}
+One can construct two null vectors $K_1^\flat$ and $K_2^\flat$ from the external momenta $K_1$ and $K_2$ 
+\begin{equation*}
+K_1^\flat = K_1 - \frac{S_1}{\gamma}K_2^\flat \quad\quad
+K_2^\flat = K_2 - \frac{S_2}{\gamma}K_1^\flat
+\end{equation*}
+%
+where $S_i = K_i^2$ and $\gamma = \langle K_1^\flat|K_2^\flat|K_1^\flat] =\langle K_2^\flat|K_1^\flat|K_2^\flat]$.
+There are two possibilities for $\gamma$
+\begin{equation*}
+\gamma_{\pm} = (K_1\cdot K_2) \pm\sqrt{\Delta}\quad
+\mathrm{where}\quad
+\Delta = (K_1\cdot K_2)^2 - K_1^2K_2^2
+\end{equation*}
+In terms of the spinor components, the constraints require
+\begin{equation*}
+\langle l | = t\langle K_1^\flat| + \alpha_{01}\langle K_2^\flat| \quad\quad
+[ l | = \frac{\alpha_{02}}{t}[ K_1^\flat| + [ K_2^\flat|
+\end{equation*}
+where
+\begin{equation*}
+\alpha_{01} = \frac{S_1(\gamma S_2)}{\gamma^2 - S_1S_2}\quad \quad
+\alpha_{02} = \frac{S_2(\gamma S_1)}{\gamma^2 - S_1S_2}
+\end{equation*}
+%
+and, as a four-vector,
+\begin{equation*}
+l^\mu = \alpha_{02} K_1^{\flat,\mu} + \alpha_{01}K_2^{\flat,\mu} + \frac{t}{2}\langle K_1^\flat | \gamma^\mu |K_2^\flat] + \frac{\alpha_{01}\alpha_{02}}{2t}\langle K_2^\flat|\gamma^\mu |K_1^\flat]
+\end{equation*}
+%
+Now, we can use an argument similar to the one in~\cite{Ossola:2006us} on the spurious term to find the vanishing integrals.
+To illustrate this argument, we consider the case of a rank-1 3-point-like integral. 
+By simple arguments on the rank and the dependence on external momenta, 
+\begin{equation*}
+\int\dd^D q \frac{q^\mu}{D_0(q)D_1(q+p_1)D_2(q+p_2)} = c_1p_1^\mu + c_2p_2^\mu
+\end{equation*}
+If we contract the above relation with a vector $v^\mu$ orthogonal to $p_1$ and $p_2$, we obtain a vanishing integral.
+$q\cdot v$ is hence a spurious term.
+The same technique can be applied to show that $(q\cdot v)^n$ is spurious for any $n>0$. 
+Back to our case, we can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
+to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}
+
+
+
+
+
+

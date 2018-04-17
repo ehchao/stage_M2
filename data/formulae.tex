@@ -9,6 +9,22 @@ B(a,b) = \int_0^1 \dd x (1-x)^{a-1}x^{b-1} = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+
 \begin{equation*}
 _2F_1(a,b,c;z) = \frac{\Gamma(c)}{\Gamma(b)\Gamma(c-b)}\int_0^1\frac{t^{b-1} (1-t)^{c-b-1}}{(1-tz)^a} \dd t
 \end{equation*}
+%
+\begin{equation*}
+\begin{split}
+_2F_1(a,b,c;z) & = (1-z)^{-a}(_2F_1)(a,c-b,c;\frac{z}{z-1})
+\\
+& = (1-z)^{-b}(_2F_1)(c-a,b,c;\frac{z}{z-1})
+\\
+& = (1-z)^{c-a-b}(_2F_1)(c-a,c-b,c;z)
+\end{split}
+\end{equation*}
+%
+\begin{equation*}
+_2F_1(a,b,c;z) = 1 + \frac{ab}{1!c} + \frac{a(a+1)b(b+1)}{2!c(c+1)}z^2 + \ldots
+=\sum_{n=0}^{\infty}\frac{(a)_n(b)_n}{(c)_n}\frac{z^n}{n!}
+\end{equation*}
+
 
 \paragraph{$D$-dimensional sphere ($(D-1)$-sphere) measure }
 \begin{equation*}
@@ -30,4 +46,14 @@ _2F_1(a,b,c;z) = \frac{\Gamma(c)}{\Gamma(b)\Gamma(c-b)}\int_0^1\frac{t^{b-1} (1-
 \paragraph{Gamma function}
 \begin{equation*}
 \Gamma(\epsilon) = \frac{1}{\epsilon} - \gamma_E + \mathcal{O}(\epsilon)
+\end{equation*}
+
+\paragraph{Feynman parametrization}
+\begin{equation*}
+\frac{1}{\prod_{i=1}^n A_i} = \int_0^1 \dd x_1 \ldots\int^1_0\dd x_n\frac{(n-1)!\delta(\sum_{i=1}^n x_i -1)}{(\sum_{i=1}^n x_i A_i)^n}
+\end{equation*}
+
+\paragraph{Useful integrals}
+\begin{equation*}
+\int\frac{\dd^D k}{(2\pi)^D}\frac{k^{2a}}{(k^2-\Delta)^b} = i(-1)^{a-b}\frac{1}{(4\pi)^{D/2}\Delta^{b-a-D/2}}\frac{\Gamma(a+D/2)\Gamma(b-a-D/2)}{\Gamma(b)\Gamma(D/2)}
 \end{equation*}

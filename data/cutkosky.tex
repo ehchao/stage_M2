@@ -1,0 +1,41 @@
+\section{The Cutkosky rule}
+Based on Landau's discussion on the singularities of the amplitudes calculated from an arbitrary Feynman diagram~\cite{LANDAU1959181}, 
+Cutkosky proposed a generalized version of the unitarity condition~\cite{doi:10.1063/1.1703676} which is based on the discontinuity across a cut starting from any of Landau's branch points.
+The generalized unitarity plays an essential roles in loop-level amplitude computations~\cite{Bern:1994zx, Bern:1994cg} 
+%
+\\
+%
+A general expression for an amplitude under the Feynman parametrization takes the form
+\begin{equation}
+F = (N-1)!\int_0^1 \prod_i(\dd \alpha_i) \prod_a(\dd^4 k_a ) BD^{-N}\delta(1-\sum_i\alpha_i)
+\end{equation}
+where the $\alpha$'s are Feynman parameters, $D:=\sum_i \alpha_i A_i$ with $A_i:= M_i^2 - q_i^2$ (the momenta $q_i$'s are functions in $k_a$ and the $M_i$'s are the masses of the internal lines), $B$ is a global constant and $N\in\mathbb{N}$.
+Define
+\begin{equation*}
+\phi := \max_{\{k_a\}}(D)
+\end{equation*}
+According to Landau, $F$ is non-singular if $\min_{\{\alpha_i\}|\sum_i\alpha_i = 1}>0$.
+As the $p_i^2$'s are increased, the first singularity of $F$ occurs when $\min\phi\rightarrow 0$, which is equivalent to the surface where
+\begin{equation}\label{landau}
+\alpha_i A_i = 0 \quad\forall i \quad\textrm{ and } \sum_{i\in\textrm{internal line of the loop}}\alpha_i q_i = 0 \quad\textrm{ for any closed loop}
+\end{equation}
+In the above expressions, the $i\epsilon$ terms in the propagators which allow us to recover the time-ordering are implicit.
+%
+\\\\ 
+Let $F_m$ denote the discontinuity of $F$ across a branch cut starting from a singularity defined by Landau's condition~\cref{landau} in which $A_i = 0$ for $i\leq m$. 
+More explicitly, $F_m$ is defined to be the difference between $F$ given a small negative imaginary part $-i\epsilon$ to $M^2_m$ and that calculated with a small positive imaginary part $i\epsilon$ to $M^2_m$.
+Cutkosky proved that 
+\begin{equation}\label{disc}
+F_m = (2\pi i)^m\int\frac{B\prod(\dd^4k)\delta_{(+)}(q_1^2 - M_1^2)\ldots\delta_{(+)}(q_m^2 - M_m^2)}{A_{m+1}\ldots A_N}
+\end{equation}
+%
+%
+\subsection*{Relation with the unitary condition}
+By unitarity, the imaginary part o the $T$-matrix can be written in the form
+\begin{equation*}
+T_{rs} = \int\dd\tau_m F^* G
+\end{equation*}
+where $F$ and $G$ are two graphs with $m$ outgoing lines and $r$ and $s$ incoming lines respectively.
+$\dd \tau_m$ is the phase space measure with $m$ on-shell lines.
+This is totally analog to~\cref{disc} upon the imaginary mass shifts over the propagators $A_i =M_i^2 +i\epsilon - q_i^2$ in the graph $F$ and $A_j =M_j^2 +i\epsilon - q_j^2$. 
+Introduction to the unitarity condition can be found in many QFT textbooks \eg\cite{Schwartz:2013pla} 

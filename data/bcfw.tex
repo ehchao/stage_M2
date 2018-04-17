@@ -1,6 +1,6 @@
 \section{BCFW on-shell recursion}
 Tree-level amplitudes can be computed in using the singularities which appear when a propagator is put on-shell. 
-Due to Britto, Cachazo, Feng and Witten~\cite{BRITTO2005499}~\cite{PhysRevLett.94.181602}, one can establish a recursion relation for tree-level amplitudes by complex analysis (Cauchy's theorem).
+Due to Britto, Cachazo, Feng and Witten~\cite{BRITTO2005499, PhysRevLett.94.181602}, one can establish a recursion relation for tree-level amplitudes by complex analysis (Cauchy's theorem).
 The main idea is to take the external momenta to be complex and apply well chosen shifts to them.
 This method does not require the knowledge of individual contribution of each diagram.
 Let us see how this work in following~\cite{Elvang:2013cua}.
@@ -37,9 +37,9 @@ Therefore, at tree-level, the poles of $\hat{A}(z)$ are the points where, for a 
 \end{equation*}   
 %
 Then, one can check that
-\begin{equation*}
+\begin{equation}\label{cauchy}
 \res_{z=z_I}\frac{\hat{A}_n(z)}{z} = - \hat{A}_L(z_I)\frac{1}{P_I^2}\hat{A}_R(z_I)
-\end{equation*}
+\end{equation}
 where $P_I := \sum_{i\in I}p_i$ and $\hat{A}_{L,R}$ are two on-shell amplitudes with less external momenta.
 We will illustrate this by considering a concrete example later.
 %
@@ -51,8 +51,13 @@ in terms of the spinors,
 |\hat{i}] = |i] + z |j], \quad |\hat{j}] = |j], \quad|\hat{i}\rangle = |i\rangle, \quad |\hat{j}\rangle = |j\rangle - z|i\rangle
 \end{equation}  
 The other spinors remain the same. 
-The term $B_n$ in~\cref{residue} will disappear when the shift is apply to ajacent lines $i,j$ for the following helicities
-
+The term $B_n$ in~\cref{residue} will disappear when the shift is apply to ajacent lines $i,j$ for the following helicities~\cite{ArkaniHamed:2008yf}
+\begin{equation*}
+[-,-\rangle \quad [-,+\rangle \quad [+,+\rangle
+\end{equation*}
+Therefore, the unshifted amplitude can be computed by dropping the residue at infinity in~\cref{residue} and its first term on the right-hand side is given by~\cref{cauchy} under the BCFW shift.
+%
+\subsection{Example: $A_6[1^-2^-3^-4^+5^+6^+]$}
 
 
 

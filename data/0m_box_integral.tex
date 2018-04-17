@@ -1,0 +1,52 @@
+\section{0-mass box integral}
+Define $s=K_{12}^2$ and $t=K_{14}^2$.
+The 0-mass box integral with massless internal lines in $D=4-2\epsilon$ dimension reads
+\begin{equation*}
+\begin{split}
+I_4 & = \int\frac{\dd^D l }{(2\pi)^D}\frac{1}{(l-K_1)^2(l+K_4)^2 l^2 (l-K_{12}^2)}
+\\
+&=
+3!\times\int\frac{\dd^D l }{(2\pi)^D}
+\int
+\frac{\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)}{\big[\alpha_1(l-K_1)^2 + \alpha_2(l+K_4)^2 + \alpha_3 (l-K_{12}^2) + \alpha_4\big]^4}
+\\
+&=
+3!\times\int\frac{\dd^D l }{(2\pi)^D}
+\int
+\frac{\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)}{\big[l^2 + \alpha_1\alpha_2 t + \alpha_3\alpha_4 s\big]^4}
+\\
+&= \frac{i\Gamma(2+\epsilon)}{(4\pi)^{2-\epsilon}}\int\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)\frac{1}{(-\alpha_1\alpha_2 t - \alpha_3\alpha_4 s )^{2+\epsilon}}
+\end{split}
+\end{equation*}
+%
+Use the following change of variables
+\begin{equation*}
+\alpha_1 = xy \quad
+\alpha_2 = z(1-y)\quad
+\alpha_3 = y(1-x)\quad
+\alpha_4 = (1-y)(1-z)
+\end{equation*}
+%
+the integral appearing in the above expression becomes
+\begin{equation*}
+\begin{split}
+& \int^1_0\dd x\int^1_0\dd y\int^1_0\dd z \frac{y(1-y)}{\big[1-x-z + (1+r)zx\big]^{2+\epsilon}\big[-ty(1-y)\big]^{2+\epsilon}}
+\\ = &
+(-t)^{-2-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(-2\epsilon)}
+\int_0^1\dd x\int_0^1\dd z
+\frac{1}{(1-x)^{2+\epsilon}}\Big[1+\frac{(1+r)x-1}{1-x} z\Big]^{-2\epsilon}
+\\
+= &(-t)^{-2-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(-2\epsilon)}
+\frac{1}{1+\epsilon} 
+\Big(\int_0^1 \dd x \frac{(rx)^{-1-\epsilon}}{1-(1+r)x} -
+\int^1_0 \dd x \frac{1}{(1-x)^{1+\epsilon}[1-(1+r)x]}
+\\
+= & 
+ (-t)^{-2-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(-2\epsilon)}
+\frac{1}{1+\epsilon}\frac{\Gamma(-\epsilon)}{\Gamma(1-\epsilon)} 
+\big[r^{-1-\epsilon}(_2F_1)(1,-\epsilon,1-\epsilon,1+r) -(_2F_1)(1, 1 ,1-\epsilon,1+r)\big]
+\end{split}
+\end{equation*}
+where $r = \frac{s}{t}$
+
+
