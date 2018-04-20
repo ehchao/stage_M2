@@ -20,8 +20,73 @@ The cut diagram is given by
 \end{equation*}
 
 Let us now focus on the second piece of the above integral, which involves scalar products. 
+We choose $\hat{K}_2$ to be the axis and we denote $\cos\psi = \hat{K}_2\cdot\hat{K}_3$. 
+Using $\dd\Omega_{D-1} = \dd \Omega_{D-2}(1-z^2)^{\frac{D-4}{2}}\dd z$, where $z = \cos\theta$, 
+\begin{equation*}
+\begin{split}
+& \int\frac{\dd \Omega_{D-1}}{(K_{12}^0 K_3^0 - K_{12}^0 |\vec{K}_3| \hat{l}\cdot \hat{K}_3 + (K_3)^2)(1-\hat{l}\cdot\hat{K}_2)}
+\\
+= & \frac{1}{(K_3)^2 + K_{12}^0 K_3^0}\int \dd \Omega_{D-2}
+\int_0^\pi\dd\theta\frac{\cos\theta\sin^{-2\epsilon}\theta}{(1-\cos\theta)(1-a\cos\psi\cos\theta + a\sin\psi\sin\theta)}
+\end{split}
+\end{equation*}
+where 
+\begin{equation*}
+a := \frac{|\vec{K}_3|K_{12}^0}{(K_3)^2 + K_{12}^0 K_3^0}
+\end{equation*}
+The integral \wrt $\theta$ can be done by a change of variable to $t = \tan\frac{\theta}{2}$, which equals to
+\begin{equation*}
+\begin{split}
+& \int_0^\infty\dd t \frac{4t}{(1+t^2)^2}\Big(\frac{2t}{1+t^2}\Big)^{-\epsilon}\frac{1}{\Big(1-\frac{1-t^2}{1+t^2}\Big)\Big[1-\frac{a\cos\psi}{1+t^2}(1-t^2) + \frac{2a\sin\psi t}{1+t^2}\Big]}
+\\
+ =  &
+2^{1-\epsilon}\Omega_{2-2\epsilon}
+\int^{\infty}_0 \dd t t^{1-\epsilon}(1+t^2)^\epsilon
+\Big[\frac{1}{(1-a\cos\psi)t^2} + \frac{B}{t} + \frac{Ct + D}{(1+a\cos\psi)t^2 + 2at\sin\psi  + 1-a\cos\psi}\Big]
+\end{split}
+\end{equation*}
+where $B$, $C$ and $D$ are constants. 
+We do not need their explicit expressions since these terms lead to contributions at the order $\mathcal{O}(\epsilon^0)$.
+As a result, the cut integral reads
+\begin{equation*}
+\frac{K_{12}^{-2\epsilon}2^{-\epsilon}\pi^{1-\epsilon}}{\Gamma(1-\epsilon)K_{12}^0K_2^0}\frac{1}{\big[(K_3)^2 + K_{12}^0K_3^0\big](1-a\cos\psi)}
+\Big(-\frac{1}{\epsilon} + \mathcal{O}(1)\Big)
+\end{equation*}
+In terms of the invariants
+\begin{equation*}
+\begin{split}
+\frac{1}{\big[(K_3)^2 + K_{12}^0K_3^0\big](1-a\cos\psi)} 
+= &
+\frac{1}{K_3^2 + K_{12}\cdot K_3 + \frac{K_{12}^2}{K_{12}\cdot K_2}
+\Big[K_3\cdot K_2 - \frac{(K_3\cdot K_{12})(K_2\cdot K_{12})}{K_{12}^2}}
+\\
+=&
+\frac{K_{12}\cdot K_2}{(K_2\cdot K_{12})(K_3^2 + K_{12}\cdot K_3) + K_{12}^2(K_3\cdot K_2) - (K_3 \cdot K_{12})(K_2\cdot K_{12})}
+\\
+=&
+\frac{K_1 \cdot K_{12}}{- K_1^2 K_3^2 + K_{12}^2 K_{14}^2}
+\end{split}
+\end{equation*}
+where the following relations are used
+\begin{equation*}
+\begin{split}
+& K_2\cdot K_3 = \frac{1}{2} (K_{14}^2  - K_3^2)  \\
+& K_3\cdot K_{12} = \frac{1}{2}(K_{13}^2 - K_3^2 - K_1^2 + K_{14}^2 - K_3^2)
+\\
+& K_2\cdot K_{12} = \frac{1}{2}(K_{12}^2 - K_1^2)
+\end{split}
+\end{equation*}
+As a consistency check, we can compare the result to the imaginary part of the two-mass-easy box integral given in~\cite{Britto:2010xq}.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%Not the best way to do... disgarded%
+\color{gray}
 The integration can be done in using a Feynman parametrization.
-Taking into account the contraint due to the $\delta$-function, 
+Taking into account the constraint due to the $\delta$-function, 
 it becomes
 
 \begin{equation*}
@@ -55,8 +120,12 @@ where
 \begin{equation*}
 b := \big| ax \hat{K_3} + (1-x)\hat{K}_2\big|
 \end{equation*}
+We can use the identity to get the $\mathcal{O}(\epsilon^{0})$ contribution of the hypergeometric function
+\begin{equation*}
+(_2F_1)(2,1-\epsilon, 2-2\epsilon, z) = (1-z)^{-1-\epsilon}(_2F_1)(-2\epsilon, 1-\epsilon, 2-2\epsilon, z)
+=(1-z)^{-1-\epsilon}\big(1+\mathcal{O}(\epsilon)\big)
+\end{equation*}
 
-
-
+\color{black}
 
 

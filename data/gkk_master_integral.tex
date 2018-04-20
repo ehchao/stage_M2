@@ -1,0 +1,72 @@
+\section{Basis for master integrals}
+It is known that there exists a basis for one-loop integrals: one can write down a one-loop integral in terms of linear combination of box, triangle, bubble and tadpole integrals. 
+Let us follow the review done in~\cite{Gluza:2010ws}.
+\\\\
+We consider integrals in $D= 4-2\epsilon$ dimension and keep external momenta to be four-dimensional.
+A generic loop-integral can be written as
+\begin{equation*}
+I_n[P(l)] = 
+-i\int\frac{\dd^D l}{(2\pi)^D}\frac{P(l)}{l^2(l-K_1)^2(l-K_{12})^2\ldots(l-K_{1\ldots (n-1)})^2}
+\end{equation*}
+where $P$ is a polynomial in $l$.
+Let us begin with integrals with high multiplicity, with five or more external legs.
+In this case, we can use the Gram determinant defined as
+\begin{equation*}
+\begin{split}
+& G\begin{pmatrix}
+p_1,\ldots, p_l \\
+q_1,\ldots, q_l 
+\end{pmatrix}
+:= \det(2p_i\cdot q_j)
+\\
+& G(p_1, \ldots , p_l) := G\begin{pmatrix}
+p_1,\ldots, p_l \\
+p_1,\ldots, p_l 
+\end{pmatrix}
+\end{split}
+\end{equation*} 
+to reduce the integral.
+In fact, the Gram determinant vanishes if either $\{p_i\}$ or $\{q_i\}$ are linearly dependent.
+One can expand each of the four-vectors $v^\mu$ in a basis of four chosen external momenta $\{b_i\}_{i=1\ldots 4}$ with the help of Gram determinants.
+At one-loop, the terms $l\cdot b_i$ are reducible since we can write them as differences between terms appearing in the denominator.
+They will lead to sums of integrals with fewer propagators or fewer powers in $l$. 
+In other words, 
+\begin{equation*}
+I_n[(l\cdot v)^n] \rightarrow I_{n-1}[(l\cdot v)^{n-1}]\oplus I_n[(l\cdot v)^{n-1}]
+\end{equation*}
+Next, we have to know reduce the five- or higher-point integrals with trivial numerators. 
+Let us first consider the reduction of six- or higher-point integrals, which can be done to all orders in $\epsilon$. 
+\\\\
+Since the external momenta are four-dimensional, 
+\begin{equation*}
+G\begin{pmatrix}
+l & 1 & 2 & 3 & 4\\
+5 & 1 & 2 & 3 & 4 
+\end{pmatrix}
+ = 0
+\end{equation*}
+Accordingly, we can show, by expanding the Gram determinant, that
+\begin{equation*}
+I_n\Big[G\begin{pmatrix}
+l & 1 & 2 & 3 & 4\\
+5 & 1 & 2 & 3 & 4 
+\end{pmatrix}\Big]
+ = 0
+ \quad\quad n\leq 6
+\end{equation*}
+As for the five-point integral, there might be a worry about the $\mathcal{O}(\epsilon^0)$ term or even the divergent terms.
+However, divergences appear only when the loop momentum $l$ is soft or collinear to one of the external momenta, where the five-point Gram determinant also vanishes, we have
+\begin{equation*}
+I_5[G(l,1,2,3,4)] = \mathcal{O}(\epsilon)
+\end{equation*}
+Hence, the five-point integral can be also reduced by expanding the Gram determinant.
+The reduction of five- or higher-point integrals are given explicitly in~\cite{Gluza:2010ws}
+
+
+
+
+
+
+
+
+
