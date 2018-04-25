@@ -1,0 +1,49 @@
+\section{Amplitudes in N=4 super Yang-Mills by unitarity method}
+Bern, Dixon, Dunbar and Kosower proposed a procedure~\cite{Bern:1994zx} based on the Cutkosky rule~\cite{doi:10.1063/1.1703676} which allows to determine compute amplitudes in a gauge field theory in a more efficient way than the traditional diagrammatic methods. 
+Especially, in their paper~\cite{Bern:1994zx}, they showed how the generalized unitarity can be applied to the N=4 super Yang-Mills theory thanks to the fact that only scalar box integrals involve in amplitudes after reduction.
+Let us start by review some known results.
+\\\\
+For one-loop amplitudes, there exists a color decomposition. In particular, when all internal particles transform as color adjoints, as is the case for N=4 SYM, the result takes the form
+\begin{equation*}
+\mathcal{A}_n = \sum_J n_J \sum_{c=1}^{\lfloor \frac{n}{2} + 1 \rfloor + 1}{c=1}\sum_{\sigma\in \mathcal{S}_n/\mathcal{S}_{n;c}} Gr_{n;c}(\sigma) A^{[J]}_{n;c}(\sigma)
+\end{equation*}   
+where $J$ is the spin and the color-structure factors are defined as
+\begin{equation*}
+\begin{split}
+& Gr_{n;1}(1) = N_c \tr (T^{a_1}\ldots T^{a_n})
+\\
+& Gr_{n;c}(1) = \tr (T^{a_1}\ldots T^{a_{c-1}})\tr(T^{a_c}\ldots T^{a_n})
+\end{split}
+\end{equation*}
+In an M=4 SYM theory, the string-based method tells us that at loop-level, the loop-momentum polynomials entering in the calculation have degree four less than a scalar in the loop,\ie $m-4$ for an $m$-point contribution.
+\\\\
+Now, let us sketch the proof.
+Using the Cutkosky rule, it is proven that N=4 SYM MHV amplitudes contain only scalar boxes. For the proof, one does first of all a cut and use the SUSY Ward identities
+\begin{equation*}
+\begin{split}
+A^{\mathrm{tree}}(\Lambda_1^-, g_2^+, \ldots, g_j, \ldots, \Lambda_n^+)
+= \frac{\langle jn \rangle}{\langle j 1 \rangle}
+A^{\mathrm{tree}}(g_1^-, g_2^+, \ldots g_j^-, \ldots , g_n^+)
+\\
+A^{\mathrm{tree}}(\phi_1^-, g_2^+, \ldots, g_j, \ldots, \phi_n^+)
+= \frac{\langle jn \rangle^2}{\langle j 1 \rangle^2}
+A^{\mathrm{tree}}(g_1^-, g_2^+, \ldots g_j^-, \ldots , g_n^+)
+\end{split}
+\end{equation*}
+Due to supersymmetry, it suffices to compute amplitudes with only gluons. 
+Then, the SUSY Ward identities determine the overall factor.
+With the usage of the Schouten identity and some on-shell relations on spinors, we can reduce an N=4 amplitude to a sum of box integrals. 
+\\\\
+By a Passarino-Veltman reduction~\cite{PASSARINO1979151}, we can rewrite an $m$-point ($m\geq 4$) tensor integral of degree $d$ ($d\geq$ 1) as a sum of $m$- and $(m-1)$-point integrals of degree $d-1$. 
+Any scalar $m$-point integral can also be reduced to a sum of scalar $(m-1)$-point integrals for $m\geq 5$. 
+In this way, any one-loop $m$-point integral can be reduced to a combination of tensor box integrals of degree up to $d+4-m$.
+For a renormalizable gauge theory, the maximum degree of polynomial for an $m$-point integral is $m$. Therefore, amplitudes in N=4 SYM can be reduced to scalar boxes. 
+The result is unique in the sense that
+\begin{equation*}
+\sum c_i I_i^{\mathrm{box}} =\mathrm{polynomial}
+\end{equation*}
+has only trivial solution for $\{c_i\}$.
+This comes from the logarithms and dilogarithms in the expression of $I_i^{\mathrm{box}}$. 
+But in general, there are ration terms.
+
+
