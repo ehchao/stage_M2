@@ -108,21 +108,35 @@ z_1 = \frac{-(1-y)(A_1 + C)+i\eta}{(1-y)C}
 \end{equation*}
 As we know already from the expansion
 \begin{equation*}
-{}_2F_1(1,-\epsilon,1-\epsilon,a) = 1-\epsilon\ln(1-a) - \epsilon^2\mathrm{Li}(t) + \mathcal{O}(\epsilon^{3})
+{}_2F_1(1,-\epsilon,1-\epsilon,a) = 1-\epsilon\ln(1-a) - \epsilon^2\mathrm{Li}(a) + \mathcal{O}(\epsilon^{3})
 \end{equation*}
 let us now look at the terms which have branch cuts. 
+For its usefulness, we compute
 \begin{equation*}
-\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[A_3 + C ]y + i\eta']^{1+\epsilon}}(-z_0)^{-\epsilon}
-= \frac{(-y)^{-\epsilon}}{r - i\eta-i\eta'}
+z_0 + z_1 = \frac{-(A_1 + C)(A_3 + C) - C +i\eta + i\eta'}{C(A_3 + C + i\eta')}
 \end{equation*}
+%
+\begin{equation}
+\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[(A_3 + C )y + i\eta']^{1+\epsilon}}(-z_0)^{-\epsilon}
+= \frac{(-y)^{-\epsilon}}{r - i\eta-i\eta'}
+\end{equation}
 where
 \begin{equation*}
-r = (A_1 + C)(A_3 + C)+C = \frac{K^2_1K_3^2}{s^2} -\chi 
+r = -(A_1 + C)(A_3 + C)-C = -\frac{K^2_1K_3^2}{s^2} +\chi 
 \end{equation*}
-\begin{equation*}
-\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[A_3 + C ]y + i\eta']^{1+\epsilon}}(1-z_0)^{-\epsilon}
-= \frac{(y)^{-\epsilon}(\frac{K_1^2}{s}+i\eta')^{-\epsilon}}{r - i\eta-i\eta'}
-\end{equation*}
+%
+\begin{equation}
+\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[(A_3 + C)y + i\eta']^{1+\epsilon}}(1-z_0)^{-\epsilon}
+= \frac{(y)^{-\epsilon}(\frac{-K_1^2}{s}+i\eta')^{-\epsilon}}{r - i\eta-i\eta'}
+\end{equation}
+%
+\begin{equation}
+\frac{z_0}{z_0 + z_1} = \frac{-y}{r + i\eta + i\eta'}
+\end{equation}
+%
+\begin{equation}
+\frac{z_0 - 1}{z_0 + z_1} = \frac{-\frac{K_1^2}{s}+i\eta'}{r + i\eta + i\eta'}
+\end{equation}
 
 
 
