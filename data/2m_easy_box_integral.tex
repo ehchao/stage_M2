@@ -3,27 +3,27 @@ The two-mass-easy box integral can be computed in using the same Feynman paramet
 At a certain point, we encounter the following integral
 \begin{equation*}
 I = \int\dd x\dd y \dd z y^{-1-\epsilon}(1-y)^{-1-\epsilon}s^{-2-\epsilon}
-\frac{1}{-\chi + A_1 x + A_3 z + C xz}
+\frac{1}{-1 + A_1 x + A_3 z + C xz}
 \end{equation*}
 where
 \begin{equation*}
 \chi = \frac{t}{s}\quad, \quad
-A_1 = \chi - \frac{K_1^2}{s}\quad, \quad
-A_3 = \chi - \frac{K_3^2}{s} \quad,\quad
+A_1 = 1 - \frac{K_1^2}{s}\quad, \quad
+A_3 = 1 - \frac{K_3^2}{s} \quad,\quad
 C = -1 - \chi  + \frac{K_1^2}{s} + \frac{K_3^2}{s}
 \end{equation*}
 Again, the $y$-integration factorizes. Let us focus on the $x$ and $z$ dependent part.
 After integrating over $x$, we are left with 
 \begin{equation*}
-J = \int^1_0\dd z\frac{1}{(Cz + A_1)[-\chi + A_3z]^{1+\epsilon}} - 
-\int^1_0\dd z\frac{1}{(Cz + A_1)[-\chi + A_1  + (A_3 + C)z]^{1+\epsilon} }
+J = \int^1_0\dd z\frac{1}{(Cz + A_1)[-1 + A_3z]^{1+\epsilon}} - 
+\int^1_0\dd z\frac{1}{(Cz + A_1)[-1 + A_1  + (A_3 + C)z]^{1+\epsilon} }
 \end{equation*}
 The two integrals on the \rhs can be easily computed in applying adequate changes of variables.
 Let us call the first piece on the \rhs $J_1$ and the second $J_2$.
 Then
 \begin{equation*}
 \begin{split}
-J_1 = & \int^1_0 \dd z \frac{1}{A_3^{1+\epsilon}C(z + \frac{A_1}{C})(-\frac{\chi}{A_3} + z)^{1+\epsilon}} 
+J_1 = & \int^1_0 \dd z \frac{1}{A_3^{1+\epsilon}C(z + \frac{A_1}{C})(-\frac{1}{A_3} + z)^{1+\epsilon}} 
 \\
 = &
 \frac{1}{A_3^{1+\epsilon}C}\Big(
@@ -38,12 +38,12 @@ J_1 = & \int^1_0 \dd z \frac{1}{A_3^{1+\epsilon}C(z + \frac{A_1}{C})(-\frac{\chi
 \end{equation*}
 where
 \begin{equation*}
-z_0 = \frac{\chi}{A_3} \quad, \quad z_1 = \frac{A_1}{C}
+z_0 = \frac{1}{A_3} \quad, \quad z_1 = \frac{A_1}{C}
 \quad,\quad
 u=\frac{-z + z_0}{z_0}\quad,\quad
 v=\frac{z-z_0}{1-z_0}
 \end{equation*}
-$J_2$ is given by the same expression up to a factor in subsituting $z_0$ by $z_2 = \frac{\chi - A_1}{A_3 + C}$. 
+$J_2$ is given by the same expression up to a factor in subsituting $z_0$ by $z_2 = \frac{1 - A_1}{A_3 + C}$. 
 %
 %
 %
@@ -61,7 +61,7 @@ Instead of doing the phase-space integral, let us represent the delta functions 
 \\
  = &
 \int\dd x \dd y \dd z
-\frac{y(1-y)}{[sy(1-y)(-\chi + A_1x + A_3 z + Cxy) - iy(1-x)\eta - i(1-y)(1-z)\eta']^{2+\epsilon}} -\mathrm{c.c.}
+\frac{y(1-y)}{[sy(1-y)(-1 + A_1x + A_3 z + Cxy) - iy(1-x)\eta - i(1-y)(1-z)\eta']^{2+\epsilon}} -\mathrm{c.c.}
 \end{split}
 \end{equation*}
 where the same notations as before are used and the limits $\eta\rightarrow 0$ and $\eta'\rightarrow 0$ are taken at the end.
@@ -72,17 +72,17 @@ Let us first integrate \wrt $x$.
 \int\dd x \dd y \dd z y^{-1-\epsilon}(1-y)s^{-2-\epsilon}
 \\
 &
-\frac{1}{\big\{(1-y)[-\chi + (A_3+C)z + A_1] - (1-x)[(1-y)(A_1 + Cz)  +i\eta]-i\frac{1-y}{y}(1-z)\eta'\big\}^{2+\epsilon}}
+\frac{1}{\big\{(1-y)[-1 + (A_3+C)z + A_1] - (1-x)[(1-y)(A_1 + Cz)  +i\eta]-i\frac{1-y}{y}(1-z)\eta'\big\}^{2+\epsilon}}
 \\
 = &
 \frac{1}{1+\epsilon}
 \int\dd y \dd z y^{-1-\epsilon}s^{-2-\epsilon}(1-y)[(1-y)(A_1 + Cz ) +i\eta]^{-1}
 \\
 & \times
-\Big(-\{(1-y)[-\chi + A_1 + (A_3 + C)z ] - i\frac{1-y}{y}(1-z)\eta'\}^{-1-\epsilon} 
+\Big(-\{(1-y)[-1 + A_1 + (A_3 + C)z ] - i\frac{1-y}{y}(1-z)\eta'\}^{-1-\epsilon} 
 \\
 &
-+\{(1-y)(-\chi + A_3z) - i\eta - i\frac{1-y}{y}(1-z)\eta'\}^{-1-\epsilon}\Big)
++\{(1-y)(-1 + A_3z) - i\eta - i\frac{1-y}{y}(1-z)\eta'\}^{-1-\epsilon}\Big)
 \end{split}
 \end{equation*}
 Call the first term on the \rhs $I_1$ and the second $I_2$. Then
@@ -90,7 +90,7 @@ Call the first term on the \rhs $I_1$ and the second $I_2$. Then
 \begin{split}
 I_1 = &
 -\frac{s^{-2-\epsilon}}{1+\epsilon}\int\dd y \dd z (1-y)^{-\epsilon}[(1-y)(A_1 + Cz) - i\eta]^{-1}
-\{y[-\chi + A_1 + A_3 + C ] 
+\{y[-1 + A_1 + A_3 + C ] 
 \\
 & - (1-z)[y(A_3 + C) + i\eta']\}^{-1-\epsilon}
 \\
@@ -103,7 +103,7 @@ I_1 = &
 \end{equation*}
 where
 \begin{equation*}
-z_0 = \frac{-y}{(A_3 + C)y +i\eta'}\quad,\quad
+z_0 = \frac{-\chi y}{(A_3 + C)y +i\eta'}\quad,\quad
 z_1 = \frac{-(1-y)(A_1 + C)+i\eta}{(1-y)C}
 \end{equation*}
 As we know already from the expansion
@@ -113,12 +113,12 @@ As we know already from the expansion
 let us now look at the terms which have branch cuts. 
 For its usefulness, we compute
 \begin{equation*}
-z_0 + z_1 = \frac{-(A_1 + C)(A_3 + C) - C +i\eta + i\eta'}{C(A_3 + C + i\eta')}
+z_0 + z_1 = \frac{-(A_1 + C)(A_3 + C) - C +i\eta + i\eta'}{C(A_3 + C + i\eta')y}
 \end{equation*}
 %
 \begin{equation}
-\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[(A_3 + C )y + i\eta']^{1+\epsilon}}(-z_0)^{-\epsilon}
-= \frac{(-y)^{-\epsilon}}{r - i\eta-i\eta'}
+\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)C[(A_3 + C )y + i\eta']^{1+\epsilon}}(-z_0)^{-\epsilon}
+= -\frac{(-\chi y)^{-\epsilon}}{r - i\eta-i\eta'}
 \end{equation}
 where
 \begin{equation*}
@@ -126,23 +126,45 @@ r = -(A_1 + C)(A_3 + C)-C = -\frac{K^2_1K_3^2}{s^2} +\chi
 \end{equation*}
 %
 \begin{equation}
-\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)(1-y)C[(A_3 + C)y + i\eta']^{1+\epsilon}}(1-z_0)^{-\epsilon}
-= \frac{(y)^{-\epsilon}(\frac{-K_1^2}{s}+i\eta')^{-\epsilon}}{r - i\eta-i\eta'}
+\frac{(-1)^{-1-\epsilon}}{(z_0+z_1)C[(A_3 + C)y + i\eta']^{1+\epsilon}}(1-z_0)^{-\epsilon}
+= - \frac{(y)^{-\epsilon}(\frac{-K_1^2}{s}+i\eta')^{-\epsilon}}{r - i\eta-i\eta'}
 \end{equation}
 %
 \begin{equation}
-\frac{z_0}{z_0 + z_1} = \frac{-y}{r + i\eta + i\eta'}
+\frac{z_0}{z_0 + z_1} = \frac{-C\chi }{r + i\eta + i\eta'}
 \end{equation}
 %
 \begin{equation}
-\frac{z_0 - 1}{z_0 + z_1} = \frac{-\frac{K_1^2}{s}+i\eta'}{r + i\eta + i\eta'}
+\frac{z_0 - 1}{z_0 + z_1} = \frac{C(-\frac{K_1^2}{s}+i\eta')}{r + i\eta + i\eta'}
 \end{equation}
-
-
-
-
-
-
+%
+On the other hand, 
+$I_2$ takes exactly the same form as $I_1$ up to a factor and the substition of $z_0$ by
+\begin{equation*}
+z_2 = \frac{1-A_3 + i\eta}{A_3-i\eta'}
+\end{equation*}
+The relevant computations are
+\begin{equation*}
+z_1 + z_2 = \frac{-r + i\eta + i\eta'}{C(A_3 - i\eta')}
+\end{equation*}
+%
+\begin{equation}
+\frac{(-1)^{-1-\epsilon}}{(z_2+z_1)C[A_3 y - i\eta']^{1+\epsilon}}(-z_2)^{-\epsilon}
+= -\frac{(-\frac{K_3^2}{s} + i\eta)^{-\epsilon}}{r - i\eta-i\eta'}
+\end{equation}
+%
+\begin{equation}
+\frac{(-1)^{-1-\epsilon}}{(z_2+z_1)C[A_3y - i\eta']^{1+\epsilon}}(1-z_2)^{-\epsilon}
+= - \frac{(-1-i\eta-i\eta')^{-\epsilon}}{r - i\eta-i\eta'}
+\end{equation}
+%
+\begin{equation}
+\frac{z_2}{z_2+z_1} = -\frac{C(1-A_3 + i\eta)}{r-i\eta-i\eta'}
+\end{equation}
+%
+\begin{equation}
+\frac{z_2-1}{z_2+z_1} = -\frac{C(1+i\eta+i\eta')}{r-i\eta-i\eta'}
+\end{equation}
 
 
 
