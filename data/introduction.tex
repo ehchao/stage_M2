@@ -5,24 +5,23 @@ Quantum corrections at higher order become crucial for studying physically relev
 Especially, next-to-leading (NLO) corrections in quantum chromodynamics (QCD) play an important role. 
 For example, differential cross section computations require processes beyond tree-level, such as real gluon emissions, formation of jets and virtual one-loop corrections.
 However, traditional diagrammatic amplitude computations become highly complicated in gauge theories at loop-level.
-One-loop results in QCD were only known up to five external legs before the early nineties. 
+One-loop results in QCD were only known up to five external legs before the early nineties~\cite{Bern:1994zx}. 
 During the past twenty years, many breakthroughs in amplitude computations have been made at both tree-level and one-loop.
-The main propose of this internship report is to give an overview of how to use the on-shell recursion and the generalized unitarity to get tree-level and one-loop amplitudes in an efficient way. 
+The main propose of this internship report is to give an overview of how to use on-shell recursion and generalized unitarity to get tree-level and one-loop amplitudes in an efficient way. 
 The actual threshold of amplitude computation is at the next-to-next-to-leading order (NNLO), which these techniques are being generalized to.
 \\\\
 Tree-level amplitude computations are more simple since they do not require any potentially divergent loop integral.
 Nevertheless, in a gauge theory, the complexity of the calculation still increases phenomenally when the number of external legs increases.
 Due to Britto, Cachazo, Feng and later Witten~\cite{BRITTO2005499, PhysRevLett.94.181602}
 tree-level amplitudes can be computed recursively in the number of external legs.
-The BCFW recursion, or known as the on-shell recursion, makes use of complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function contructed out of an n-point amplitude.
+The BCFW recursion, or known as on-shell recursion, makes use of complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function contructed out of an n-point amplitude.
 This method does not require the knowledge of any individual Feynman diagram, but only needs the behavior of the analytic function when certain combinations of external momenta go "on-shell". 
-This will be reviewed in~\cref{sect-bcfw}
 In a massless gauge theory, the recursion relation of color-ordered amplitudes can be written in a compact way using the spinor-helicity formalism.
-In particular, we can recover the Taylor-Parke formula for maximally-helicty-violation (MHV) amplitudes (\ie only two particles have a helicity different from the others.) from the on-shell recursion.
+In particular, we can recover the Taylor-Parke formula for maximally-helicty-violation (MHV) amplitudes (\ie only two particles have a helicity different from the others.) from on-shell recursion.
 \\\\
-In the early nineties, Bern, Dixon, Dunbar and Kosower~\cite{Bern:1994zx} proposed a method based on the Cutkosky rules~\cite{doi:10.1063/1.1703676}, or known as generalized unitarity, which became later an important one-loop amplitude computation technique.
-It is known that an $m$-point integral can be reduced to integrals of lower degree (\eg by a Passarino-Veltman reduction~\cite{PASSARINO1979151}).
-Although in the presence of massless propagators, one might use the dimension regularization scheme to control the infrared divergences and work in $D = 4-2\epsilon$ dimension, it can be proven that loop integrals can be written in a basis composed of bubble, triangle and box integrals (\ie two-, three- and four-point integrals), called the master integrals, up to the order of $\mathcal{O}(\epsilon^0)$.
+In the early nineties, Bern, Dixon, Dunbar and Kosower~\cite{Bern:1994zx} proposed a method based on the Cutkosky rules~\cite{doi:10.1063/1.1703676}, or known as generalized unitarity, which became later an important basis for one-loop amplitude computation tools.
+It is known that an $m$-point integral can be reduced into integrals of lower degree (\eg by a Passarino-Veltman reduction~\cite{PASSARINO1979151}).
+Although in the presence of massless propagators, one might use the dimension regularization scheme to control the infrared divergences and work in $D = 4-2\epsilon$ dimension, it can be proven that loop integrals can be written in a basis composed of bubble, triangle and box integrals (\ie two-, three- and four-point integrals), called the master integrals, up to the order of $\mathcal{O}(\epsilon^0)$ (see \eg~\cite{Gluza:2010ws} for a review).
 Generalized unitarity consists in "cutting" one or several loop propagators in the same time by putting them on-shell.
 Mathematically, this corresponds to the branch cut at the channel where the cut is performed. 
 To be more precise, since the master integrals contain logarithms and dilogarithms, this equals to the imaginary part of the final loop amplitude when a certain kinematic invariant changes sign.
@@ -31,8 +30,8 @@ In a theory with supersymmetry, this task becomes even more simple thanks to the
 An even particular case, where the generalized unitarity was first tested~\cite{Bern:1994zx}, is the N=4 super-Yang-Mills (SYM) theory, whose one-loop amplitudes involve uniquely scalar box integrals. 
 \\\\
 During the last decade, methods to extract coefficients of master integrals were developped. 
-A procedure to extract the box coefficients using quadruple cuts,\ie with four internal propagators put on-shell, was proposed by Britto, Cachazo and Feng~\cite{Britto:2004nc}. 
-This procedure was originally formulated in four-dimension, where a quadruple cut leads to four delta functions which makes the integral over the phase-space trivial to compute. 
+A procedure to extract the box coefficients using quadruple cuts, \ie with four internal propagators put on-shell, was proposed by Britto, Cachazo and Feng~\cite{Britto:2004nc}. 
+This procedure was originally formulated in four-dimension, where a quadruple cut leads to four delta functions, which makes the integral over the phase-space trivial to compute. 
 However, to make this idea clear, complex momenta~\cite{PhysRevD.75.025028} have to be used for the delta functions.
 By a wise choice of parametrization, Forde shows~\cite{Forde:2007mi} an efficient way to extract bubble and triangle coefficients using triple cuts in $D=4$.
 Contrary to the quadruple cut case, there will still be remaining degrees of freedom for two-particle and triple cuts. 
@@ -43,9 +42,9 @@ Rational terms do not have branch cut when kinetic invariants change regime, thu
 In a cut-constuctible theory, the issue of rational term still exists due to the dimensional regularization scheme. 
 Based on previous works in four-dimensions, Badger shows how rational terms can be determined~\cite{Badger:2008cm}
 \\\\
-All these tools described above enable us to compute amplitudes in all helicities at one-loop.
+All these tools described above enable us to compute amplitudes for all helicities at one-loop.
 In this report, we will review them in the following order.
-We start with a brief introduction about the spinor-helicity formalism, general facts in color-ordered amplitudes and the on-shell recursion.
+We start with a brief introduction on the spinor-helicity formalism, general facts in color-ordered amplitudes and on-shell recursion.
 An explicit computation using the on-shell recursion will be done for the five-point MHV tree-level gluon amplitude. 
 Then, we sketch the idea of the Cutkosky rules and verify the statement with the examples of cuts in the s-channel of the one-mass triangle and two-mass-easy box, with massless internal propagators.
 Later on, we concentrate on the generalized unitarity applied to one-loop in N=4 SYM.
