@@ -2,3 +2,80 @@
 The spinor-helicity formalism is widely used in amplitude literatures. 
 One can refer to~\cite{Dixon:1996wi,Elvang:2013cua} for good introductions\footnote{The convention may change according to the signature}.
 We present some useful properties under the convention used in QCD~\cite{Dixon:1996wi}.
+\\\\
+In a gauge theory, one might want to write the kinematic part of amplitudes in terms of the Lorentz invariants that can be formed from external momenta, \eg the square $p^2$ of a four-vector $p^\mu$.
+However, in most interesting models, there are not only scalar fields but also particles which have spins. 
+A more suitable representation of the Lorentz group is the spinor two-dimensional spinor representation.
+We can trade a four-dimensional vector for a pair of spinors.
+To be more explicit, let us consider the massless case.
+Consider two spinors $\bar{u}(p)$ and $v(p)$ for an outgoing fermion and an outgoing anti-fermion of momentum $p$.
+They satisfy the Dirac equation and we can decompose them into two parts of different helicity:
+\begin{equation*}
+v_+(p) = \begin{pmatrix}
+|p]_\alpha \\ 0
+\end{pmatrix} := \lambda_p^\alpha
+\quad,\quad
+v_-(p) = \begin{pmatrix}
+0 \\ |p\rangle^{\dot{\alpha}}
+\end{pmatrix} := \tilde{\lambda}_p^{\dot{\alpha}}
+\quad,\quad
+\bar{u}_-(p) = \begin{pmatrix} 
+0, & \langle p |_{\dot{\alpha}})\end{pmatrix}
+\quad,\quad
+\bar{u}_+(p) = \begin{pmatrix} [ p|^\alpha, & 0 \end{pmatrix}
+\end{equation*} 
+where $v_\pm = \frac{1}{2}(1\pm\gamma_5)v(p)$ (analog for the others) and $\alpha = 1,2$.
+The crossing symmetry is garanteed since $v_\pm = u_\mp$.
+Using the Dirac representation for the gamma matrices, 
+we have
+\begin{equation*}
+\slashed{p} = \begin{pmatrix}
+0 & p_{a\dot{b}} \\ 
+p^{\dot{a}b} & 0
+\end{pmatrix}
+\end{equation*}
+where 
+\begin{equation*}
+p^{\dot{a}b} = p_\mu(\bar{\sigma^\mu})^{\dot{a}b}
+\quad,\quad
+p_{a\dot{b}} = p_\mu(\sigma^\mu)_{a\dot{b}}
+\end{equation*}
+With a slight abuse of notation, the massless Dirac equation implies
+\begin{equation*}
+\slashed{p}v_\pm (p) = \slashed{p}|p^\pm\rangle = 0
+\quad \mathrm{where}\quad
+|p^+\rangle := |p]
+\quad
+|p^-\rangle := |p\rangle
+\end{equation*}
+The raising and lowering of spinor indices are achieved by the Levi-Civita tensor
+\begin{equation*}
+[p|^a = \epsilon^{ab}|p] \quad,\quad
+|p\rangle^{\dot{a}} = \epsilon^{\dot{a}\dot{b}}\langle p |_{\dot{b}}
+\end{equation*}
+The spinor products defined in the following are Lorentz invariant objects
+\begin{equation*}
+\begin{split}
+& \langle ij \rangle = \epsilon^{ab}(\lambda_i)_a(\lambda_j)_b = \bar{u}_-(i)u_+(j)
+\\
+& [ij] = \epsilon^{\dot{a}\dot{b}}(\tilde{\lambda}_i)_{\dot{a}}(\tilde{\lambda}_j)_{\dot{b}} = \bar{u}_+(i)u_-(j)
+\end{split}
+\end{equation*}
+In this formalism, the momentum can also be chosen complex. 
+In the case where the momentum is real, we note that
+$(\slashed{p})^* = {}^t\slashed{p}$, which correspond to an exchange of the right and the left spinors. 
+In other words, the chirality flip of all spinors in a spinor product is simply the complex conjugate of teh spinor product
+\begin{equation*}
+[ij] = \langle ij \rangle^* \quad\textrm{when both momenta are real}
+\end{equation*}
+The spinor products are antisymmetric and the product of an angle and an square spinors vanishes. 
+With this remark and a slight abuse of notation, one has, from the completeness relation of spinors,
+\begin{equation*}
+\slashed{p} = |p\rangle [p| + |p]\langle p|
+\end{equation*}
+For computational purpose, we give here two useful identities
+\begin{enumerate}
+\item (Fierz) $\langle 1 |\gamma^\mu |2]\langle 3 |\gamma^\mu|4] = 2\langle 13 \rangle [24]$
+\item (Schouten) $\langle ij \rangle \langle lk \rangle + \langle ik\rangle \langle jl\rangle + \langle il \rangle \langle kj \rangle$
+\end{enumerate}
+For the first one, the properties of the Pauli matrices are used and the second one can be derived from the fact that the spinors used here are two-dimensional objects.
