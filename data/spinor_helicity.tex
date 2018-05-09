@@ -79,3 +79,31 @@ For computational purpose, we give here two useful identities
 \item (Schouten) $\langle ij \rangle \langle lk \rangle + \langle ik\rangle \langle jl\rangle + \langle il \rangle \langle kj \rangle$
 \end{enumerate}
 For the first one, the properties of the Pauli matrices are used and the second one can be derived from the fact that the spinors used here are two-dimensional objects.
+%
+%
+In presence of massless vectors, we can write the corresponding polarization vectors by choosing an arbitrary reference vector $q$ which is not collinear to the momentum $p_i$ of the vector field:
+\begin{equation*}
+\begin{spilt}
+& \varepsilon^+_\mu (p_i, q) = \frac{\langle q | \gamma |i]}{\sqrt{2}\langle qi \rangle}
+\\
+& \varepsilon^-_\mu (p_i, q) = -\frac{[q|\gamma_\mu | i\rangle}{\sqrt{2}[qi]}
+\end{split}
+\end{equation*}
+One can check that these polarization vectors are transverse and give us the expected results from Feynman diagram computations. 
+It might still be complicated if one has to recall the polarization vectors each time.
+However, amplitudes can be computed without using the explicit expression of the polarization vectors.
+%
+%
+\subsection*{3-point amplitudes}
+The first non-trivial object to compute at tree-level is the three-point function $A_3[1^{h_1}2^{h_2}3^{h_3}]$, where the $h_i$'s denote the helicities.
+By momentum conservation, we have $p_3^2 = (p_1 + p_2)^2 = \langle 12\rangle[21] = 0$. 
+If we allow complex momenta, the spinor products can be non simultaneously vanishing (since they are not related by complex conjugation anymore). 
+As a result, either the square or the angle product vanishes.
+
+
+
+
+
+
+
+

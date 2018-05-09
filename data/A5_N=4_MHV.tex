@@ -15,25 +15,26 @@ The on-shell conditions allow us to set
 |l_2\rangle = \delta |3\rangle \quad
 |l_3\rangle = \gamma |l_3\rangle\quad
 |l_3] = \eta|4]\quad
-|l_4\rangle = \beta 4]
+|l_4] = \beta 4]
 \end{equation*}
 Hence, the coefficient
 \begin{equation*}
 \begin{split}
 c_1 = &
-\frac{1}{2}\frac{\langle 2 1 \rangle^4}{\langle 1 2 \rangle \langle 2 l_2\rangle \langle l_2 l_1 \rangle\langle l_1 1 \rangle}
-\frac{[3l_3]^3}{[l_3 l_2][l_2 l_3]}
+\frac{1}{2}\frac{\langle 12 \rangle^4}{\langle 1 2 \rangle \langle 2 l_2\rangle \langle l_2 l_1 \rangle\langle l_1 1 \rangle}
+\frac{[3l_3]^3}{[l_3 l_2][l_2 3]}
 \frac{\langle l_3 l_4 \rangle^{3}}{\langle l_4 4 \rangle \langle 4 l_3\rangle}
 \frac{[l_4 5 ]^3}{[5l_1][l_1 l_4]}
 \\
 = & 
-\frac{1}{2}\frac{\langle 2 1 \rangle^3}{\langle 2 l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1\rangle}
-\frac{[34]^2\langle 4 l_4\rangle}{[l_3 l_2][l_2 3]\langle 4 l_3\rangle}
+\frac{1}{2}\frac{\langle 12 \rangle^3}{\langle 2 l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1\rangle}
+\frac{[34]^2\langle l_4 4\rangle}{[l_3 l_2][l_2 3]\langle 4 l_3\rangle}
 \frac{[l_4 5]^2}{[5l_1 ][l_1 l_4]}
-[3 l_3]\langle l_3 l_4 \rangle [l_4 l_5]
+[3 l_3]\langle l_3 l_4 \rangle [l_4 5]
 \\
 = &
-\frac{1}{2}\frac{\langle 21 \rangle^3 [34]^2 \langle 45 \rangle [45]}{\langle 32 \rangle \langle 5 | \slashed{K}_{12}|3]}
+\frac{1}{2}
+\frac{\langle 12 \rangle^3[34]^2[45]}{\langle 15 \rangle\langle2|\slashed{K}_{3}|4]}
 \end{split}
 \end{equation*}
 %
@@ -58,10 +59,15 @@ c_1 = \frac{1}{2 K_{123}^2}\frac{\langle 2 1 \rangle^3 [34]\langle 45 \rangle\la
 %
 \begin{equation*}
 \begin{split}
-c_2  = & \frac{1}{2}\frac{\langle 21 \rangle^4}{\langle 21 \rangle\langle 1 l_1 \rangle\langle l_1 l_2 \rangle\langle l_2 2 \rangle}
-\frac{\langle l_2 l_3\rangle^3}{\langle 3 l_3 \rangle \langle l_3 l_2 \rangle}
+c_2  = &
+\frac{1}{2}\frac{\langle 21\rangle^4}{\langle 21 \rangle\langle 1l_1\rangle\langle l_1l_2\rangle\langle l_2 2\rangle}
+\frac{\langle l_2 l_3\rangle^3}{\langle l_3 3\rangle\langle 3 l_2\rangle}
 \frac{[l_3 4]^3}{[4l_4][l_4 l_3]}
 \frac{[5 l_4]^3}{[l_4 l_1][l_1 5]}
+\\
+= &
+\frac{1}{2}\frac{\langle 12 \rangle^3[l_4 4 ]^2\langle l_2l_4\rangle^2 [l_4 5]\langle l_2 5\rangle}{\langle 15\rangle\langle 5 l_2 \rangle\langle l_2 2\rangle[l_4 l_2]\langle l_2 3\rangle^2
+}
 \\
 = &
 -\frac{1}{2}\frac{\langle 21 \rangle^3}{\langle 1 l_1 \rangle\langle l_1 l_2 \rangle\langle l_2 2 \rangle}
@@ -124,7 +130,7 @@ c_3 = &
 \frac{1}{2}
 \frac{\langle 12 \rangle^4}{\langle 12 \rangle\langle 2l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1 \rangle}
 \frac{[3l_3]^3}{[l_3 l_2][l_2 3]}
-\frac{[4 l_3]^3}{[l_4 l_3][l_3 l_4]}
+\frac{[4 l_4]^3}{[l_4 l_3][l_3 l_4]}
 \frac{\langle l_4 l_1 \rangle^3}{\langle l_4 5\rangle\langle 5 l_1 \rangle}
 \\
 = &
@@ -167,11 +173,11 @@ c_4 = & \frac{1}{2}\frac{\langle 12 \rangle^4}{\langle 12 \rangle\langle 2l_2 \r
 \frac{[l_4 5]^3}{[5l_1][l_1 l_4]}
 \\
 = &
-\frac{1}{2}\frac{\langle 12 \rangle^3}{\langle 2l_2\rangle\langle l_2 l_4 \rangle\langle 51 \rangle}
+-\frac{1}{2}\frac{\langle 12 \rangle^3}{\langle 2l_2\rangle\langle l_2 l_4 \rangle\langle 51 \rangle}
 \frac{\langle l_2 3 \rangle^2 [34]^3 [l_4 5]}{\langle 3 l_3 \rangle [l_4 l_3][4 l_4]}
 \\
 = &
-\frac{\langle 12 \rangle^3\langle l_2 3\rangle^2[34]^3[l_4 5]}{\langle 2 l_2 \rangle\langle l_2 l_4 \rangle\langle 51 \rangle\langle 34 \rangle [l_4 4]^2}
+-\frac{\langle 12 \rangle^3\langle l_2 3\rangle^2[34]^3[l_4 5]}{\langle 2 l_2 \rangle\langle l_2 l_4 \rangle\langle 51 \rangle\langle 34 \rangle [l_4 4]^2}
 \end{split}
 \end{equation*}
 Set
@@ -186,7 +192,7 @@ We solve the coefficients with the on-shell conditions
 \begin{split}
 & (l_4 + K_{34})^2 = (l_4 +K_{1234})^2 = 0 \quad\Rightarrow
 b\beta = -\frac{K_{34}^2}{[4|\slashed{K}_3|4\rangle} ,\quad
-a\beta = \frac{1}{[3|slashed{K}_{12}|4\rangle}\Big( -K_{1234}^2 + \frac{K_{34}^2 [4|\slashed{K}_{123}|4\rangle}{[4|\slashed{K}_3|4\rangle}\Big)
+a\beta = \frac{1}{[3|\slashed{K}_{12}|4\rangle}\Big( -K_{1234}^2 + \frac{K_{34}^2 [4|\slashed{K}_{123}|4\rangle}{[4|\slashed{K}_3|4\rangle}\Big)
 \\
 &
 (l_2 + K_{34})^2 = (l_2 + K_{1234})^2 = 0 \quad\Rightarrow
@@ -194,3 +200,278 @@ a\beta = \frac{1}{[3|slashed{K}_{12}|4\rangle}\Big( -K_{1234}^2 + \frac{K_{34}^2
 \alpha d = \frac{1}{[3|\slashed{K}_{12}|4\rangle}\Big(-K_{1234}^2 + \frac{K_{34}^2 [3|\slashed{K}_{124}|3\rangle}{[3|\slashed{K}_4|3\rangle}\Big)
 \end{split}
 \end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-5}
+    \caption{A5-5}
+  \label{A5-5}
+\end{figure}
+\paragraph{\ref{A5-5}}
+\begin{equation*}
+\begin{split}
+c_5 = & \frac{1}{2}\frac{[l_1 l_2]^3}{[l_2][l_1]}\frac{\langle l_2 3 \rangle^4}{\langle l_2 2 \rangle\langle 23 \rangle\langle 3 l_3 \rangle\langle l_3 l_2\rangle}
+\frac{\langle l_3 l_4 \rangle^3}{\langle l_3 4 \rangle\langle 4 l_4 \rangle}
+\frac{[l_4 5]^3}{[5 l_1][l_1 l_4]}
+\\
+= &
+\frac{1}{2}\frac{[l_1 1 ]^2 \langle 12 \rangle^3 \langle l_3 4 \rangle^2[45]^3}{\langle 23 \rangle\langle 3 l_3 \rangle\langle l_3 |\slashed{K}_{23}|1]\langle 45 \rangle [5l_1]^2}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-6}
+    \caption{A5-6}
+  \label{A5-6}
+\end{figure}
+\paragraph{\ref{A5-6}}
+\begin{equation*}
+\begin{split}
+c_6 = & \frac{1}{2}\frac{\langle 1l_1\rangle^3}{\langle l_1 l_2 \rangle\langle l_2 1 \rangle}
+\frac{\langle l_2 2 \rangle^4}{\langle l_2 2\rangle\langle 23 \rangle\langle 3l_3\rangle\langle l_3 l_2 \rangle}
+\frac{[4l_4]^3}{[l_4 l_3][l_3 4]}
+\frac{[5l_1]^3}{[l_1l_4][l_4 5]}
+\\
+= &
+\frac{1}{2}
+\frac{\langle l_2 2 \rangle^3\langle 1 l_4\rangle^3[l_4 5][4 l_4]}{\langle 5 l_2 \rangle\langle l_2 1 \rangle\langle 23 \rangle\langle 34 \rangle\langle l_2 l_4 \rangle}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-7}
+    \caption{A5-7}
+  \label{A5-7}
+\end{figure}
+\paragraph{\ref{A5-7}}
+\begin{equation*}
+\begin{split}
+c_7 = & \frac{1}{2}\frac{\langle 1 l_2 \rangle^3}{\langle l_2 l_1 \rangle\langle l_1 1\rangle}
+\frac{\langle 2 l_3 \rangle^4}{\langle 23\rangle\langle 3 l_3 \rangle\langle l_3 l_2\rangle\langle l_2 2 \rangle}
+\frac{[l_3 4]^3}{[4 l_4][l_4 l_3]}
+\frac{[l_4 5 ]^3}{[5 l_1 ][l_1 l_4]}
+\\
+= &
+-\frac{1}{2}
+\frac{\langle 1 l_2 \rangle^2\langle 24 \rangle [l_4 5]^2\langle 2 l_4\rangle^3 [l_4 4]}{[15]\langle 51 \rangle \langle 23 \rangle \langle 34 \rangle\langle l_2 2 \rangle\langle 4 l_2\rangle}
+\end{split}
+\end{equation*}
+where $| l_3\rangle \propto |4\rangle$ is used in the second line.
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-8}
+    \caption{A5-8}
+  \label{A5-8}
+\end{figure}
+\paragraph{\ref{A5-8}}
+\begin{equation*}
+\begin{split}
+c_8 = & \frac{1}{2}
+\frac{[l_1 l_2]^3}{[l_1 1][1l_2]}
+\frac{\langle 2 l_2 \rangle^4}{\langle 2l_2 \rangle\langle l_2 l_3\rangle\langle l_3 3 \rangle\langle 32 \rangle}
+\frac{[l_4 4 ]^3}{[l_4 l_3][l_3 4]}
+\frac{\langle l_4 l_1 \rangle^3}{\langle l_4 5 \rangle\langle 5 l_1\rangle}
+\\
+= &
+\frac{\langle 12 \rangle^3[1l_1 ]\langle l_1 5\rangle^2 [54]^3}{\langle l_1 l_3\rangle\langle l_3 3 \rangle\langle 32 \rangle [l_3 4 ]^2\langle 45\rangle}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-9}
+    \caption{A5-9}
+  \label{A5-9}
+\end{figure}
+\paragraph{\ref{A5-9}}
+\begin{equation*}
+\begin{split}
+c_9 = & \frac{1}{2}\frac{[l_1 l_2]^3}{[l_1 1][1 l_2]}
+\frac{\langle 2l_2 \rangle^3}{\langle l_2 l_3 \rangle\langle l_3 2 \rangle}
+\frac{[34]^4}{[34][4 l_4][l_4 l_3][l_3 3]}
+\frac{[l_4 5]^3}{[l_4 l_1][l_1 5]}
+\\
+= &
+-\frac{1}{2}
+\frac{\langle 21 \rangle^3 [1l_1]^2[34]^3[l_4 5]^3}{[12][l_4|\slashed{K}_{34}|2\rangle \big(\rangle 2 | \slashed{K}_{24}|3]\big) [4l_4][l_4 l_1 ][l_1 5]}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-10}
+    \caption{A5-10}
+  \label{A5-10}
+\end{figure}
+\paragraph{\ref{A5-10}}
+\begin{equation*}
+\begin{split}
+c_{10} = &
+\frac{1}{2}\frac{\langle 1l_2\rangle^3}{\langle l_2 l_1 \rangle\langle l_1 1 \rangle}
+\frac{[l_2 l_3]^3}{[l_2 2 ][2 l_3]}
+\frac{[34]^4}{[34][4 l_4][l_4 l_3][l_3 3]}
+\frac{[l_4 5]^3}{[l_4 l_1][l_1 5]}
+\\
+= &
+\frac{1}{2}\frac{\langle 12 \rangle^3[2l_3]^3[34]^3[l_4 5 ]^2}{\langle 51 \rangle[15][2l_3]^2\langle l_3 1\rangle [4 l_4][l_4 l_3][l_3 3]}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-11}
+    \caption{A5-11}
+  \label{A5-11}
+\end{figure}
+\paragraph{\ref{A5-11}}
+\begin{equation*}
+\begin{split}
+c_{11} = &
+\frac{1}{2}\frac{[l_1 l_2]^3}{[l_1 1][1l_2]}
+\frac{\langle l_2 2 \rangle^3}{\langle 2 l_3 \rangle\langle l_3 l_2 \rangle}
+\frac{[3l_4]^3}{[l_4 l_3][l_3 3]}
+\frac{[45]^4}{[45][5l_1][l_1l_4][l_4 4]}
+\\
+= &
+-\frac{1}{2}
+\frac{[l_1 1]\langle 12 \rangle^3[3l_4]^2[45]^3}{[23]\langle l_1 2 \rangle\langle 23 \rangle[5l_1][l_1l_4][l_4 4]}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-12}
+    \caption{A5-12}
+  \label{A5-12}
+\end{figure}
+\paragraph{\ref{A5-12}}
+\begin{equation*}
+\begin{split}
+c_{12} = &
+\frac{1}{2}
+\frac{\langle 1 l_2 \rangle^3}{\langle 1 l_1\rangle\langle l_1 l_2\rangle}
+\frac{[l_2 l_3]^3}{[l_2 2 ][2l_3]}
+\frac{[3l_4]^3}{[l_4 l_3][l_3 3]}
+\frac{[45]^4}{[45][5l_1][l_1 l_4][l_4 4]}
+\\
+= &
+\frac{1}{2}\frac{\langle 12 \rangle^3[2l_3]^2[3l_4]^3[45]^4}{\langle 1|\slashed{K}_{45}|l_4] \big([5l_4]\langle l_41\rangle - [54]\langle 41 \rangle\big) [12][l_4 l_3][l_3 3 ][45][l_4 4]}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-13}
+    \caption{A5-13}
+  \label{A5-13}
+\end{figure}
+\paragraph{\ref{A5-13}}
+\begin{equation*}
+\begin{split}
+c_{13} = &
+\frac{1}{2}\frac{\langle 1 l_1 \rangle^4}{\langle 1 l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 5 \rangle\langle 51 \rangle}
+\frac{\langle 2l_2\rangle^3}{\langle l_2 l_3\rangle\langle l_3 2 \rangle}
+\frac{[3l_4]^3}{[l_4 l_3][l_3 3]}
+\frac{[4l_1]^3}{[4l_4][l_4l_1]}
+\\
+= &
+\frac{1}{2K_{23}^2}\frac{\langle 14\rangle\langle 1 l_4\rangle^3[l_4 4]\langle 2l_2\rangle^2[3l_4]^2}{\langle 1l_2\rangle\langle l_2 4\rangle\langle 51\rangle\langle 45\rangle}
+\end{split}
+\end{equation*}
+where $|l_1\rangle \propto |4\rangle$ and $(l_2 - l_4)^2 = K_{23}^2 = -\langle l_2 l_4\rangle[l_4l_2]$ are used.
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-14}
+    \caption{A5-14}
+  \label{A5-14}
+\end{figure}
+\paragraph{\ref{A5-14}}
+\begin{equation*}
+\begin{split}
+c_{14} = & \frac{1}{2}\frac{\langle 1l_2\rangle^4}{\langle 1 l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 5\rangle\langle 5 1\rangle}
+\frac{[l_2 l_3]^3}{[l_2 2 ][2 l_3]}
+\frac{[3l_4]^3}{[l_4 l_3][l_3 3]}
+\frac{\langle l_4 l_1 \rangle^3}{\langle l_4 4 \rangle\langle 4 l_1\rangle}
+\\
+= &
+\frac{1}{2}
+\frac{\langle 12 \rangle^3[2l_3]^2[34]^3\langle 4 l_1 \rangle^2}{\langle l_1 |\slashed{K}_{15}|2]\langle l_1 5\rangle\langle 51 \rangle\langle 43\rangle[3l_2]^2}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-15}
+    \caption{A5-15}
+  \label{A5-15}
+\end{figure}
+\paragraph{\ref{A5-15}}
+\begin{equation*}
+\begin{split}
+c_{15} = &
+\frac{1}{2}
+\frac{[5l_1]^4}{[5l_1][l_1  l_2][l_2 1][15]}
+\frac{\langle 2 l_3\rangle^3}{\langle 2 l_2 \rangle\langle l_2 l_3\rangle}
+\frac{[l_3 3 ]^3}{[l_3 l_4][l_4 3]}
+\frac{[l_4 4]^3}{[4l_1][l_1 l_4]}
+\\
+= &
+-\frac{1}{2}
+\frac{[5l_1]^3\langle 2l_4\rangle^3[l_4 3][l_4 4]^3}{[l_1|\slashed{K}_{15}|2\rangle [15][12]\langle 23\rangle[4l_1][l_1l_4]}
+\end{split}
+\end{equation*}
+%
+%
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{A5-15}
+    \caption{A5-15}
+  \label{A5-15}
+\end{figure}
+\paragraph{\ref{A5-15}}
+\begin{equation*}
+\begin{split}
+c_{16} = & \frac{1}{2}
+\frac{\langle l_2 1 \rangle^4}{\langle l_2 1 \rangle\langle 15 \rangle\langle 5 l_1 \rangle\langle l_1 l_2\rangle}
+\frac{[l_2 l_3]^3}{[l_3 2 ][2 l_2]}
+\frac{\langle l_3 l_4\rangle^3}{\langle l_3 3\rangle\langle 3 l_4\rangle}
+\frac{[l_4 4 ]^3}{[4l_1][l_1l_4]}
+\\
+= & 
+-\frac{1}{2}\frac{\langle l_2 1\rangle^3[l_2 2 ]\langle 23 \rangle^3[34]^3}{\langle 15 \rangle[4l_4]\langle l_4 l_2\rangle\langle 3l_2\rangle \langle 3 l_4\rangle\langle 54\rangle[4l_4]}
+\end{split}
+\end{equation*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
