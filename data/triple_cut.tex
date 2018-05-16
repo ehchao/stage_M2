@@ -65,9 +65,79 @@ $q\cdot v$ is hence a spurious term.
 The same technique can be applied to show that $(q\cdot v)^n$ is spurious for any $n>0$. 
 Back to our case, we can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
 to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}
-
-
-
+%
+%
+\subsection*{Two-particle cuts and scalar bubble coefficients}
+Triple cuts can also be used to determine bubble coefficients. 
+Let us first consider a two-particle cut.
+Contrary to the previous case, we will have two free parameters $y$ and $t$.
+\begin{equation}\label{2-part_cut}
+\begin{split}
+(2\pi)^2\int \dd^4 l \prod_{i=0}^1 \delta(l_i^2) A_1 A_2 = & 
+(2\pi)^2\int \dd t\dd y J_{t,y}\Big(\big[\mathrm{Inf}_t [\mathrm{Inf}_y(A_1A_2)](y)\big](t) 
+\\&
++
+\mathrm{Inf}_t\big(\sum_{\textrm{poles}}\frac{\mathrm{Res}_{y = y_i}A_1A_2}{y-y_j})
++
+\mathrm{Inf}_t\big(\sum_{\textrm{poles}}\frac{\mathrm{Res}_{t = t_l}\mathrm{Inf}_y A_1A_2}{t-t_l})
+\\ &
++
+\mathrm{Inf}_t\big(\sum_{\textrm{poles}}\frac{\mathrm{Inf}_t\big(\sum_{\textrm{poles}}\frac{\mathrm{Res}_{y = y_i}A_1A_2}{y-y_j}\big)}{t-t_l}\big)
+\Big)
+\end{split}
+\end{equation}
+We parametrize the loop momentum $l$ by
+\begin{equation*}
+l^\mu = yK_1^{\flat,\mu} + \frac{S_1}{\gamma}(1-y)\chi^\mu + \frac{t}{2}\langle K_1^\flat|\gamma^\mu|\chi] + \frac{S_1}{2\gamma}\frac{y}{t}(1-y)\langle \chi|\gamma^\mu|K_1^\flat]
+\end{equation*}
+where
+\begin{equation*}
+K_1^\flat = K_1 - \frac{S_1}{\gamma}\chi^\mu ,\quad
+\gamma = \langle \chi | \slashed{K}_1^\flat|\chi]
+\end{equation*}
+and $\chi$ is an arbitrary null vector (non-collinear to $K_1$).
+As in the triangle case, we can use $\langle K_1^\flat| \slashed{K}_1|\chi] = \langle K_1^\flat|\slashed{K}_1 | \gamma^\mu|\chi]\langle K_1^\flat|\gamma_\mu|\chi]= 0$ to show that
+\begin{equation*}
+\int\dd t\dd y J_{t,y}t^n = \int \dd t \dd y \big(\frac{y}{t}\big)^n(1-y)^n = 0
+\quad\Rightarrow\quad
+\int \dd t \dd y J_{t,y}t^n = 0
+\quad\textrm{for}\quad n\neq 0
+\end{equation*} 
+From the Passarino-Veltman reduction, we are able to conclude that all terms of the type $t^0y^m$ are non-vanishing, which makes difference \wrt the triple cut case. 
+Naively, one might think that the bubble coefficients come from the first term of~\cref{2-part_cut}.
+However, the loop momentum parametrization that has been used leads to more non-vanishing terms than in the triple cut case. 
+Furthermore, the second and the third terms in~\cref{2-part_cut} can be reduced to scalar bubble integrals plus triangle integrals. 
+In order to relate the contribution to the bubble coefficient of the residue piece, we apply an additional constraint: $(l+K_2)^2=0$ to the two-particle cut.
+This will then fix the free parameter $y$.
+The integral will then take the form
+\begin{equation*}
+(2\pi)^3\int \dd t \dd y J_t'\big(\delta(y-y_+) + \delta(y-y_-)\big) \mathcal{M}(y,t) = -2(2\pi)^2 i \int \dd t \dd y J_{t,y}\mathrm{Res}_{y = y_{\pm}\frac{\mathcal{M}(y,t)}{(l+K_2)^2}}
+\end{equation*}
+where $\mathcal{M}(y,t)$ is a general cut integral and $J_t'$ a function of $t$.
+Therefore, the residue contributions are, up to a factor of $-\frac{1}{2}$, given by the triple cut.
+As discussed in the previous subsection, the $t^0$ contribution in the triple cut gives the triangle coefficients ant the other terms in power of $t$ give the scalar bubble coefficients.
+\\\\
+We will just list here the final result without giving computational details which involve calculations of non-vanishing integrals and reduction techniques.
+The bubble coefficient is given by
+\begin{equation*}
+b = -i[\Inf_t[\Inf_y A_1 A_2](y)](t)\big|_{t\rightarrow 0 , y^m\rightarrow \frac{1}{m+1}}
+-\frac{1}{2}\sum_{C_{\mathrm{tri}}}[\Inf_t A_1A_2A_3](t)\big|_{t^j\rightarrow T(j)}
+\end{equation*}
+where the subscripts indicate the substitutions to be done and $T(j)$ is given in eq.(5.26) of~\cite{Forde:2007mi}. 
+The second term above is summed over all possible triangle configurations.
+\\\\
+As an example, let us cite briefly how the two-mass linear triangle
+\begin{equation*}
+(2\pi)^2\int\dd^4 l \prod_{i=0}^1\delta(l_i^2)\frac{\langle K_2|\slashed{l}|K_1]}{(l+K_2)^2}
+\end{equation*}
+is treated in~\cite{Forde:2007mi}:
+\begin{enumerate}
+\item Do a two-particle cut. We will then get two terms in the integrand: one in $y^0$ and a residual term. The term in $y^0$ gives us a contribution to the bubble coefficients; while the residual term means that a triple cut is needed to get the contributions to the bubble and triangle contributions.
+%
+\item Apply a triple cut. There will be a term in $t$ if we choose the parametrization introduced previously, which encodes information on the bubble coefficients.
+%
+\item This term then requires the knowledge of $\int \dd t J_t' t$, which can be re-expressed in terms of our parametrization. Then, apply the Passarino-Veltman reduction to get the relationsship between $\int \dd tJ_t' t$ and the cut bubble $B_0^{\mathrm{cut}(K_1^2)}$
+\end{enumerate}
 
 
 
