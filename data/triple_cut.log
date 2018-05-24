@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.3)  16 MAY 2018 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.28)  24 MAY 2018 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **triple_cut.tex
 (./triple_cut.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 ! Undefined control sequence.
 l.1 \section
             {Triangle and bubble coefficients in $D=4$}
@@ -4185,12 +4185,12 @@ l.131 (2\pi)^2\int\dd
                      ^4 l \prod_{i=0}^1\delta(l_i^2)\frac{\langle K_2|\slash...
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 17 strings out of 494883
- 265 string characters out of 6178694
- 57957 words of memory out of 5000000
- 3417 multiletter control sequences out of 15000+600000
+ 17 strings out of 493029
+ 265 string characters out of 6136234
+ 65067 words of memory out of 5000000
+ 3652 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  18i,6n,21p,252b,93s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 !  ==> Fatal error occurred, no output PDF file produced!

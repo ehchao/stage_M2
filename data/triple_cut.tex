@@ -138,6 +138,83 @@ is treated in~\cite{Forde:2007mi}:
 %
 \item This term then requires the knowledge of $\int \dd t J_t' t$, which can be re-expressed in terms of our parametrization. Then, apply the Passarino-Veltman reduction to get the relationsship between $\int \dd tJ_t' t$ and the cut bubble $B_0^{\mathrm{cut}(K_1^2)}$
 \end{enumerate}
+%
+%
+%
+\subsection*{Example: triangle coefficient extraction for six-photon amplitude in QED}
+Let us show explicitly how to extract the coefficient for scalar triangle using the example of the six-photon amplitude $A_6[1^-2^+3^-4^+5^-6^+]$ in QED.
+This example is given in~\cite{Forde:2007mi}.
+\\\\
+First, we have to compute the tree-level four-point amplitude $A_4[1^{h_1}2^{h_2}3^{h_3}4^{h_4}]$. 
+Contrary to non-abelian theories, the four-photon amplitude vanishes at tree-level in QED.
+Thus, the relevant four-point amplitudes are following ones which containt two photons and two fermions
+\begin{equation*}
+A_4^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
+\quad,\quad
+A_4^{\mathrm{tree}}(\bar{f}_1^+ f_2^- \gamma_1^-\gamma_2^+)
+\end{equation*}
+Recall that the polarization vectors contracted with the $\gamma$-matrices are represented by\footnote{This can be shown using the expression given previously and the Fierz identity.}
+\begin{equation*}
+\begin{split}
+& \slashed{\epsilon}_+(p,k) = -\frac{\sqrt{2}}{\langle kp\rangle}\big(|p]\langle k| + |k\rangle[p|\big)
+\\
+& \slashed{\epsilon}_-(p,k) = \frac{\sqrt{2}}{[kp]}\big(|p\rangle [k| + |k]\langle p|\big)
+\end{split}
+\end{equation*}
+We denote the out-going fermion momenta by $q_i$ and the out-going photon momenta by $p_i$. 
+A direct Feynman diagram computation gives\footnote{Recall that we take all the particles out-going in our convention.}
+\begin{equation*}
+\begin{split}
+A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+) 
+= &
+-\frac{ie^2}{(p_2+q_2)^2}\langle -q_1, -p_1\rangle \frac{\sqrt{2}}{[k, -p_1]}
+[i|\big(|p_2] \langle p_2| + |q_2]\langle q_2|\big)
+\frac{\sqrt{2}}{\langle k p_2\rangle}
+\big(|p_2]\langle k| + |k\rangle[p_2|\big) |q_2]
+\\
+&
+-\frac{ie^2}{(-q_1-p_2)^2}\langle -q_1, k'\rangle
+\frac{\sqrt{2}}{\langle k', p_2\rangle}[p_2|
+\big( -|p_2]\langle p_2| - |q_1]\langle q_1|\big)
+\frac{\sqrt{2}}{[k', -p_1]}|k'\rangle [-p_1, q_2]
+\end{split}
+\end{equation*}
+The first term corresponds to the $s$-channel and the second one $u$-channel.
+By choosing the reference momentum $k'$ to be $q_1$, the second term above vanishes. 
+We can choose $k = q_2$ and get 
+\begin{equation*}
+\begin{split}
+A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+) 
+= &
+\frac{2ie^2\langle q_1 p_1 \rangle[p_2 q_2]^2}{[q_2 p_1](p_1+q_1)^2}
+\\ 
+= &
+\frac{2ie^2[42]^2}{[23][31]}
+\end{split}
+\end{equation*}
+where in the last equation, the particles are indexed in the order in which they appear in the argument of the amplitude.
+In the same manner, there is an $s$-channel and an $u$-channel contribution for the other relevant four-point amplitude. 
+The $s$-channel can be made vanishing by choosing properly the reference momentum. 
+If we choose the reference momentum for the $u$-channel to be $q_2$, we find 
+\begin{equation*}
+\begin{split}
+A_4^{\mathrm{tree}}(\bar{f}_1^+ f_2^- \gamma_1^- \gamma_2^+) = & \frac{2ie^2}{(q_2+p_2)^2}\frac{\langle p_1q_2\rangle^2}{\langle p_2q_1\rangle\langle q_2p_2\rangle}
+\\
+= &
+\frac{2ie^2\langle 32\rangle^2}{\langle 41 \rangle\langle 24\rangle}
+\end{split}
+\end{equation*}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
