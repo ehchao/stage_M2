@@ -182,7 +182,7 @@ A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 The first term corresponds to the $s$-channel and the second one $u$-channel.
 By choosing the reference momentum $k'$ to be $q_1$, the second term above vanishes. 
 We can choose $k = q_2$ and get 
-\begin{equation*}
+\begin{equation}\label{4pt_qed1}
 \begin{split}
 A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+) 
 = &
@@ -191,21 +191,39 @@ A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 = &
 \frac{2ie^2[42]^2}{[23][31]}
 \end{split}
-\end{equation*}
+\end{equation}
 where in the last equation, the particles are indexed in the order in which they appear in the argument of the amplitude.
 In the same manner, there is an $s$-channel and an $u$-channel contribution for the other relevant four-point amplitude. 
 The $s$-channel can be made vanishing by choosing properly the reference momentum. 
 If we choose the reference momentum for the $u$-channel to be $q_2$, we find 
-\begin{equation*}
+\begin{equation}\label{4pt_qed2}
 \begin{split}
 A_4^{\mathrm{tree}}(\bar{f}_1^+ f_2^- \gamma_1^- \gamma_2^+) = & \frac{2ie^2}{(q_2+p_2)^2}\frac{\langle p_1q_2\rangle^2}{\langle p_2q_1\rangle\langle q_2p_2\rangle}
 \\
 = &
 \frac{2ie^2\langle 32\rangle^2}{\langle 41 \rangle\langle 24\rangle}
 \end{split}
-\end{equation*}
+\end{equation}
+Applying a triple cut on the channel $12:34:56$, we get the two contributing cut amplitudes
+\begin{equation}\label{triple_cut_1}
+A_{4}^{\mathrm{tree}}(f_1^- 1^-2^+\bar{f}_3^+)
+A_4^{\mathrm{tree}}(\bar{f}_1^+f_2^-5^-6^+)
+A_4^{\mathrm{tree}}(\bar{f}_2^+ f_3^-3^-4^+)
+=
+-8e^6\frac{\langle l_1 1\rangle^2 \langle 5l_2 \rangle^2\langle 3l_3\rangle^2}{\langle2 l_3\rangle\langle l_1 2\rangle\langle 6 l_1 \rangle\langle l_2 6\rangle\langle 4 l_2\rangle\langle l_3 4\rangle}
+\end{equation}
+\begin{equation}\label{triple_cut_2}
+A_{4}^{\mathrm{tree}}(f_1^+ 1^-2^+\bar{f}_3^-)
+A_4^{\mathrm{tree}}(\bar{f}_1^-f_2^+5^-6^+)
+A_4^{\mathrm{tree}}(\bar{f}_2^- f_3^+3^-4^+)
+=
+-8e^6\frac{[2l_1]^2[6l_2]^2[4l_3]^2}{[l_1 1 ][1l_3][l_2 5][5l_1][l_2 3][3l_3]}
+\end{equation}
+Under the triple cut parametrization,~\cref{triple_cut_1} and~\cref{triple_cut_2} lead to the same contribution. 
+In fact, the ratio of~\cref{4pt_qed1} and~\cref{4pt_qed2} gives
+\begin{equation*}
 
-
+\end{equation*} 
 
 
 
