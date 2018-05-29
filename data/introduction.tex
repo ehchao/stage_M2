@@ -5,13 +5,15 @@ Quantum corrections at higher order become crucial for studying physically relev
 Especially, next-to-leading (NLO) corrections in quantum chromodynamics (QCD) play an important role. 
 For example, differential cross section computations require processes beyond tree-level, such as real gluon emissions, formation of jets and virtual one-loop corrections.
 However, traditional diagrammatic amplitude computations become highly complicated in gauge theories at loop-level.
-One-loop results in QCD were only known up to five external legs before the early nineties~\cite{Bern:1994zx}. 
+Compared with abelian theories such as QED, non-abelian theories allow higher-point interactions such as the three- and four-point gluon vertices in QCD.
+The gain in complexity comes from both the rapidly increasing number of diagrams to take into account and the IR-divergent loop integrals in presence of massless particles in renormalizable cases.  
+One-loop results in QCD were only known up to four external legs before the early nineties~\cite{Bern:1994zx}. 
 During the past twenty years, many breakthroughs in amplitude computations have been made at both tree-level and one-loop.
-The main propose of this internship report is to give an overview of how to use on-shell recursion and generalized unitarity to get tree-level and one-loop amplitudes in an efficient way. 
+The main propose of this internship report is to give an overview of modern amplitude computational techniques at tree and one-loop level.
 The actual threshold of amplitude computation is at the next-to-next-to-leading order (NNLO), which these techniques are being generalized to.
 \\\\
-Tree-level amplitude computations are more simple since they do not require any potentially divergent loop integral.
-Nevertheless, in a gauge theory, the complexity of the calculation still increases phenomenally when the number of external legs increases.
+Tree-level amplitude computations are simpler because they do not require any loop integrals.
+Nevertheless, in a gauge theory, the complexity of the calculation still increases when the number of external legs increases.
 Due to Britto, Cachazo, Feng and later Witten~\cite{BRITTO2005499, PhysRevLett.94.181602}
 tree-level amplitudes can be computed recursively in the number of external legs.
 The BCFW recursion, or known as on-shell recursion, makes use of complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function contructed out of an n-point amplitude.
