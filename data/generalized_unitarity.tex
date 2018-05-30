@@ -4,3 +4,39 @@ Especially, in their paper~\cite{Bern:1994zx}, they showed how the generalized u
 \\\\
 Based on Landau's discussion on the singularities of the amplitudes calculated from an arbitrary Feynman diagram~\cite{LANDAU1959181}, 
 Cutkosky proposed a generalized version of the unitarity condition~\cite{doi:10.1063/1.1703676} which is based on the discontinuity across a cut starting from any of Landau's branch points.
+\\
+The simplest physical cut is a double cut (or a two-particle cut).
+Let us consider a generic one-loop amplitude with explicit dependence on the kinematic invariant $K^2$
+\begin{equation*}
+A(K^2) = \int\frac{\dd^D l}{(2\pi)^D} A_L\frac{1}{l^{2} (l-K)^{2}}A_R
+\end{equation*}
+where $A_{L,R}$ are rational fractions in the loop momentum $l$ and the external momenta. 
+In Cutkosky's language, a double cut amounts to choose two of the propagators in the loop on-shell.
+Mathematically, this means doing the following propagator subsitutions\footnote{One should be careful with the $i\epsilon$ prescription which is often omitted in amplitude computations}
+\begin{equation*}
+\frac{1}{l^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big(l^2\big)
+\quad,\quad
+\frac{1}{(l-K)^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big((l-K)^2\big)
+\end{equation*}
+We call this a double cut in the $K^2$-channel.
+Cutkosky's rules states that we will get the branch cut, \ie the discontinuity of $A$ between approching the branch $K^2$ from above and approching from below on the complex plan
+\begin{equation}\label{cutkosky}
+A(K^2 + i\epsilon) - A(K^2 - i\epsilon) =
+-4\pi^2 \int\frac{\dd^D l}{(2\pi)^D}A^{\mathrm{tree}}_LA^{\mathrm{tree}}_R \delta^{(+)}(l^2)\delta^{(+)}\big((l-K)^2\big) 
+\end{equation}
+Here, $A_L$ and $A_R$ become genuine amplitudes at tree-level because of the on-shell internal propagators. 
+\\\\
+We illustrate~\cref{cutkosky} by two different examples.
+%
+%
+\subsection{Example: cut one-mass triangle}
+%
+\subsection{Example: cut two-mass-easy box}
+%
+In the previous examples, we see that the branch cuts come from the logrithms and dilogrithms in the scalar triangle and box integral. 
+In effect, the basis integrals in~\cite{master_equation} do have branch cuts which can be distinguished from the different kinematic invariant dependences between them.
+\color{red}point to a ref\color{black}
+In effect, one can use double cuts to reconstruct an amplitude if the rational term in~\cref{master_equation} is missing since it has no branch cuts.
+This class of amplitudes is called \textit{cut-constructible}~\cite{Bern:1994cg}. 
+\\\\
+A more systematic way to determine the coefficients in~\cref{master_equation} is to use quadruple~\cite{BRITTO2005499} and triple cuts~\cite{Forde:2007mi}, which is a generalization of the Cutkosky rule.
