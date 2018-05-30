@@ -44,6 +44,7 @@
 \newcommand{\grad}{\mathrm{grad}}
 \newcommand{\res}{\mathrm{Res}}
 \newcommand{\Inf}{\mathrm{Inf}}
+\renewcommand{\thesection}{\arabic{section}} %to avoid the zero in front of the sections
 
 %equation with split DOESN'T WORK...
 %\def\sequation#1#2{\begin{equation}\label{#2}\begin{split}{#1} \end{split} \end{equation} }
@@ -65,21 +66,23 @@
 
 %\maketitle
 %title page
+\let\clearpage\relax
 \include{data/titlepage}
 
 
 \tableofcontents
-%\include{data/introduction}
+\include{data/introduction}
+\include{data/spinor_helicity}
+\include{data/bcfw} %some refs do not work ????
+\include{data/gkk_master_integral}
+\include{data/generalized_unitarity}
+\include{data/bddk_n=4sym}
+\include{data/cutkosky}
 %\include{data/A5_N=4_MHV}
-%\include{data/cutkosky}
-%\include{data/bcfw}
 %\include{data/1m_triangle_cut}
 %\include{data/2m_easy_box_integral}
-%\include{data/bddk_n=4sym}
-\include{data/2m_easy_box_cut}
+%\include{data/2m_easy_box_cut}
 %\include{data/0m_box_integral}
-%\include{data/gkk_master_integral}
-%\include{data/spinor_helicity}
 %\include{data/triple_cut}
 %\include{data/rational_term}
 %\include{data/formulae}
