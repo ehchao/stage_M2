@@ -1,23 +1,42 @@
-\section{$A_5[1^-2^-3^+4^+5^+]^{\mathrm{1-loop}}$ in N=4}
-There are four possible configurations contributing to the quadruple cut.
+\subsection{$A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills}
+Let us see how to use quadruple cuts to extract box coefficients. 
+There are four possible configurations for the external momenta under a quadruple cut.
+Each of the configurations corresponds to a one-mass box integral.
+Among the four tree-level amplitudes that we obtain from a quadruple cut~\cref{box_coeff}, there is a four-point amplitude and three three-point ones.
+As already noted in~\cite{Britto:2004nc}, massless legs in quadruple cut would lead to inconsistent results if we choose loop-momentun to be real\footnote{This was handled in~\cite{Britto:2004nc} by working in the signature $(--++)$.}. 
+However, in the contour integral scheme with complex loop momentum that we mentioned earlier, this problem is not present.
+\\\\
+Next, let us consider all the possible helicity configuration on the cuts.
+To start, we may take all the internal particles to be gluons. 
+Then, we relate the all-gluon tree-level amplitudes to other amplitudes with different species by~\cref{super_wi}. 
+By the discussion given in section~\ref{sect-spinor}, we have to have exactly two particles of the same helicity in order to get non-vanishing contribution from three- and four-point tree-level amplitudes.
+Up to this step, we have already eliminate a bunch of helicity configurations
+\\\\
+Finally, the on-shell condition of the internal propagtors may in certain case impose further relationships to the external momenta than just the momentum conservation.
+These cases should also be discarded because they violate our requirement of non-collinearity of the external momenta. 
+\color{red}perhaps describe more with a graph.\color{black}
+At the end of the day, there are only five possible solution to the all-gluon configuration.
+We give the detailed computation hereunder.
+\\\\
+\iffalse
 \begin{figure}[h!]
   \centering
     \includegraphics[width=\linewidth]{A5-1}
     \caption{A5-1}
   \label{A5-1}
 \end{figure}
-Let us now compute the box coefficients.
-%
+\fi
 \paragraph{\ref{A5-1}}
-The on-shell conditions allow us to set
+The special three-particle kinematics tells us that either the square spinor product or the angle one of any two on-shell spinor linked with a trivalent vertex vanishes.
+By considering the trivalent vertices appearing in the cut~\cref{A5-1}, the only possible solution for the internal momenta in terms should satisfy
 \begin{equation*}
-|l_1\rangle = \alpha |5\rangle \quad
-|l_2\rangle = \delta |3\rangle \quad
-|l_3\rangle = \gamma |l_3\rangle\quad
-|l_3] = \eta|4]\quad
+|l_1\rangle = \alpha |5\rangle \quad,\quad
+|l_2\rangle = \delta |3\rangle \quad,\quad
+|l_3\rangle = \gamma |l_3\rangle\quad,\quad
+|l_3] = \eta|4]\quad,\quad
 |l_4] = \beta 4]
 \end{equation*}
-Hence, the coefficient
+Hence, the coefficient determined by~\cref{box_coeff} is
 \begin{equation*}
 \begin{split}
 c_1 = &
@@ -46,237 +65,18 @@ c_1 = &
 As we will see, all the contributions that we will compute are related to the tree-level amplitude by the same structure as given in the last line.   
 %
 %
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Not used
-%
-\iffalse
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=\linewidth]{A5-2}
-    \caption{A5-2}
-  \label{A5-2}
-\end{figure}
-\paragraph{\ref{A5-2}}
-%
-\begin{equation*}
-\begin{split}
-c_2  = &
-\frac{1}{2}\frac{\langle 21\rangle^4}{\langle 21 \rangle\langle 1l_1\rangle\langle l_1l_2\rangle\langle l_2 2\rangle}
-\frac{\langle l_2 l_3\rangle^3}{\langle l_3 3\rangle\langle 3 l_2\rangle}
-\frac{[l_3 4]^3}{[4l_4][l_4 l_3]}
-\frac{[5 l_4]^3}{[l_4 l_1][l_1 5]}
-\\
-= &
-\frac{1}{2}\frac{\langle 12 \rangle^3[l_4 4 ]^2\langle l_2l_4\rangle^2 [l_4 5]\langle l_2 5\rangle}{\langle 15\rangle\langle 5 l_2 \rangle\langle l_2 2\rangle[l_4 l_2]\langle l_2 3\rangle^2
-}
-\\
-= &
--\frac{1}{2}\frac{\langle 21 \rangle^3}{\langle 1 l_1 \rangle\langle l_1 l_2 \rangle\langle l_2 2 \rangle}
-\frac{\langle l_2 3 \rangle^2[34]^3[5l_4]^3}{[l_4 3]\langle 3 4 \rangle [4 l_4][l_4 l_1][l_1 5]}
-\\
-= & 
-\frac{1}{2}
-\frac{\langle 21 \rangle^3 \langle l_2 3 \rangle^2 [34]^3 [5l_4]^2}{\langle 1 l_4 \rangle [l_4|\slashed{K}_{12}|l_2\rangle\langle l_2 2 \rangle [l_4 3]\langle 34 \rangle [4l_4]}
-\end{split}
-\end{equation*}
-Due to the on-shell kinematic relations, we can write
-\begin{equation*}
-|l_3] = \alpha 3] \quad
-|l_3\rangle = \beta |4\rangle \quad
-|l_4\rangle = c|4\rangle \quad
-|l_2] = f |3]
-\end{equation*}
-We re-express the remaining undetermined terms in using the on-shell conditions
-\begin{equation*}
-\langle l_3|\slashed{K}_{123}|l_3\rangle = K_{123}^2 \quad\Rightarrow
-\alpha\beta \langle 4 | \slashed{K}_{123}|3] = K_{123}^2
-\quad\Rightarrow
-[4l_4]\langle l_4 1 \rangle = \alpha\beta [43]\langle 41 \rangle
-=\frac{K_{123}^2}{\langle 4 |\slashed{K}_{123}|3]}[43]\langle 4 1 \rangle
-\end{equation*}
-Supposing
-\begin{equation*}
-|l_4] = a|3] + b|4] \quad
-|l_2\rangle = d|3\rangle + e|4\rangle
-\end{equation*}
-we then have
-\begin{equation*}
-\begin{split}
-&
-(l_4 + K_{34})^2 = (l_4 + K_{1234})^2 = 0
-\quad\Rightarrow
-bc = \frac{K_{34}^2}{[4|\slashed{K}_3}|4\rangle
-,\quad
-ac = \frac{1}{[3|\slashed{K}_{12}|4\rangle}\Big(K_{1234}^2 - \frac{K_{34}^2 [4|\slashed{K}_{123}|4\rangle}{[4|\slashed{K}_3|4\rangle}\Big)
-\\
-&
-(l_2 + K_{34} )^2 = (l_2 + K_{12})^2= 0 \quad\Rightarrow
-df = \frac{K_{34}^2}{[3|\slashed{K}_4|3\rangle}
-,\quad
-de = \frac{1}{[3 | \slashed{K}_{12}|4\rangle}\Big(K_{12}^2 - \frac{[3|\slashed{K}_{12}|3\rangle K_{34}^2}{[3|\slashed{K}_4|3\rangle}\Big)
-\end{split}
-\end{equation*}
-Since we have the same degree in loop spinors in the numerator and in the denominator, the exact values of $c$ and $f$ are not important.
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-3}
-    \caption{A5-3}
-  \label{A5-3}
-\end{figure}
-\paragraph{\ref{A5-3}}
-\begin{equation*}
-\begin{split}
-c_3 = &
-\frac{1}{2}
-\frac{\langle 12 \rangle^4}{\langle 12 \rangle\langle 2l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1 \rangle}
-\frac{[3l_3]^3}{[l_3 l_2][l_2 3]}
-\frac{[4 l_4]^3}{[l_4 l_3][l_3 l_4]}
-\frac{\langle l_4 l_1 \rangle^3}{\langle l_4 5\rangle\langle 5 l_1 \rangle}
-\\
-= &
-\frac{1}{2}\frac{\langle 12 \rangle^3 [3|\slashed{K}_{12}|l_1\rangle^2}{\langle 23 \rangle [ 3 l_3]\langle l_1 1\rangle}\frac{[4l_3]}{\langle 45\rangle\langle 5l_1\rangle}
-\end{split}
-\end{equation*}
-Set
-\begin{equation*}
-|l_1] = \alpha|5] ,\quad
-|l_3\rangle = \beta|4\rangle, \quad
-|l_1\rangle = a |4\rangle + b|5\rangle ,\quad
-|l_3] = c|4] + d|5] 
-\end{equation*}
-Then
-\begin{equation*}
-\begin{split}
-& (l_1 + K_{45})^2 = (l_1 - K_{12})^2 = 0 \quad\Rightarrow
-\alpha b = \frac{-K_{45}^2}{[5|\slashed{K}_4|5\rangle} ,\quad
-\alpha a = \frac{1}{[5|\slashed{K}_{12}|4\rangle}\Big(K_{12}^2 + \frac{K_{45}^2[5|\slashed{K}_4|5\rangle}{[5|\slashed{K}_{12}|5\rangle}\Big)
-\\
-& (l_3 -K_{45})^2 = (l_3 + K_3)^2 = 0 \quad\Rightarrow
-\beta c =\frac{K_{45}^2}{[4|\slashed{K}_5|4\rangle} ,\quad
-\beta d = \frac{1}{[5|\slashed{K}_3|4\rangle}\Big( -K_3^2 - \frac{K_{45}^2[4|\slashed{K}_3|4\rangle}{[4|\slashed{K}_5|4\rangle}\Big)
-\end{split}
-\end{equation*}
-%
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-4}
-    \caption{A5-4}
-  \label{A5-4}
-\end{figure}
-\paragraph{\ref{A5-4}}
-\begin{equation*}
-\begin{split}
-c_4 = & \frac{1}{2}\frac{\langle 12 \rangle^4}{\langle 12 \rangle\langle 2l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1 \rangle}
-\frac{\langle l_2 l_3 \rangle^3}{\langle l_2 3 \rangle \langle 3 l_3 \rangle}
-\frac{[l_3 4 ]^3}{[l_4 l_3][4 l_4]}
-\frac{[l_4 5]^3}{[5l_1][l_1 l_4]}
-\\
-= &
--\frac{1}{2}\frac{\langle 12 \rangle^3}{\langle 2l_2\rangle\langle l_2 l_4 \rangle\langle 51 \rangle}
-\frac{\langle l_2 3 \rangle^2 [34]^3 [l_4 5]}{\langle 3 l_3 \rangle [l_4 l_3][4 l_4]}
-\\
-= &
--\frac{\langle 12 \rangle^3\langle l_2 3\rangle^2[34]^3[l_4 5]}{\langle 2 l_2 \rangle\langle l_2 l_4 \rangle\langle 51 \rangle\langle 34 \rangle [l_4 4]^2}
-\end{split}
-\end{equation*}
-Set
-\begin{equation*}
-|l_2] = \alpha|3] \quad
-|l_4\rangle = \beta|4\rangle \quad
-|l_4] = a|3] + b|4] \quad
-|l_2\rangle = c|3\rangle + d|4\rangle
-\end{equation*}
-We solve the coefficients with the on-shell conditions
-\begin{equation*}
-\begin{split}
-& (l_4 + K_{34})^2 = (l_4 +K_{1234})^2 = 0 \quad\Rightarrow
-b\beta = -\frac{K_{34}^2}{[4|\slashed{K}_3|4\rangle} ,\quad
-a\beta = \frac{1}{[3|\slashed{K}_{12}|4\rangle}\Big( -K_{1234}^2 + \frac{K_{34}^2 [4|\slashed{K}_{123}|4\rangle}{[4|\slashed{K}_3|4\rangle}\Big)
-\\
-&
-(l_2 + K_{34})^2 = (l_2 + K_{1234})^2 = 0 \quad\Rightarrow
-\alpha c = -\frac{K_{34}^2}{[3|\slashed{K}_4|3\rangle} ,\quad
-\alpha d = \frac{1}{[3|\slashed{K}_{12}|4\rangle}\Big(-K_{1234}^2 + \frac{K_{34}^2 [3|\slashed{K}_{124}|3\rangle}{[3|\slashed{K}_4|3\rangle}\Big)
-\end{split}
-\end{equation*}
-%
-%
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-5}
-    \caption{A5-5}
-  \label{A5-5}
-\end{figure}
-\paragraph{\ref{A5-5}}
-\begin{equation*}
-\begin{split}
-c_5 = & \frac{1}{2}\frac{[l_1 l_2]^3}{[l_2][l_1]}\frac{\langle l_2 3 \rangle^4}{\langle l_2 2 \rangle\langle 23 \rangle\langle 3 l_3 \rangle\langle l_3 l_2\rangle}
-\frac{\langle l_3 l_4 \rangle^3}{\langle l_3 4 \rangle\langle 4 l_4 \rangle}
-\frac{[l_4 5]^3}{[5 l_1][l_1 l_4]}
-\\
-= &
-\frac{1}{2}\frac{[l_1 1 ]^2 \langle 12 \rangle^3 \langle l_3 4 \rangle^2[45]^3}{\langle 23 \rangle\langle 3 l_3 \rangle\langle l_3 |\slashed{K}_{23}|1]\langle 45 \rangle [5l_1]^2}
-\end{split}
-\end{equation*}
-%
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-6}
-    \caption{A5-6}
-  \label{A5-6}
-\end{figure}
-\paragraph{\ref{A5-6}}
-\begin{equation*}
-\begin{split}
-c_6 = & \frac{1}{2}\frac{\langle 1l_1\rangle^3}{\langle l_1 l_2 \rangle\langle l_2 1 \rangle}
-\frac{\langle l_2 2 \rangle^4}{\langle l_2 2\rangle\langle 23 \rangle\langle 3l_3\rangle\langle l_3 l_2 \rangle}
-\frac{[4l_4]^3}{[l_4 l_3][l_3 4]}
-\frac{[5l_1]^3}{[l_1l_4][l_4 5]}
-\\
-= &
-\frac{1}{2}
-\frac{\langle l_2 2 \rangle^3\langle 1 l_4\rangle^3[l_4 5][4 l_4]}{\langle 5 l_2 \rangle\langle l_2 1 \rangle\langle 23 \rangle\langle 34 \rangle\langle l_2 l_4 \rangle}
-\end{split}
-\end{equation*}
-%
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-7}
-    \caption{A5-7}
-  \label{A5-7}
-\end{figure}
-\paragraph{\ref{A5-7}}
-\begin{equation*}
-\begin{split}
-c_7 = & \frac{1}{2}\frac{\langle 1 l_2 \rangle^3}{\langle l_2 l_1 \rangle\langle l_1 1\rangle}
-\frac{\langle 2 l_3 \rangle^4}{\langle 23\rangle\langle 3 l_3 \rangle\langle l_3 l_2\rangle\langle l_2 2 \rangle}
-\frac{[l_3 4]^3}{[4 l_4][l_4 l_3]}
-\frac{[l_4 5 ]^3}{[5 l_1 ][l_1 l_4]}
-\\
-= &
--\frac{1}{2}
-\frac{\langle 1 l_2 \rangle^2\langle 24 \rangle [l_4 5]^2\langle 2 l_4\rangle^3 [l_4 4]}{[15]\langle 51 \rangle \langle 23 \rangle \langle 34 \rangle\langle l_2 2 \rangle\langle 4 l_2\rangle}
-\end{split}
-\end{equation*}
-where $| l_3\rangle \propto |4\rangle$ is used in the second line.
-%
-%
-\fi %end of the unused block
 %%%%%%%%%%%%%
 %
+\iffalse
 \begin{figure}
   \centering
     \includegraphics[width=\linewidth]{A5-8}
     \caption{A5-8}
   \label{A5-8}
 \end{figure}
+\fi
 \paragraph{\ref{A5-8}}
+By~\cref{box_coeff}, the box coefficient corresponding to this contribution is
 \begin{equation*}
 \begin{split}
 c_8 = & \frac{1}{2}
@@ -289,8 +89,8 @@ c_8 = & \frac{1}{2}
 \frac{\langle 12 \rangle^3[1l_1 ]\langle l_1 5\rangle^2 [54]^3}{\langle l_1 l_3\rangle\langle l_3 3 \rangle\langle 32 \rangle [l_3 4 ]^2\langle 45\rangle}
 \end{split}
 \end{equation*}
-By the three-particle kinematics, set
-\begin{equation*}
+By the three-particle kinematics and the fact that spinors are two-dimensional objects, set
+\begin{equation}\label{coef_c8}
 |l_1] = \alpha |5]
 \quad,\quad
 |l_1\rangle = a|4\rangle + b|5\rangle
@@ -298,12 +98,12 @@ By the three-particle kinematics, set
 |l_3\rangle = \beta |4\rangle
 \quad,\quad
 |l_3] = c|4] + d|5]
-\end{equation*}
-From $(l_1 - K_1)^2 = 0$, we get
+\end{equation}
+From the on-shell condition $(l_1 - K_1)^2 = 0$, we get
 \begin{equation*}
 a\langle 14\rangle = -b\langle 15 \rangle
 \end{equation*}
-and from $(l_1 + K_{45})^2 = 0$, we get
+and from another on-shell condition $(l_1 + K_{45})^2 = 0$, we get
 \begin{equation*}
 K_{45}^2 = -b\alpha [5|\slashed{K}_4|5\rangle 
 \end{equation*}
@@ -312,7 +112,7 @@ Hence
 a\alpha = \frac{\langle 15\rangle}{\langle 14\rangle}\quad,\quad
 b\alpha = -1
 \end{equation*}
-On the other hand
+In the same manner, we determine the other coeffients in~\cref{coef_c8} by two other on-shell conditions:
 \begin{equation*}
 \begin{split}
 & (l_3 - K_{45})^2 = 0 \quad\Rightarrow\quad
@@ -331,38 +131,18 @@ Putting all these results back, we get
 \begin{equation*}
 c_8 = \frac{1}{2} s_{51}s_{45} \frac{\langle 12 \rangle^3 [15] [54]}{\langle 43 \rangle\langle 32 \rangle}=\frac{1}{2} s_{51}s_{45} A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
+We will be using this machinery to determine the rest of the coefficients.
 %
 %
-\iffalse % unused block
-%
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-9}
-    \caption{A5-9}
-  \label{A5-9}
-\end{figure}
-\paragraph{\ref{A5-9}}
-\begin{equation*}
-\begin{split}
-c_9 = & \frac{1}{2}\frac{[l_1 l_2]^3}{[l_1 1][1 l_2]}
-\frac{\langle 2l_2 \rangle^3}{\langle l_2 l_3 \rangle\langle l_3 2 \rangle}
-\frac{[34]^4}{[34][4 l_4][l_4 l_3][l_3 3]}
-\frac{[l_4 5]^3}{[l_4 l_1][l_1 5]}
-\\
-= &
--\frac{1}{2}
-\frac{\langle 21 \rangle^3 [1l_1]^2[34]^3[l_4 5]^3}{[12][l_4|\slashed{K}_{34}|2\rangle \big(\rangle 2 | \slashed{K}_{24}|3]\big) [4l_4][l_4 l_1 ][l_1 5]}
-\end{split}
-\end{equation*}
-%
-\fi %end
-%
+\iffalse
 \begin{figure}
   \centering
     \includegraphics[width=\linewidth]{A5-10}
     \caption{A5-10}
   \label{A5-10}
 \end{figure}
+\fi
+%
 \paragraph{\ref{A5-10}}
 \begin{equation*}
 \begin{split}
@@ -379,6 +159,7 @@ c_{10} = &
 Set
 \begin{equation*}
 |l_3\rangle = \alpha |2\rangle \quad,\quad |l_3] = a|2] + b|5]
+\quad,\quad
 |l_4\rangle = \beta |5\rangle \quad,\quad |l_4] = c|2]+d|5]
 \end{equation*}
 Then
@@ -438,12 +219,15 @@ c_{10} = \frac{1}{2}s_{51}s_{12}A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
 %
 %
+\iffalse
 \begin{figure}
   \centering
     \includegraphics[width=\linewidth]{A5-11}
     \caption{A5-11}
   \label{A5-11}
 \end{figure}
+\fi
+%
 \paragraph{\ref{A5-11}}
 \begin{equation*}
 \begin{split}
@@ -519,12 +303,16 @@ c_{11} = \frac{1}{2}s_{12}s_{23}A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
 %
 %
+\iffalse
 \begin{figure}
   \centering
     \includegraphics[width=\linewidth]{A5-16}
     \caption{A5-16}
   \label{A5-16}
 \end{figure}
+\fi
+%
+%
 \paragraph{\ref{A5-16}}
 \begin{equation*}
 \begin{split}
@@ -568,9 +356,32 @@ Thus
 \begin{equation*}
 c_{16}= \frac{1}{2}\frac{\langle 21\rangle^3[34][32]}{\langle 15\rangle\langle 54\rangle} = \frac{1}{2}s_{23}s_{34}A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
-
-
-
+%
+%
+%
+The last question: how about the other remaining possible intermediate species such as fermions and scalars?
+These configurations should of course also be taken into account.
+One might think of using the supersymmetry Ward identities~\cref{super_wi} to compute them. 
+In fact, the total contribution of these configurations vanishes.
+This can be done by a rather trivial analysis of the above helicity configurations.
+Let us recall the action of a $\mathcal{N} = 4$ super Yang-Mills theory (cf. \eg Eq.(4.19) of~\cite{Elvang:2013cua})
+\begin{equation*}
+S = \int \dd^4 x\tr\Big(
+-\frac{1}{4}F_{\mu\nu}F^{\mu\nu} - \frac{1}{2}\big(D\Phi_I)^2 + \frac{i}{2}\bar{\Psi}\slashed{D}\Psi + \frac{g}{2}\bar{Psi}\Gamma^I \big[\Phi_I, \Psi\big] + \frac{g^2}{4}\big[\Phi_I, \Phi_J\big]^2\Big) 
+\end{equation*}
+where $\Phi_I$'s are six real scalar field, fermions are represented by the ten-dimensional Majorana-Weyl spinor $\Psi$, $D$ is the usual covariant derivative and $F_{\mu\nu}$ represents the gluon field strength.
+In the context of~\cref{super_wi}, we will consider complex scalar fields made of the real scalar ones instead. 
+Without giving the action written with complex scalar fields, we just state that, at tree-level, complex scalars and fermions always come up in pair with their conjugate fields when coupled with gluons. 
+Recall that our convention is to take all the particles outgoing in an amplitude.
+All of the non-vanishing helicity configurations given above involve at least one tree-level amplitude with the same helicity for the cut propagator in the product~\cref{box_coeff}.
+Since it is impossible to have such a tree-level contribution with other intermediate species than gluons, the corresponding species configurations vanish.
+\\\\
+In consequence, the five-point MHV all-gluon amplitude $A_5^{\mathrm{1-loop}}[--+++]$ is given by
+\begin{equation}
+A_5^{\mathrm{1-loop}}[--+++] = c_1 I_{1} + c_8 I_8 + c_{10}I_{10} + c_{11}I_{11} + c_{16}I_{16}
+\end{equation}
+where the $I_{k}$'s are the corresponding box integral for each configuration.
+This result is in agreement with~\cite{Bern:1994zx}.
 
 
 

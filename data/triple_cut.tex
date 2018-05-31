@@ -1,24 +1,25 @@
-\section{Triangle and bubble coefficients in $D=4$}
+\section{Triple cut, triangle and bubble coefficients in $D=4$}
+We are now left with triangle and bubble coefficients to determine. 
 Forde proposed a method using triple cut to determine the triangle and bubble coefficients in one-loop in four-dimension~\cite{Forde:2007mi}.
+This method consists in choosing a good parametrization for the loop momentum after applying cuts such that the triangle and bubble contributions can be distiguished from the box contributions.
+In this method, we consider four dimensional loop momentum.
 %
 \subsection*{Triangle coefficient} 
 Upon applying a triple cut, the three delta functions leave only one degree of freedom in four-dimension. 
 Let us denote it by $t$.
-The most general cut expression takes the form 
+The most general expression for a cut amplitude takes the form 
 \begin{equation}\label{tricut}
 (2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2) A_1A_2A_3 = 
 (2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2)\Big(\mathrm{Inf}_t(A_1A_2A_3)(t) + \sum_{\textrm{$t_j$ poles}}\frac{\res_{t = t_j}A_1 A_2 A_3}{t-t_j}\Big)
 \end{equation}
-where the $A$'s are tree amplitudes and the first term on the right-hand side is defined by
+where the $A$'s are tree amplitudes and the first term on the right-hand side is a polynomial in $t$ defined by
 \begin{equation*}
-\lim_{t\rightarrow\infty}\big([\mathrm{Inf}_tA_1A_2A_3](t) - A_1A_2A_3(t)\big)
+\lim_{t\rightarrow\infty}\big([\mathrm{Inf}_tA_1A_2A_3](t) - A_1A_2A_3(t)\big) = 0
 \end{equation*}
-In general, $\mathrm{Inf}_tA_1A_2A_3$ is some polynomial in $t$. 
 In most of cases, the propagators of the type $\frac{1}{(l-P)^2}$ contain two poles that can be expressed in terms of $t$. 
 The second part of~\cref{tricut} can hence be considered as contributions of cut boxes. 
 As a result, the information on the bubble and triangle contributions is only contained in the first term on the \rhs of~\cref{tricut}.
 According to Forde, we can choose a parametrization such that only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to the integral. 
-We will see how this works in the next paragraph.
 %
 \\\\
 Consider a triple cut leading to the constraints
@@ -55,6 +56,10 @@ l^\mu = \alpha_{02} K_1^{\flat,\mu} + \alpha_{01}K_2^{\flat,\mu} + \frac{t}{2}\l
 \end{equation*}
 %
 Now, we can use an argument similar to the one in~\cite{Ossola:2006us} on the spurious term to find the vanishing integrals.
+\color{red}Appendix ?\color{black}
+%
+%%%%%%%%%%%%% not used
+\iffalse
 To illustrate this argument, we consider the case of a rank-1 3-point-like integral. 
 By simple arguments on the rank and the dependence on external momenta, 
 \begin{equation*}
@@ -63,7 +68,10 @@ By simple arguments on the rank and the dependence on external momenta,
 If we contract the above relation with a vector $v^\mu$ orthogonal to $p_1$ and $p_2$, we obtain a vanishing integral.
 $q\cdot v$ is hence a spurious term.
 The same technique can be applied to show that $(q\cdot v)^n$ is spurious for any $n>0$. 
-Back to our case, we can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
+\fi
+%%%%%%%%%%%%%%%%%%%5 end of not used
+%
+We can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
 to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}
 %
 %
@@ -96,6 +104,7 @@ K_1^\flat = K_1 - \frac{S_1}{\gamma}\chi^\mu ,\quad
 \gamma = \langle \chi | \slashed{K}_1^\flat|\chi]
 \end{equation*}
 and $\chi$ is an arbitrary null vector (non-collinear to $K_1$).
+\\
 As in the triangle case, we can use $\langle K_1^\flat| \slashed{K}_1|\chi] = \langle K_1^\flat|\slashed{K}_1 | \gamma^\mu|\chi]\langle K_1^\flat|\gamma_\mu|\chi]= 0$ to show that
 \begin{equation*}
 \int\dd t\dd y J_{t,y}t^n = \int \dd t \dd y \big(\frac{y}{t}\big)^n(1-y)^n = 0
@@ -103,7 +112,7 @@ As in the triangle case, we can use $\langle K_1^\flat| \slashed{K}_1|\chi] = \l
 \int \dd t \dd y J_{t,y}t^n = 0
 \quad\textrm{for}\quad n\neq 0
 \end{equation*} 
-From the Passarino-Veltman reduction, we are able to conclude that all terms of the type $t^0y^m$ are non-vanishing, which makes difference \wrt the triple cut case. 
+From the Passarino-Veltman reduction, we are able to conclude that all integrands of the type $t^0y^m$ are non-vanishing, which makes difference \wrt the triple cut case. 
 Naively, one might think that the bubble coefficients come from the first term of~\cref{2-part_cut}.
 However, the loop momentum parametrization that has been used leads to more non-vanishing terms than in the triple cut case. 
 Furthermore, the second and the third terms in~\cref{2-part_cut} can be reduced to scalar bubble integrals plus triangle integrals. 
@@ -111,7 +120,7 @@ In order to relate the contribution to the bubble coefficient of the residue pie
 This will then fix the free parameter $y$.
 The integral will then take the form
 \begin{equation*}
-(2\pi)^3\int \dd t \dd y J_t'\big(\delta(y-y_+) + \delta(y-y_-)\big) \mathcal{M}(y,t) = -2(2\pi)^2 i \int \dd t \dd y J_{t,y}\mathrm{Res}_{y = y_{\pm}\frac{\mathcal{M}(y,t)}{(l+K_2)^2}}
+(2\pi)^3\int \dd t \dd y J_t'\big(\delta(y-y_+) + \delta(y-y_-)\big) \mathcal{M}(y,t) = -2(2\pi)^2 i \int \dd t \dd y J_{t,y}\mathrm{Res}_{y = y_{\pm}}\frac{\mathcal{M}(y,t)}{(l+K_2)^2}
 \end{equation*}
 where $\mathcal{M}(y,t)$ is a general cut integral and $J_t'$ a function of $t$.
 Therefore, the residue contributions are, up to a factor of $-\frac{1}{2}$, given by the triple cut.
@@ -126,6 +135,8 @@ b = -i[\Inf_t[\Inf_y A_1 A_2](y)](t)\big|_{t\rightarrow 0 , y^m\rightarrow \frac
 where the subscripts indicate the substitutions to be done and $T(j)$ is given in eq.(5.26) of~\cite{Forde:2007mi}. 
 The second term above is summed over all possible triangle configurations.
 \\\\
+%%%%%% not used
+\iffalse
 As an example, let us cite briefly how the two-mass linear triangle
 \begin{equation*}
 (2\pi)^2\int\dd^4 l \prod_{i=0}^1\delta(l_i^2)\frac{\langle K_2|\slashed{l}|K_1]}{(l+K_2)^2}
@@ -138,6 +149,8 @@ is treated in~\cite{Forde:2007mi}:
 %
 \item This term then requires the knowledge of $\int \dd t J_t' t$, which can be re-expressed in terms of our parametrization. Then, apply the Passarino-Veltman reduction to get the relationsship between $\int \dd tJ_t' t$ and the cut bubble $B_0^{\mathrm{cut}(K_1^2)}$
 \end{enumerate}
+\fi
+% end of not used
 %
 %
 %

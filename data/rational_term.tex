@@ -1,6 +1,8 @@
 \section{The rational term}
 Not all the theories are cut-constructible. 
-Amplitudes might contain pure polynomial terms that are suppressed while applying cuts. 
+As mentioned earlier, the rational term in~\cref{master_equation} can not be detected by cuts since it does not have branch cut singularity. 
+Ration terms arise from the dimensional regularization.
+By using analogous parametrization as introduced in the last section, 
 Badger gives a systematic way to extract rational terms by using cuts~\cite{Badger:2008cm}.
 \\\\
 We focus on the relationship between the $D = 4-2\epsilon$ dimensional representation and that associated with an effective mass $\mu^2$~\cite{Mahlon:1993si}.
@@ -20,7 +22,8 @@ A_n^{(1),D} = \sum_{K_5} \tilde{C}_{5,K_5}(D) I^D_{5,K_5}
 where the terms $I_m$ represent $m$-point integrals and the summations are over all possibile configurations.
 In any renormalizable gauge theory, the maximal rank of an $n$-point tensor integral appearing in the amplitude is $n$.
 Hence, for the box functions, we can have up to $\mu^4$ in the coefficient and up to $\mu^2$ in the triangle.
-The integral measure can be split in the following way
+\\
+The integration measure can be split in the following way
 \begin{equation*}
 \int\frac{\dd^D l}{(2\pi)^D} = 
 \int\frac{\dd^{-2\epsilon}(\mu^2)}{(2\pi)^{-2\epsilon}}\int\frac{\dd^4 \bar{l}}{(2\pi)^4}
@@ -31,7 +34,7 @@ As explained in~\cite{Bern:1995db}, the integral of the type
 \bar{l}^\nu,\mu^2) 
 \end{equation*}
 can be computed in the following fashion
-\begin{equation*}
+\begin{equation}\label{formula_for_mu}
 \begin{split}
 \int\frac{\dd^{4-2\epsilon} \bar{l}}{(2\pi)^{4-2\epsilon}} (\mu^2)^rf(
 \bar{l}^\nu,\mu^2) 
@@ -43,8 +46,8 @@ can be computed in the following fashion
 = &
 -\epsilon(1-\epsilon)\ldots(r-1-\epsilon)(4\pi)^{r}\int\frac{\dd^{4+2r-2\epsilon}}{(4\pi)^{4+2r-2\epsilon}}f(\bar{l},\mu^2)
 \end{split}
-\end{equation*}
-Based on this and the resursion relations given in~\cite{Bern:1993kr}, we can write down the amplitude up to the order $\mathcal{O}(\epsilon)$ in $D = 4-2\epsilon$ dimension as
+\end{equation}
+Based on~\cref{formula_for_u} and the resursion relations given in~\cite{Bern:1993kr}, we can write down the amplitude up to the order $\mathcal{O}(\epsilon)$ in $D = 4-2\epsilon$ dimension as
 \begin{equation*}
 A_n^{(1),D} = \sum_{K_4}C_{4,K_4} I_{4,K_4}^{D} +
 \sum_{K_3}C_{3,K_3} I_{3,K_3}^{D}+
@@ -52,12 +55,13 @@ A_n^{(1),D} = \sum_{K_4}C_{4,K_4} I_{4,K_4}^{D} +
 C_1 I_1^{D} + R_n + \mathcal{O}(\epsilon)
 \end{equation*}
 where $R_n$ is the rational term. It comes from the $-2\epsilon$-dimsional component.
-Explicitly
+\\
+Explicitly,
 \begin{equation*}
 R_n = -\frac{1}{6}\sum_{K_4}C_{4,K_4}^{[4]} - \frac{1}{2}\sum_{K_3}C_{3,K_3}^{[2]} - 
 \frac{1}{6}\sum_{K_2}\big(K_2^2 - 3(m_1^2 + m_2^2)\big)C_{2,K_2}^{[2]}
 \end{equation*}
-The terms $C_m^[k]$ in $R_n$ come from the coefficients of the $m$-point integral with $\mu^k$ appearing at the numerator of the integrand in the $\epsilon\rightarrow 0 $ limit.
+The terms $C_m^{[k]}$ in $R_n$ come from the coefficients of the $m$-point integral with $\mu^k$ appearing at the numerator of the integrand in the $\epsilon\rightarrow 0 $ limit.
 We can extract these terms by applying cuts. 
 The on-shell condition to be imposed will become
 \begin{equation*}
@@ -66,7 +70,7 @@ The on-shell condition to be imposed will become
 \ie the cut propagators are now massive.
 %
 %
-\subsection{Box coefficient}
+\subsection{Coefficients $C_{4, K_4}^{[4]}$}
 It can be shown that, in using Forde's formalism~\cite{Forde:2007mi}, we can ignore the pentagon coefficient entirely.
 We may choose to parametrize the four-momentum $\bar{l}$ by
 \begin{equation*}
@@ -85,10 +89,13 @@ We then apply a quadruple cut.
 The four on-shell conditions then fix the coefficients $a,b,c,d$.
 The quadruple cut can be expanded as
 \begin{equation*}
-(4\pi)^{D/2}\int\frac{\dd^D l}{(2\pi)^D}(-2\pi i)^4\prod^4_{i=1}\delta(l_i^2)A_1A_2A_3A_4
-= (4\pi)^{D/2}\int\frac{\dd^{-2\epsilon \mu}}{(2\pi)^{-2\epsilon}}
+\begin{split}
+(4\pi)^{D/2}\int\frac{\dd^D l}{(2\pi)^D}(-2\pi i)^4 & \prod^4_{i=1}\delta(l_i^2)A_1A_2A_3A_4
+\\
+= & (4\pi)^{D/2}\int\frac{\dd^{-2\epsilon \mu}}{(2\pi)^{-2\epsilon}}
 \sum_{\sigma}\Big(\Inf_{\mu^2}[A_1 A_2 A_3 A_4(\bar{l})] 
 \sum_{\textrm{poles $\{i\}$}}\frac{\res_{\mu^2 = \mu_i^2}\big(A_1A_2A_3A_4(\bar{l}^\sigma)\big)}{\mu^2 - \mu_i^2}\Big)
+\end{split}
 \end{equation*}
 where $\sum_\sigma$ means the summation over all the solutions under the on-shell conditions. 
 The second term above can be regarded as a sum of a $(D + 2)$-dimensional pentagon contribution plus the boundary term for the box coefficient.
@@ -100,7 +107,7 @@ C_4^{[4]} = \frac{i}{2}\sum_{\sigma}\Inf_{\mu^2}[A_1A_2A_3A_4(\bar{l}^\sigma)]\b
 where the subscription means the extraction of the coefficient of $\mu^4$ in the expression.
 %
 %
-\subsection{Triangle coefficients}
+\subsection{Coefficients $C_{3,K_{3}}^{[2]}$}
 Consider a triply cut integral
 \begin{equation*}
 \begin{split}
@@ -109,8 +116,8 @@ Consider a triply cut integral
 \int \dd^{-2\epsilon}\mu\int \dd t J_t \Big(
 \Inf_{\mu^2}[\Inf_tA_1A_2A_3] 
 + \sum_i\Inf_{\mu^2}\big[\frac{\res_{t=t_i}(A_1A_2A_3)}{t-t_i}\big]
-+ \sum_i\frac{\res_{\mu^2 = \mu_i^2(\Inf_t[A_1A_2A_3])}}{\mu^2 -\mu_i^2}
 \\ &
++ \sum_i\frac{\res_{\mu^2 = \mu_i^2(\Inf_t[A_1A_2A_3])}}{\mu^2 -\mu_i^2}
 +\sum_{i,j}\frac{\res{\mu^2 = \mu_i^2}\big(\res_{t=t_i}(A_1A_2A_3)\big)}{(t-t_i)(\mu^2 - \mu_j^2)}
 \end{split}
 \end{equation*}
@@ -128,8 +135,8 @@ C_3^{[2]} = \frac{1}{2}\sum_\sigma\Inf_{\mu^2}[\Inf_t[A_1A_2A_3(\bar{l}^\sigma)]
 \end{equation*}
 %
 %
-\subsection{Bubble coefficient}
-Finally, the bubble coefficient can also be extracted in using the following parametrization
+\subsection{Coefficient $C_{2,K_{2}}$}
+The coefficients $C_{2,K_{2}}$ can also be extracted in using the following parametrization
 \begin{equation*}
 \bar{l} = y K_1^\flat + \frac{S_1(1-y)}{\gamma}\chi + t|K_1^\flat\rangle[\chi| 
 +\big(y(1-y)S_1 - \mu^2\big)\frac{|\chi\rangle[K_1^\flat}{\gamma t}
