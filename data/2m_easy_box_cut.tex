@@ -1,23 +1,23 @@
-\section{2m easy box cut}
-Consider an 2m easy box.
-The massive external legs are $K_1$ and $K_3$.
-The cut momenta are denoted $l_1 = l$ and $l_2 = -( l-K_1-K_2)$.
+%\section{2m easy box cut}
+Now, let us verify the Cutkosky rule with the two-mass easy box integral.
+We apply a cut in the $s$-channel and the cut momenta are denoted by $l_1 = l$ and $l_2 = -( l-K_1-K_2)$.
 We work in the center-of-mass frame of $K_{12}$
-The cut diagram is given by
-
-\begin{equation*}
+The cut integral is given by
+\begin{equation}\label{cuti4}
 \begin{split}
-\int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}} &
- \int\frac{\dd^{D-1}l_2}{(2\pi)^{D-1}}
-\frac{\delta^{D}(l_1 + l_2 - K_1- K_2)}{8(l_1\cdot K_2)(2l_1\cdot K_3 + (K_3)^2)l_1^0 l_2^0} 
- = 
+\Delta I_4 =&
 \int\frac{\dd^{D-1}l_1}{(2\pi)^{D-1}} 
+ \int\frac{\dd^{D-1}l_2}{(2\pi)^{D-1}}
+\frac{(2\pi)^D\delta^{D}(l_1 + l_2 - K_1- K_2)}{8(l_1\cdot K_2)(2l_1\cdot K_3 + (K_3)^2)l_1^0 l_2^0} 
+\\
+ = & 
+\int\frac{\dd^{D-1}l_1}{(2\pi)^{D-2}} 
 \frac{\delta(l_1^0 + l_2^0 - K_1^0 - K_2^0)}{8 l_1^0 l_2^0 (2l_1\cdot K_3 + (K_3)^2)(l_1\cdot K_2)}
 \\
-& = \int\frac{|\vec{l}_1|^{D-2} \dd |\vec{l}_1|}{(2\pi)^{D-1}(2l_1^0 K_2^0)(K_{12}^0)^2}
-\frac{\dd \Omega_{D-1} \delta(l_1^0 - \frac{K^0_{12}}{2})}{(2l_1^0 K_3^0 - 2l_1^0 \hat{l}\cdot\vec{K_3} + (K_3)^2)(1-\hat{l}\cdot \hat{K}_2)}
+ = & \int\frac{|\vec{l}_1|^{D-2} \dd |\vec{l}_1|}{(2\pi)^{D-2}(2l_1^0 K_2^0)(K_{12}^0)^2}
+\frac{\dd \Omega_{D-1} \delta(l_1^0 + l_2^0 - K^0_{12})}{(2l_1^0 K_3^0 - 2l_1^0 \hat{l}\cdot\vec{K_3} + (K_3)^2)(1-\hat{l}\cdot \hat{K}_2)}
 \end{split}
-\end{equation*}
+\end{equation}
 Let us now focus on the second piece of the above integral, which involves scalar products. 
 We parametrize the spatial components $\hat{K}_2$, $\hat{K}_3$ and $\hat{l}$ in the following way
 \begin{equation*}
@@ -112,10 +112,24 @@ v= &
 \end{split}
 \end{equation*}
 %
+All taken into account, we have
+\begin{equation*}
+\begin{split}
+\Delta I_4 = & -\frac{1}{2}\big(\frac{K_{12}^0}{2}\big)^{2-2\epsilon}\frac{1}{(2\pi)^{2-2\epsilon}}\frac{1}{s (K_{12}\cdot K_2)}2^{1-2\epsilon}\frac{1}{(-K_3\cdot K_4)}\pi^{1-\epsilon} \frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}
+\frac{1}{v}\Big(\frac{1}{\epsilon} + \ln v + \mathcal{O}(\epsilon)\Big)
+\\
+= & 4{-1+\epsilon}\pi^{-1+\epsilon}\frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}s^{-\epsilon}\frac{1}{st - K_1^2K_3^2}\Big(
+\frac{1}{\epsilon} + \ln\big(1-\frac{K_1^2K_3^2}{st}\big)
+-\ln\big(1-\frac{K_1^2}{s}\big) - \ln\big(1-\frac{K_3^2}{s}\big) + \ln\big(\frac{t}{s}\big)\Big)
+\end{split}
+\end{equation*}
+The first factor of $\frac{1}{2}$ comes from the delta function in the last line of~\cref{cuti4}.
+This expression is exactly the branch cut across $s^2 < 0 $ of $I_4$ given in~\cref{i4bdk}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
+\iffalse %not used
 %Not the best way to do... disgarded%
 \color{gray}
 The integration can be done in using a Feynman parametrization.
@@ -160,5 +174,5 @@ We can use the identity to get the $\mathcal{O}(\epsilon^{0})$ contribution of t
 \end{equation*}
 
 \color{black}
-
-
+\fi
+\\
