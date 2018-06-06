@@ -61,8 +61,97 @@ The term $B_n$ in~\cref{residue} will disappear when the shift is apply to ajace
 Therefore, the unshifted amplitude can be computed by dropping the residue at infinity in~\cref{residue} and its first term on the right-hand side is given by~\cref{cauchy} under the BCFW shift.
 %
 \subsection{Example: $A_6[1^-2^-3^-4^+5^+6^+]$}
-
-
-
+Let us now see how the BCFW recursion can be applied by considering a six-point next-to-MHV (NMHV) all-gluon amplitude $A_6[1^-2^-3^-4^+5^+6^+]$.
+We assume that all external momenta are not collinear to each other.
+For this example, we apply a $[1,6\rangle$-shift:
+\begin{equation*}
+|\hat{1}] = |1] + z|6]
+\quad,\quad
+|\hat{6}] = |6]
+\quad,\quad
+|\hat{1}\rangle = |1\rangle
+\quad,\quad
+|\hat{6}\rangle = |6\rangle - z|1\rangle
+\end{equation*}
+As discussed before, the first non-vanishing tree-level amplitudes are the three-point ones. 
+There are thus three possible configuration for the external momenta \wrt the location of the propagator 
+%
+\paragraph{$A_1$}
+\begin{equation*}
+\begin{split}
+A_1 = & \hat{A}_3[1^-,2^-, -P_{12}^+]\frac{1}{P_{12}^2}\hat{A}_5[3^-4^+5^+6^+ P_{12}^-]
+\\
+= &\frac{\langle \hat{1}2\rangle^3}{\langle 2\hat{P}_{12}\rangle\langle \hat{P}_{12} 1\rangle}
+\frac{1}{[12]\langle 21\rangle}
+\frac{\langle \hat{P}_{12} 3\rangle^4}{\langle 34\rangle\langle 45\rangle\langle 5\hat{6}\rangle\langle 6\hat{P}_{12}\rangle\langle \hat{P}_{12} 3\rangle}
+\\
+=&
+\frac{\langle \hat{1}2\rangle^3}{\langle 2\hat{P}_{12}\rangle[\hat{P}_{12} 1][\hat{P}_{12} 1]\langle \hat{P}_{12} 1\rangle}
+\frac{1}{[12]\langle 21\rangle}
+\frac{\langle \hat{P}_{12} 3\rangle^3[\hat{P}_{12} 1]^3}{\langle 34\rangle\langle 45\rangle\langle 5\hat{6}\rangle\langle 6\hat{P}_{12}\rangle[\hat{P}_{12} 1]}
+\end{split}
+\end{equation*}
+First, we determine the pole $z=z_I$ for this configuration by using the on-shell condition 
+\begin{equation*}
+\hat{P}_{12}^2 = 0
+\quad\Rightarrow\quad
+[\hat{1}2] =  [12] + z[62] = 0
+\quad\Rightarrow\quad
+z= -\frac{[12]}{[62]}
+\end{equation*}
+Also, we compute
+\begin{equation*}
+\begin{split}
+& \langle 2 |\hat{\slashed{P}}_{12}|1] = z\langle 21\rangle[61] = -\frac{[12]}{[62]}\langle 21 \rangle[61]
+\\
+&
+\langle 1 |\hat{\slashed{P}}_{12}|3\rangle = 
+z[16]\langle 13 \rangle + [12]\langle 23 \rangle
+=\frac{[21]}{[62]}\langle 3 |\slashed{P}_{12}|6]
+\\
+&
+\langle \hat{6}\hat{P}_{12}\rangle[\hat{P}_{12}1] = z\langle 61 \rangle[61] + \langle 62\rangle - z\langle 12\rangle[21]
+=
+\frac{[12]}{[62]}P_{126}^2
+\end{split}
+\end{equation*}
+Therefore
+\begin{equation*}
+A_1 = -\frac{\langle 3 |\slashed{P}_{12}|6]^3}{[61]\langle 34\rangle \langle 45\rangle\langle 5|\slashed{P}_{16}|2]}[12]s_{126}
+\end{equation*}
+%
+%
+\paragraph{$A_2$}
+\begin{equation*}
+\begin{split}
+A_2 = & \hat{A}_5[1^-2^-3^-4^+ P_{56}^+]\frac{1}{P_{56}^2}\hat{A}_3[-P_{56},5^+,6^+]
+\\
+= &
+\frac{[4\hat{P}_{56}]^4}{[4\hat{P}_{56}][\hat{P}_{56}\hat{1}][\hat{1}2][23][34]}\frac{1}{\langle 56\rangle [65]}\frac{[65]^3}{[5\hat{P}_{56}][\hat{P}_{56}6]}
+\\
+= &
+\frac{[4\hat{P}_{56}]^3\langle\hat{P}_{56}1\rangle^3}{\langle 1P_{56}\rangle [\hat{P}_{56}\hat{1}][\hat{1}2][23][34]}\frac{1}{\langle 56\rangle [65]}\frac{[65]^3}{[5\hat{P}_{56}]\langle \hat{P}_{56} 1\rangle [\hat{P}_{56} 6]\langle 1\hat{P}_{56}\rangle}
+\end{split}
+\end{equation*}
+The pole $z$ for this configuration is given by the on-shell condition, with the same computation as in the previous case
+\begin{equation*}
+\hat{P}_{56}^2 = 0 \quad\Rightarrow\quad
+z=\frac{\langle 65\rangle}{\langle 15\rangle}
+\end{equation*}
+On the other hand
+\begin{equation*}
+\begin{split}
+& \langle 1\hat{P}_{56}\rangle [\hat{P}_{56}\hat{1}] = \langle 15 \rangle[51] + \langle 16\rangle[61] + z\langle 15 \rangle[56] = P_{156}^2
+\\
+& [5\hat{P}_{56}]\langle\hat{P}_{56} 1 \rangle = [56]\langle 61\rangle
+\\
+&
+\langle 1 \hat{P}_{56}\rangle[\hat{P}_{56}6] =\langle 15\rangle[56]
+\end{split}
+\end{equation*}
+At the end, we get
+\begin{equation*}
+A_2 = -\frac{[4|\slashed{P}_{56}|1\rangle^3}{s_{156}\langle 5|\slashed{P}_{16}|2][23][34]\langle 56\rangle\langle 61\rangle}
+\end{equation*}
 
 

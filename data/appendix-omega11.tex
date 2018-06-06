@@ -1,0 +1,83 @@
+\section{Proof of~\cref{omega11}}\label{appendix-omega11}
+We illustrate here the idea given in~\cite{Somogyi:2011ir} to prove~\cref{omega11}.
+Let us call this quantity $I$.
+Consider the parametrization~\cref{spatial_param}.
+With the aide of Feynman parametrization, \cref{omega11} equals to
+\begin{equation}\label{omega11i}
+\begin{split}
+\int\dd\Omega_{D-1}\frac{1}{(1-\hat{K}_2\cdot\hat{l})(1-\hat{K}_3\cdot\hat{l})}
+= &
+\int\dd\Omega_{D-1}\int\dd x_1\dd x_2\delta(x_1+x_2-1)\frac{1}{\big(1-(x_1\hat{K}_2 + x_2\hat{K}_3)\cdot\hat{l}
+\big)^2}
+\\
+=&
+\int\dd\Omega_{D-2}\int\dd x_1\dd x_2\delta(x_1+x_2-1)
+\frac{\dd(\cos\theta) \sin^{-2\epsilon}\theta}{(1-\beta\cos\theta)^2}
+\\
+=&
+\int\dd x_1\dd x_2 \delta(x_1+x_2-1)2^{2-2\epsilon}\pi^{1-\epsilon}\frac{\Gamma(1-\epsilon)}{\Gamma(2-2\epsilon)}(1+\beta)^{-2}
+\\
+& \times
+{}_2F_1\big(2,1-\epsilon, 2-2\epsilon,\frac{2\beta}{1+\beta}\big)
+\end{split}
+\end{equation}
+where in the second last line we choose to take the polar axis in the $(x_1\hat{K}_2 + x_2\hat{K}_3)$-direction and
+\begin{equation*}
+\beta^2 = x_1^2 + x_2^2 + 2x_1x_2\cos\psi
+\end{equation*}
+%(cf. \eg~\cite{Smirnov:2004ym})
+%%%%%%%
+%
+%
+%
+\iffalse %not used
+\begin{equation*}
+\frac{1}{(x+y)^\lambda} = \frac{1}{\Gamma(\lambda)}
+\frac{1}{2\pi i}\int^{i\infty}_{-i\infty}\dd z \Gamma(\lambda + z)\Gamma(-z)\frac{y^z}{x^{\lambda+z}}
+\end{equation*}
+to write the above equation as
+\fi %%%%%%%%%%%%%%
+%
+%
+%
+Using the quadratic hypergeometric identity
+\begin{equation*}
+{}_2F_1(a,b,2b,z)=\big(1-\frac{z}{2}\big)^{-a}{}_2F_1\big[\frac{a}{2},\frac{a+1}{2}, b+\frac{1}{2}, \big(\frac{z}{2-z}\big)^2\big]
+\end{equation*}
+and the following Mellin-Barnes representation for the hypergeometric function
+\begin{equation*}
+{}_2F_1(a,b,c,x) = \frac{\Gamma(c)}{\Gamma(a)\Gamma(b)\Gamma(c-a)\Gamma(c-b)}\int_{-i\infty}^{i\infty}\frac{\dd z}{2\pi i}\Gamma(a+z)\Gamma(b+z)\Gamma(c-a-b-z)\Gamma(-z)(1-x)^z
+\end{equation*}
+\cref{omega11i} becomes
+\begin{equation*}
+\begin{split}
+& \int\dd x_1\dd x_2 
+\delta(x_1+x_2-1) 
+2^{2-2\epsilon} 
+\pi^{1-\epsilon}\frac{\Gamma(1-\epsilon)}{\Gamma(2-2\epsilon)}
+{}_2F_1(1,\frac{3}{2},\frac{3}{2}-\epsilon, \beta^2)
+\\
+= &
+\int\dd x_1\dd x_2 \delta(x_1+x_2-1)
+2^{1-2\epsilon}\pi^{\frac{1}{2}-\epsilon}\frac{1}{\Gamma(2)\Gamma(-2\epsilon)}\int^{i\infty}_{-i\infty}\frac{\dd z}{2\pi i}\Gamma(1+z)\Gamma(\frac{3}{2}+z)\Gamma(-1-\epsilon-z)\Gamma(-z)(1-\beta^2)^z
+\\
+=&
+\int\dd x_1\dd x_2 \delta(x_1+x_2-1)
+2^{-2\epsilon}\pi^{1-\epsilon}\frac{1}{\Gamma(-2\epsilon)}\int^{i\infty}_{-i\infty}\frac{\dd z}{2\pi i}\Gamma(2+2z)\Gamma(-1-\epsilon-z)\Gamma(-z)\big(\frac{1-\beta^2}{4}\big)^z
+\end{split}
+\end{equation*}
+where the identity
+\begin{equation*}
+\Gamma(2x) = \frac{2^{2x-1}}{\sqrt{\pi}}\Gamma(x)\Gamma(x+\frac{1}{2})
+\end{equation*}
+is used in the last line.
+\\Since
+\begin{equation*}
+\frac{1}{4}(1-\beta)^2 = \frac{1}{2}(1-\cos\psi)x_1x_2 = vx_1x_2 
+\end{equation*}
+the integration \wrt the Feynman parameters will give us a beta function.
+Finally, we get the following value for~\cref{omega11i}
+\begin{equation*}
+\frac{2^{-2\epsilon}\pi^{1-\epsilon}}{\Gamma(1-2\epsilon)}\int^{i\infty}_{-i\infty}\frac{\dd z}{2\pi i}\Gamma(-z)\Gamma(-1-\epsilon -z)\Gamma^2(1+z) v^z
+\end{equation*}
+which is exactly~\cref{omega11} after inverting the Mellin-Barnes integral to the hypergeometric function.
