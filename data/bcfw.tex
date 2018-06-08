@@ -45,7 +45,13 @@ where
 \begin{equation*}
 P_I := \sum_{i\in I}p_i
 \end{equation*}
-and $\hat{A}_{L,R}$ are two on-shell amplitudes with less external momenta connected by the on-shell propagator at two different ends.
+and $\hat{A}_{L,R}$ are two on-shell amplitudes with less external momenta connected by the on-shell propagator at two different ends (cf. figure~\ref{fig_cauchy}).
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{bcfw.jpg}
+  \caption{Illustration of~\cref{cauchy}. The two tree-level graphs $\hat{A}_{L,R}$ are on the two ends of a chosen combined momentun $P_I$}
+  \label{fig_cauchy}
+\end{figure}
 \\
 The BCFW recursion consists in applying a $[i,j\rangle$-shift :
 \begin{equation}
@@ -74,12 +80,22 @@ For this example, we apply a $[1,6\rangle$-shift:
 |\hat{6}\rangle = |6\rangle - z|1\rangle
 \end{equation*}
 As discussed before, the first non-vanishing tree-level amplitudes are the three-point ones. 
-There are thus three possible configuration for the external momenta \wrt the location of the propagator 
+There are thus three possible configuration for the external momenta \wrt the location of the propagator which will be taken on-shell\footnote{One can check that, whenever the shifted momenta $\hat{p}_1$ and $\hat{p}_6$ are put on the same side \wrt the on-shell propagator, there is no pole created.} (cf. figure~\ref{fig_A6nmhv})
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{A6nmhv.jpg}
+  \caption{Possible contributions in the BCFW computation. The momenta $\hat{P}_I$ in the middle of each graphs are taken on-shell, \ie $\hat{P}_I^2=0$}
+  \label{fig_A6nmhv}
+\end{figure}
+However, the configuration $b$ in~\ref{fig_A6nmhv} vanishes because it is impossible to find a helicity configuration for the intermediate momentum such that we have non-vanishing amplitudes on each side of it (the first non-vanishing four-point amplitudes are the MHV ones).
+We are thus left with the configurations $a$ and $c$.
 %
-\paragraph{$A_1$}
+\paragraph{Configuration $a$}
+To get a non-vanishing contribution on the left-hand ($\{1,2\}$) side of the on-shell propagator, we have to choose the propagator to have helicity plus at its left-hand end.
+The contribution of this configuration is thus  
 \begin{equation*}
 \begin{split}
-A_1 = & \hat{A}_3[1^-,2^-, -P_{12}^+]\frac{1}{P_{12}^2}\hat{A}_5[3^-4^+5^+6^+ P_{12}^-]
+A_a = & \hat{A}_3[1^-,2^-, -P_{12}^+]\frac{1}{P_{12}^2}\hat{A}_5[3^-4^+5^+6^+ P_{12}^-]
 \\
 = &\frac{\langle \hat{1}2\rangle^3}{\langle 2\hat{P}_{12}\rangle\langle \hat{P}_{12} 1\rangle}
 \frac{1}{[12]\langle 21\rangle}
@@ -116,15 +132,16 @@ z[16]\langle 13 \rangle + [12]\langle 23 \rangle
 \end{split}
 \end{equation*}
 Therefore
-\begin{equation*}
-A_1 = -\frac{\langle 3 |\slashed{P}_{12}|6]^3}{[61]\langle 34\rangle \langle 45\rangle\langle 5|\slashed{P}_{16}|2]}[12]s_{126}
-\end{equation*}
+\begin{equation}\label{a6a}
+A_a = -\frac{\langle 3 |\slashed{P}_{12}|6]^3}{[61]\langle 34\rangle \langle 45\rangle\langle 5|\slashed{P}_{16}|2]}[12]s_{126}
+\end{equation}
 %
 %
-\paragraph{$A_2$}
+\paragraph{Configuraion $c$}
+This time, in order to get non-vanishing contribution, we impose the helicity of the intermediate propagator on the left-hand side to be minus.
 \begin{equation*}
 \begin{split}
-A_2 = & \hat{A}_5[1^-2^-3^-4^+ P_{56}^+]\frac{1}{P_{56}^2}\hat{A}_3[-P_{56},5^+,6^+]
+A_c = & \hat{A}_5[1^-2^-3^-4^+ P_{56}^+]\frac{1}{P_{56}^2}\hat{A}_3[-P_{56},5^+,6^+]
 \\
 = &
 \frac{[4\hat{P}_{56}]^4}{[4\hat{P}_{56}][\hat{P}_{56}\hat{1}][\hat{1}2][23][34]}\frac{1}{\langle 56\rangle [65]}\frac{[65]^3}{[5\hat{P}_{56}][\hat{P}_{56}6]}
@@ -150,8 +167,11 @@ On the other hand
 \end{split}
 \end{equation*}
 At the end, we get
+\begin{equation}\label{a6c}
+A_c = -\frac{[4|\slashed{P}_{56}|1\rangle^3}{s_{156}\langle 5|\slashed{P}_{16}|2][23][34]\langle 56\rangle\langle 61\rangle}
+\end{equation}
+To sum up, the total amplitude is
 \begin{equation*}
-A_2 = -\frac{[4|\slashed{P}_{56}|1\rangle^3}{s_{156}\langle 5|\slashed{P}_{16}|2][23][34]\langle 56\rangle\langle 61\rangle}
+A_6[1^-2^-3^-4^+5^+6^+] = A_a + A_c
 \end{equation*}
-
-
+where $A_a$ and $A_c$ are given in~\cref{a6a} and~\cref{a6c}.
