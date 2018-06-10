@@ -33,10 +33,10 @@ Consider a triple cut leading to the constraints\footnote{Here we take $-K_2$ in
 l^2 = (l-K_1)^2 = (l - K_2)^2 = 0
 \end{equation*}
 One can construct two null vectors $K_1^\flat$ and $K_2^\flat$ from the external momenta $K_1$ and $K_2$ 
-\begin{equation*}
+\begin{equation}\label{k_flat}
 K_1^\flat = K_1 - \frac{S_1}{\gamma}K_2^\flat \quad\quad
 K_2^\flat = K_2 - \frac{S_2}{\gamma}K_1^\flat
-\end{equation*}
+\end{equation}
 %
 where $S_i = K_i^2$ and $\gamma = \langle K_1^\flat|K_2^\flat|K_1^\flat] =\langle K_2^\flat|K_1^\flat|K_2^\flat]$.
 There are two possibilities for $\gamma$
@@ -78,7 +78,8 @@ The same technique can be applied to show that $(q\cdot v)^n$ is spurious for an
 %%%%%%%%%%%%%%%%%%%5 end of not used
 %
 We can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
-to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}
+to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}. 
+The other two loop-momenta, $l_1 = l-K_1$ and $l_2 = l-K_2$, are parametrize in a similar way in~\cref{l_param} by replacing $\alpha_{01}$ and $\alpha_{i2}$ by $\alpha_{i1}$ and $\alpha_{i2}$ given in~\cite{Forde:2007mi}.
 %
 %
 \subsection*{Two-particle cuts and scalar bubble coefficients}
@@ -264,7 +265,9 @@ Since the contribution to triangle coefficient is given by taking the $\Inf$ of~
 = 1
 \end{equation*} 
 %
-Thus, the total contribution is twice of~\ref{triple_cut_1}, or in a more explicit form using~\cref{l_param}:
+Thus, the total contribution is twice of~\ref{triple_cut_1}, or in a more explicit form using~\cref{l_param}\footnote{
+Note that here we apply an offset of one to the indices \wrt the previous notation.
+}
 \begin{equation*}
 \begin{split}
 -32ie^6 & \frac{(t\langle K_1^\flat 1 \rangle + \alpha_{01}\langle K_2^\flat 1\rangle)^2
@@ -287,7 +290,7 @@ As a last step, we obtain the triangle coefficient by taking the $\Inf$ of the a
 \begin{equation*}
 16ie^6\sum_{\gamma_\pm}\frac{\langle K_1^\flat 1 \rangle^2\langle K_1^\flat 5\rangle^5 \langle K_1^\flat 3 \rangle^2}{\langle K_1^\flat 2 \rangle^2\langle K_1^\flat 6\rangle^2 \langle K_1^\flat 4 \rangle^2}
 \end{equation*}
-
+Substituting $K_1^\flat$ by its expression~\cref{k_flat}, we obtain an agreement with~\cite{Forde:2007mi}.
 
 
 
