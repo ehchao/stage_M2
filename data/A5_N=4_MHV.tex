@@ -1,6 +1,6 @@
 \subsection{$A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills}
 Let us see how to use quadruple cuts to extract box coefficients. 
-There are four possible configurations for the external momenta under a quadruple cut.
+There are five possible configurations for the external momenta under a quadruple cut.
 Each of the configurations corresponds to a one-mass box integral.
 Among the four tree-level amplitudes that we obtain from a quadruple cut~\cref{box_coeff}, there is a four-point amplitude and three three-point ones.
 As already noted in~\cite{Britto:2004nc}, massless legs in quadruple cut would lead to inconsistent results if we choose loop-momentun to be real\footnote{This was handled in~\cite{Britto:2004nc} by working in the signature $(--++)$.}. 
@@ -15,24 +15,23 @@ Up to this step, we have already eliminate a bunch of helicity configurations
 Finally, the on-shell condition of the internal propagtors may in certain case impose further relationships to the external momenta than just the momentum conservation.
 These cases should also be discarded because they violate our requirement of non-collinearity of the external momenta. 
 \color{red}perhaps describe more with a graph.\color{black}
-At the end of the day, there are only five possible solution to the all-gluon configuration.
+At the end of the day, there are only five possible solution to the all-gluon configuration (figure~\ref{fig-a5mhv}).
 We give the detailed computation hereunder.
-\\\\
-\begin{figure}[h]
+\begin{figure}
   \centering
-  \includegraphics[width=0.8\linewidth]{A5mhv.png}
-  \caption{The only non-vanishing contributions for $A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills}
-  \label{fig-cutkosky}
+  \includegraphics[width=0.8\linewidth]{A5mhv.jpg}
+  \caption{The only non-vanishing contributions for $A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills. The momenta in the loop are enumerated in the same way as the top-left one.}
+  \label{fig-a5mhv}
 \end{figure}
-\paragraph{\ref{A5-1}}
+\paragraph{Configuration $c_1$}
 The special three-particle kinematics tells us that either the square spinor product or the angle one of any two on-shell spinor linked with a trivalent vertex vanishes.
-By considering the trivalent vertices appearing in the cut~\cref{A5-1}, the only possible solution for the internal momenta in terms should satisfy
+By considering the trivalent vertices appearing in this configuration, the only possible solution for the internal momenta in terms should satisfy
 \begin{equation*}
 |l_1\rangle = \alpha |5\rangle \quad,\quad
 |l_2\rangle = \delta |3\rangle \quad,\quad
 |l_3\rangle = \gamma |l_3\rangle\quad,\quad
 |l_3] = \eta|4]\quad,\quad
-|l_4] = \beta 4]
+|l_4] = \beta |4]
 \end{equation*}
 Hence, the coefficient determined by~\cref{box_coeff} is
 \begin{equation*}
@@ -73,8 +72,8 @@ As we will see, all the contributions that we will compute are related to the tr
   \label{A5-8}
 \end{figure}
 \fi
-\paragraph{\ref{A5-8}}
-By~\cref{box_coeff}, the box coefficient corresponding to this contribution is
+\paragraph{Configuration $c_{8}$}
+By~\cref{box_coeff}, the box coefficient corresponding to this configuration is
 \begin{equation*}
 \begin{split}
 c_8 = & \frac{1}{2}
@@ -131,17 +130,7 @@ c_8 = \frac{1}{2} s_{51}s_{45} \frac{\langle 12 \rangle^3 [15] [54]}{\langle 43 
 \end{equation*}
 We will be using this machinery to determine the rest of the coefficients.
 %
-%
-\iffalse
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-10}
-    \caption{A5-10}
-  \label{A5-10}
-\end{figure}
-\fi
-%
-\paragraph{\ref{A5-10}}
+\paragraph{Configuration $c_{10}$}
 \begin{equation*}
 \begin{split}
 c_{10} = &
@@ -216,17 +205,7 @@ As a result
 c_{10} = \frac{1}{2}s_{51}s_{12}A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
 %
-%
-\iffalse
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-11}
-    \caption{A5-11}
-  \label{A5-11}
-\end{figure}
-\fi
-%
-\paragraph{\ref{A5-11}}
+\paragraph{Configuration $c_{11}$}
 \begin{equation*}
 \begin{split}
 c_{11} = &
@@ -289,7 +268,7 @@ Again, using Schouten identity and momentum conservation, we obtain the followin
 \begin{split}
 & [3|\slashed{K}_{12}|3\rangle [51] + [21]\langle 23\rangle [53] = -[31][54]\langle 43 \rangle 
 \\
-& -[13][45]\langle 51 \rangle
+& [32]\langle 21\rangle[14] - [1|\slashed{K}_{23}|1\rangle[34] = -[13][45]\langle 51 \rangle
 \\
 &
 (2K_{12}\cdot K_3)(2K_{23}\cdot K_1) - K_{23}^2K_{21}^2 = s_{45}s_{31}
@@ -301,17 +280,7 @@ c_{11} = \frac{1}{2}s_{12}s_{23}A_5^{\textrm{MHV-tree}}[12345]
 \end{equation*}
 %
 %
-\iffalse
-\begin{figure}
-  \centering
-    \includegraphics[width=\linewidth]{A5-16}
-    \caption{A5-16}
-  \label{A5-16}
-\end{figure}
-\fi
-%
-%
-\paragraph{\ref{A5-16}}
+\paragraph{Configuration $c_{16}$}
 \begin{equation*}
 \begin{split}
 c_{16} = & \frac{1}{2}
@@ -334,7 +303,7 @@ Set
 Then
 \begin{equation*}
 \begin{split}
-& (l_2 - K_{23})^2 = 0 \quad\Rightarrow\quad K_{23}^2 = \alpha a [2|\slashed{K}_3|2\rangle + \alpha b [4|\slashed{K}_{23}|2\langle
+& (l_2 - K_{23})^2 = 0 \quad\Rightarrow\quad K_{23}^2 = \alpha a [2|\slashed{K}_3|2\rangle + \alpha b [4|\slashed{K}_{23}|2\rangle
 \\
 & (l_2 + K_{15})^2 = 0 \quad\Rightarrow\quad K_{15}^2 = -\alpha a [2|\slashed{K}_{15}|2\rangle - \alpha b [4|\slashed{K}_{15}|2\rangle
 \end{split}

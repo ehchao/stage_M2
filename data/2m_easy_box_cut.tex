@@ -69,7 +69,8 @@ and $a>0$.
 \\
 A way to evaluate~\cref{omega11} is given in~\cite{Somogyi:2011ir} (in the two-denominator massless case, eqn.(49) of the reference), where some non-trivial relationships of Mellin-Barnes representations of a hypergeometric function are used.
 We will simply cite the result here.
-The proof of~\cref{omega11} following~\cite{Somogyi:2011ir} will be given in Appendix~\ref{appendix-omega11}
+The proof of~\cref{omega11} following~\cite{Somogyi:2011ir} will be given in Appendix~\ref{appendix-omega11}.
+\\
 Let 
 \begin{equation*}
 v = \frac{1}{2}(1-\cos\psi)
@@ -116,61 +117,12 @@ All taken into account, we have
 \Delta I_4 = & -\frac{1}{2}\big(\frac{K_{12}^0}{2}\big)^{2-2\epsilon}\frac{1}{(2\pi)^{2-2\epsilon}}\frac{1}{s (K_{12}\cdot K_2)}2^{1-2\epsilon}\frac{1}{(-K_3\cdot K_4)}\pi^{1-\epsilon} \frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}
 \frac{1}{v}\Big(\frac{1}{\epsilon} + \ln v + \mathcal{O}(\epsilon)\Big)
 \\
-= & 4{-1+\epsilon}\pi^{-1+\epsilon}\frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}s^{-\epsilon}\frac{1}{st - K_1^2K_3^2}\Big(
+= & 4^{-1+\epsilon}\pi^{-1+\epsilon}\frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}s^{-\epsilon}\frac{1}{st - K_1^2K_3^2}\Big(
 \frac{1}{\epsilon} + \ln\big(1-\frac{K_1^2K_3^2}{st}\big)
 -\ln\big(1-\frac{K_1^2}{s}\big) - \ln\big(1-\frac{K_3^2}{s}\big) + \ln\big(\frac{t}{s}\big)\Big)
 \end{split}
 \end{equation*}
 The first factor of $\frac{1}{2}$ comes from the delta function in the last line of~\cref{cuti4}.
-This expression is exactly the branch cut across $s^2 < 0 $ of $I_4$ given in~\cref{i4bdk}. 
+This expression is exactly the branch cut across $s < 0 $ of $I_4$ given in~\cref{i4bdk}. \\\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-\iffalse %not used
-%Not the best way to do... disgarded%
-\color{gray}
-The integration can be done in using a Feynman parametrization.
-Taking into account the constraint due to the $\delta$-function, 
-it becomes
-
-\begin{equation*}
-\frac{\dd \Omega_{D-1}}{(K_{12}^0 K_3^0 - K_{12}^0 |\vec{K}_3| \hat{l}\cdot \hat{K}_3 + (K_3)^2)(1-\hat{l}\cdot\hat{K}_2)}
-= \frac{1}{(K_3)^2 + K_{12}^0 K_3^0}\int \dd \Omega_{D-1}\int_0^1\frac{\dd x}{\Big(1-\hat{l}\cdot\big(ax \hat{K}_3 + (1-x)\hat{K}_2\big)\Big)^2}
-\end{equation*}
-
-where 
-\begin{equation*}
-a := \frac{|\vec{K}_3|K_{12}^0}{(K_3)^2 + K_{12}^0 K_3^0}
-\end{equation*}
-
-Using $\dd\Omega_{D-1} = \dd \Omega_{D-2}(1-z^2)^{\frac{D-4}{2}}\dd z$, where $z = \cos\theta$ takes into account the angular dependence of the denominator, the two pieces of integral read
-
-\begin{equation*}
-\begin{split}
-\int \dd \Omega_{D-1} &
-\int_0^1\frac{\dd x}{\Big(1-\hat{l}\cdot\big(ax \hat{K}_3 + (1-x)\hat{K}_2\big)\Big)^2}
-= \Omega_{D-2}\int_0^1\dd x \int_{-1}^1 \dd z (1-z)^{-\epsilon}(1+z)^{-\epsilon} (1-bz)^{-2}
-\\
-& = 
-\Omega_{D-2}\int\dd x \int^1_0\dd u 2^{1-2\epsilon} u^{-\epsilon}(1-u)^{-\epsilon}(1+b)^{-2}\big(1-\frac{2bu}{1+b}\big)^{-2}
-\\
-& = 
-\Omega_{D-2}\int^1_0 \dd x 2^{1-2\epsilon}(1+b)^{-2} (_2F_1)\big(2,1-\epsilon, 2-2\epsilon, \frac{2b}{1+b}\big)
-\frac{\Gamma^2(1-\epsilon)}{\Gamma(2-2\epsilon)} 
-\end{split}
-\end{equation*}
-
-where 
-\begin{equation*}
-b := \big| ax \hat{K_3} + (1-x)\hat{K}_2\big|
-\end{equation*}
-We can use the identity to get the $\mathcal{O}(\epsilon^{0})$ contribution of the hypergeometric function
-\begin{equation*}
-(_2F_1)(2,1-\epsilon, 2-2\epsilon, z) = (1-z)^{-1-\epsilon}(_2F_1)(-2\epsilon, 1-\epsilon, 2-2\epsilon, z)
-=(1-z)^{-1-\epsilon}\big(1+\mathcal{O}(\epsilon)\big)
-\end{equation*}
-
-\color{black}
-\fi
-\\

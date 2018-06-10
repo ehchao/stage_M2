@@ -1,5 +1,5 @@
 \section{BCFW on-shell recursion}\label{sect-bcfw}
-Tree-level amplitudes can be computed in using the singularities which appear when a propagator is put on-shell. 
+Tree-level amplitudes can be computed by looking at the singular behavior when a propagator is put on-shell. 
 Due to Britto, Cachazo, Feng and Witten~\cite{BRITTO2005499, PhysRevLett.94.181602}, one can establish a recursion relation for tree-level amplitudes by complex analysis (Cauchy's theorem).
 The main idea is to take the external momenta to be complex and apply well chosen shifts to them.
 This method does not require the knowledge of individual contribution of each diagram.
@@ -21,7 +21,7 @@ We define the shifted momenta
 \end{equation*} 
 It is easy to check that the momentum conservation holds for the shifted momenta and that the shifted momenta are themselves also null vectors.
 We denote by $\hat{A}_n(z)$ the $n$-point amplitude computed in replacing the external momenta $p_i$'s in $A_n$ by the shifted ones. 
-Note that $\hat{A}_n(z)$ is holomorphic and contains only simple poles $z_I$ in $z$\footnote{As one can see from a simple drawing, double or higher poles can not exist since they come from the propagators contained in an amplitude.}.
+Note that $\hat{A}_n(z)$ is holomorphic and contains only simple poles $z_I$ in $z$\footnote{As one can see from a simple drawing, double or higher poles can not exist at tree-level since they come from the propagators contained in an amplitude.}.
 Then, by Cauchy's theorem, the unshifted amplitude $A_n = \hat{A}_n(z=0)$ is related to the shifted one by
 \begin{equation}\label{residue}
 A_n = - \sum_{z = z_I}\res\frac{\hat{A}_n(z)}{z} + B_n
@@ -80,14 +80,14 @@ For this example, we apply a $[1,6\rangle$-shift:
 |\hat{6}\rangle = |6\rangle - z|1\rangle
 \end{equation*}
 As discussed before, the first non-vanishing tree-level amplitudes are the three-point ones. 
-There are thus three possible configuration for the external momenta \wrt the location of the propagator which will be taken on-shell\footnote{One can check that, whenever the shifted momenta $\hat{p}_1$ and $\hat{p}_6$ are put on the same side \wrt the on-shell propagator, there is no pole created.} (cf. figure~\ref{fig_A6nmhv})
+There are thus three possible configuration for the external momenta \wrt the location of the propagator which will be taken on-shell\footnote{One can check that, whenever the shifted momenta $\hat{p}_1$ and $\hat{p}_6$ are put on the same side \wrt the on-shell propagator, there is no pole created.} (cf. figure~\ref{fig_A6nmhv}).
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{A6nmhv.jpg}
   \caption{Possible contributions in the BCFW computation. The momenta $\hat{P}_I$ in the middle of each graphs are taken on-shell, \ie $\hat{P}_I^2=0$}
   \label{fig_A6nmhv}
 \end{figure}
-However, the configuration $b$ in~\ref{fig_A6nmhv} vanishes because it is impossible to find a helicity configuration for the intermediate momentum such that we have non-vanishing amplitudes on each side of it (the first non-vanishing four-point amplitudes are the MHV ones).
+However, the configuration $b$ in figure~\ref{fig_A6nmhv} vanishes because it is impossible to find a helicity configuration for the intermediate momentum such that we have non-vanishing amplitudes on each side of it (the first non-vanishing four-point amplitudes are the MHV ones).
 We are thus left with the configurations $a$ and $c$.
 %
 \paragraph{Configuration $a$}

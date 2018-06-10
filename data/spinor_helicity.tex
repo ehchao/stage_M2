@@ -3,12 +3,11 @@ The spinor-helicity formalism is widely used in amplitude literatures.
 One can refer to~\cite{Dixon:1996wi,Elvang:2013cua} for good introductions\footnote{The convention may change according to the signature}.
 We present some useful properties under the convention used in QCD~\cite{Dixon:1996wi}.
 \\\\
-From a physical point of view, ampitudes should only depend on Lorentz invariant quantities that can be formed from external momenta, \eg the square $p^2$ of a four-vector $p^\mu$.
+From a physical point of view, ampitudes should depend only on Lorentz invariant quantities that can be formed from external momenta, \eg the square $p^2$ of a four-vector $p^\mu$.
 However, in most interesting models, there are not only scalar fields but also particles which have spins. 
 A more suitable representation of the Lorentz group is the two-dimensional spinor representation.
 We can trade a four-dimensional vector for a pair of spinors.
-To be more explicit, let us consider the massless case.
-Consider two spinors $\bar{u}(p)$ and $v(p)$ for an outgoing fermion and an outgoing anti-fermion of momentum $p$.
+To be more explicit, let us consider two spinors $\bar{u}(p)$ and $v(p)$ for an outgoing massless fermion and an outgoing massless anti-fermion of momentum $p$.
 They satisfy the Dirac equation and we can decompose them into two parts of different helicity:
 \begin{equation*}
 v_+(p) = \begin{pmatrix}
@@ -40,6 +39,7 @@ p^{\dot{a}b} = p_\mu(\bar{\sigma^\mu})^{\dot{a}b}
 \quad,\quad
 p_{a\dot{b}} = p_\mu(\sigma^\mu)_{a\dot{b}}
 \end{equation*}
+The $\sigma$'s are the Pauli matrices.
 With a slight abuse of notation, the massless Dirac equation leads to
 \begin{equation*}
 \slashed{p}v_\pm (p) = \slashed{p}|p^\pm\rangle = 0
@@ -83,10 +83,10 @@ For computational purpose, we give here two useful identities
 \end{enumerate}
 These identities can be easily shown.
 For the first one, the properties of the Pauli matrices are used.
-The second one can be derived from the fact that the spinors used here are two-dimensional objects, so a spinor can always be writen as linear combination of two other independent ones.
+The second one can be derived from the fact that the spinors used here are two-dimensional objects, so a spinor can always be written as linear combination of two other independent ones.
 %
 \\\\
-In presence of massless vectors, we can write the corresponding polarization vectors by choosing an arbitrary reference momentum $q$ which is not collinear to the momentum $p_i$ of the vector field:
+In presence of massless vectors, we can write the corresponding polarization vectors by choosing an arbitrary reference momentum $q$ which is not collinear to the momentum $p$ of the vector field:
 \begin{equation*}
 \begin{split}
 & \varepsilon^+_\mu (p, q) = \frac{\langle q | \gamma |p]}{\sqrt{2}\langle qp \rangle}
@@ -104,7 +104,7 @@ To be more precise, an all-gluon QCD $n$-point amplitude at tree-level can be de
 \begin{equation}\label{color-ordered}
 \mathcal{A}_n^{\mathrm{tree}}(g_1, \ldots, g_n) = g'^{n-2}\sum_{\sigma\in\textrm{ permutation of }\{2,\ldots\}} A_n[1,\sigma(2),\ldots,\sigma(n))]\tr(T^{a_1} T^{a_{\sigma(2)}}\ldots T^{a_{\sigma(n)}})
 \end{equation}
-where $g'$ is the coupling constant and the $A_n[\ldots]$'s are the partial amplitudes.
+where $g'$ is the coupling constant, the $T^{a_i}$'s are generators of the gauge group and the $A_n[\ldots]$'s are the partial amplitudes.
 Partial amplitudes are called color-ordered amplitudes since the color configuaration determines the order of the species appearing in the argument.
 As one notices from the definition~\cref{color-ordered}, the cyclicity of the trace implies that color-ordered amplitudes are also cyclic. 
 In this report, we will essentially give examples of all-gluon amplitudes.
@@ -128,10 +128,10 @@ By momentum conservation, we have $p_3^2 = (p_1 + p_2)^2 = \langle 12\rangle[21]
 If we allow complex momenta, the spinor products can be non simultaneously vanishing (since they are not related by complex conjugation any more). 
 As a result, either the square or the angle product vanishes.
 Thus, a 3-point amplitude contains only square products or angle products. 
-Let us take the example of $A_3[1^{-}2^{-}3^{-}]$.
+Let us take the example of $A_3[1^{-}2^{-}3^{+}]$.
 We may write an ansatz for it\footnote{One might construct an ansatz with only square products. However, it should be discarded because it will not give the right dimension.} :
 \begin{equation*}
-A_3[1^{-}2^{-}3^{-}] = c\langle 12 \rangle^{x_{12}}\langle 23 \rangle^{x_{23}}\langle 31 \rangle^{x_{31}}
+A_3[1^{-}2^{-}3^{+}] = c\langle 12 \rangle^{x_{12}}\langle 23 \rangle^{x_{23}}\langle 31 \rangle^{x_{31}}
 \end{equation*}
 \cref{p_splinors} implies that the momentum $p$ remains invariant under the following transformations, called \textbf{little group scaling}\footnote{This rule is valid for spin-0, $\frac{1}{2}$ and 1 particles. 
 For spin-0 ones, the validity of the relation is clear because scalar fields do not scale with the little group scaling.
@@ -162,12 +162,12 @@ A_n[g_1^\pm \ldots g_n^\pm] = A^{\mathrm{tree}}_n[g_1^\pm \ldots g_i^\mp \ldots 
 for $n\geq 4$.
 In other words, when all the external legs have the same helicity or only one is different from the others, the tree-level amplitude vanishes.
 The first class of non-vanishing tree amplitudes is the \textbf{maximally-helicity-violating (MHV)} amplitudes.
-These are amplitudes which break maximally the helicity conservation, having at least two external legs have helicity different from the rest.
+These are amplitudes which break maximally the helicity conservation, having exactly two external legs have helicity different from the rest.
 The MHV gluon amplitudes can be written in a surprisingly simple form
 \begin{equation*}
 \begin{split}
 & A_n[1^+\ldots i^-\ldots j^-\ldots n^+] = 
-\frac{\langle ij \rangle^4]}{\langle 12 \rangle\ldots \langle n1 \rangle}
+\frac{\langle ij \rangle^4}{\langle 12 \rangle\ldots \langle n1 \rangle}
 \\
 & A_n[1^-\ldots i^+\ldots j^+\ldots n^-] = 
 \frac{[ ij]^4}{[ 12 ]\ldots [n1 ]}

@@ -1,4 +1,4 @@
-\documentclass[11pt, oneside]{report}   	% use "amsart" instead of "article" for AMSLaTeX format
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 %notitlepage puts the abstracts in different languages on the same page
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
@@ -13,6 +13,7 @@
 \usepackage{amsthm}
 \usepackage{enumitem}
 \usepackage{mathrsfs}
+\usepackage[toc,page]{appendix}
 %\usepackage{bbold}
 \usepackage{hyperref}
 %\usepackage{cleveref}
@@ -81,6 +82,7 @@
 \include{data/A5_N=4_MHV}
 \include{data/triple_cut}
 \include{data/rational_term}
+\include{data/conclusion}
 %\include{data/bddk_n=4sym}
 %\include{data/cutkosky}
 %\include{data/1m_triangle_cut}
@@ -88,9 +90,10 @@
 %\include{data/2m_easy_box_cut}
 %\include{data/0m_box_integral}
 \appendix
+%\begin{appendices}
 \include{data/appendix-omega11}
 \include{data/formulae}
-
+%\end{appendices}
 
 
 
