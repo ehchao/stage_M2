@@ -19,9 +19,9 @@ The most general expression for a cut amplitude takes the form
 (2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2)\Big(\mathrm{Inf}_t(A_1A_2A_3)(t) + \sum_{\textrm{$t_j$ poles}}\frac{\res_{t = t_j}A_1 A_2 A_3}{t-t_j}\Big)
 \end{equation}
 where the $A$'s are tree amplitudes and the first term on the right-hand side is a polynomial in $t$ defined by
-\begin{equation*}
+\begin{equation}
 \lim_{t\rightarrow\infty}\big([\mathrm{Inf}_tA_1A_2A_3](t) - A_1A_2A_3(t)\big) = 0
-\end{equation*}
+\end{equation}
 In most of cases, the propagators of the type $\frac{1}{(l-P)^2}$ contain two poles that can be expressed in terms of $t$. 
 The second part of~\cref{tricut} can hence be considered as contributions of cut boxes. 
 As a result, the information on the bubble and triangle contributions is only contained in the first term on the \rhs of~\cref{tricut}.
@@ -29,9 +29,9 @@ According to Forde, we can choose a parametrization such that only the constant 
 %
 \\\\
 Consider a triple cut leading to the constraints\footnote{Here we take $-K_2$ instead of $K_2$ in the triangle diagram of figure~\ref{tricut}, which is the choice used in Forde's original paper.}
-\begin{equation*}
+\begin{equation}
 l^2 = (l-K_1)^2 = (l - K_2)^2 = 0
-\end{equation*}
+\end{equation}
 One can construct two null vectors $K_1^\flat$ and $K_2^\flat$ from the external momenta $K_1$ and $K_2$ 
 \begin{equation}\label{k_flat}
 K_1^\flat = K_1 - \frac{S_1}{\gamma}K_2^\flat \quad\quad
@@ -51,15 +51,15 @@ In terms of the spinor components, the constraints require
 [ l | = \frac{\alpha_{02}}{t}[ K_1^\flat| + [ K_2^\flat|
 \end{equation}
 where
-\begin{equation*}
+\begin{equation}
 \alpha_{01} = \frac{S_1(\gamma S_2)}{\gamma^2 - S_1S_2}\quad \quad
 \alpha_{02} = \frac{S_2(\gamma S_1)}{\gamma^2 - S_1S_2}
-\end{equation*}
+\end{equation}
 %
 and, as a four-vector,
-\begin{equation*}
+\begin{equation}
 l^\mu = \alpha_{02} K_1^{\flat,\mu} + \alpha_{01}K_2^{\flat,\mu} + \frac{t}{2}\langle K_1^\flat | \gamma^\mu |K_2^\flat] + \frac{\alpha_{01}\alpha_{02}}{2t}\langle K_2^\flat|\gamma^\mu |K_1^\flat]
-\end{equation*}
+\end{equation}
 %
 Now, we can use an argument similar to the one in~\cite{Ossola:2006us} on the spurious term to find the vanishing integrals.
 \color{red}Appendix ?\color{black}
@@ -68,9 +68,9 @@ Now, we can use an argument similar to the one in~\cite{Ossola:2006us} on the sp
 \iffalse
 To illustrate this argument, we consider the case of a rank-1 3-point-like integral. 
 By simple arguments on the rank and the dependence on external momenta, 
-\begin{equation*}
+\begin{equation}
 \int\dd^D q \frac{q^\mu}{D_0(q)D_1(q+p_1)D_2(q+p_2)} = c_1p_1^\mu + c_2p_2^\mu
-\end{equation*}
+\end{equation}
 If we contract the above relation with a vector $v^\mu$ orthogonal to $p_1$ and $p_2$, we obtain a vanishing integral.
 $q\cdot v$ is hence a spurious term.
 The same technique can be applied to show that $(q\cdot v)^n$ is spurious for any $n>0$. 
@@ -102,23 +102,23 @@ Contrary to the previous case, we will have two free parameters $y$ and $t$.
 \end{split}
 \end{equation}
 We parametrize the loop momentum $l$ by
-\begin{equation*}
+\begin{equation}
 l^\mu = yK_1^{\flat,\mu} + \frac{S_1}{\gamma}(1-y)\chi^\mu + \frac{t}{2}\langle K_1^\flat|\gamma^\mu|\chi] + \frac{S_1}{2\gamma}\frac{y}{t}(1-y)\langle \chi|\gamma^\mu|K_1^\flat]
-\end{equation*}
+\end{equation}
 where
-\begin{equation*}
+\begin{equation}
 K_1^\flat = K_1 - \frac{S_1}{\gamma}\chi^\mu ,\quad
 \gamma = \langle \chi | \slashed{K}_1^\flat|\chi]
-\end{equation*}
+\end{equation}
 and $\chi$ is an arbitrary null vector (non-collinear to $K_1$).
 \\
 As in the triangle case, we can use $\langle K_1^\flat| \slashed{K}_1|\chi] = \langle K_1^\flat|\slashed{K}_1 | \gamma^\mu|\chi]\langle K_1^\flat|\gamma_\mu|\chi]= 0$ to show that
-\begin{equation*}
+\begin{equation}
 \int\dd t\dd y J_{t,y}t^n = \int \dd t \dd y \big(\frac{y}{t}\big)^n(1-y)^n = 0
 \quad\Rightarrow\quad
 \int \dd t \dd y J_{t,y}t^n = 0
 \quad\textrm{for}\quad n\neq 0
-\end{equation*} 
+\end{equation} 
 From the Passarino-Veltman reduction, we are able to conclude that all integrands of the type $t^0y^m$ are non-vanishing, which makes difference \wrt the triple cut case. 
 Naively, one might think that the bubble coefficients come from the first term of~\cref{2-part_cut}.
 However, the loop momentum parametrization that has been used leads to more non-vanishing terms than in the triple cut case. 
@@ -126,28 +126,28 @@ Furthermore, the second and the third terms in~\cref{2-part_cut} can be reduced 
 In order to relate the contribution to the bubble coefficient of the residue piece, we apply an additional constraint: $(l+K_2)^2=0$ to the two-particle cut.
 This will then fix the free parameter $y$.
 The integral will then take the form
-\begin{equation*}
+\begin{equation}
 (2\pi)^3\int \dd t \dd y J_t'\big(\delta(y-y_+) + \delta(y-y_-)\big) \mathcal{M}(y,t) = -2(2\pi)^2 i \int \dd t \dd y J_{t,y}\mathrm{Res}_{y = y_{\pm}}\frac{\mathcal{M}(y,t)}{(l+K_2)^2}
-\end{equation*}
+\end{equation}
 where $\mathcal{M}(y,t)$ is a general cut integral and $J_t'$ a function of $t$.
 Therefore, the residue contributions are, up to a factor of $-\frac{1}{2}$, given by the triple cut.
 As discussed in the previous subsection, the $t^0$ contribution in the triple cut gives the triangle coefficients ant the other terms in power of $t$ give the scalar bubble coefficients.
 \\\\
 We will just list here the final result without giving computational details which involve calculations of non-vanishing integrals and reduction techniques.
 The bubble coefficient is given by
-\begin{equation*}
+\begin{equation}
 b = -i[\Inf_t[\Inf_y A_1 A_2](y)](t)\big|_{t\rightarrow 0 , y^m\rightarrow \frac{1}{m+1}}
 -\frac{1}{2}\sum_{C_{\mathrm{tri}}}[\Inf_t A_1A_2A_3](t)\big|_{t^j\rightarrow T(j)}
-\end{equation*}
+\end{equation}
 where the subscripts indicate the substitutions to be done and $T(j)$ is given in eq.(5.26) of~\cite{Forde:2007mi}. 
 The second term above is summed over all possible triangle configurations.
 \\\\
 %%%%%% not used
 \iffalse
 As an example, let us cite briefly how the two-mass linear triangle
-\begin{equation*}
+\begin{equation}
 (2\pi)^2\int\dd^4 l \prod_{i=0}^1\delta(l_i^2)\frac{\langle K_2|\slashed{l}|K_1]}{(l+K_2)^2}
-\end{equation*}
+\end{equation}
 is treated in~\cite{Forde:2007mi}:
 \begin{enumerate}
 \item Do a two-particle cut. We will then get two terms in the integrand: one in $y^0$ and a residual term. The term in $y^0$ gives us a contribution to the bubble coefficients; while the residual term means that a triple cut is needed to get the contributions to the bubble and triangle contributions.
@@ -173,19 +173,19 @@ This example is given in~\cite{Forde:2007mi}.
 First, we have to compute the tree-level four-point amplitude $A_4[1^{h_1}2^{h_2}3^{h_3}4^{h_4}]$. 
 Contrary to non-abelian theories, the four-photon amplitude vanishes at tree-level in QED.
 Thus, the relevant four-point amplitudes are following ones which containt two photons and two fermions
-\begin{equation*}
+\begin{equation}
 A_4^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 \quad,\quad
 A_4^{\mathrm{tree}}(\bar{f}_1^+ f_2^- \gamma_1^-\gamma_2^+)
-\end{equation*}
+\end{equation}
 Recall that the polarization vectors contracted with the $\gamma$-matrices are represented by\footnote{This can be shown using the expression given previously and the Fierz identity.}
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & \slashed{\epsilon}_+(p,k) = -\frac{\sqrt{2}}{\langle kp\rangle}\big(|p]\langle k| + |k\rangle[p|\big)
 \\
 & \slashed{\epsilon}_-(p,k) = \frac{\sqrt{2}}{[kp]}\big(|p\rangle [k| + |k]\langle p|\big)
 \end{split}
-\end{equation*}
+\end{equation}
 We denote the out-going fermion momenta by $q_i$ and the out-going photon momenta by $p_i$. 
 A direct Feynman diagram computation gives\footnote{Recall that we take all the particles out-going in our convention.}
 \begin{figure}[h]
@@ -195,7 +195,7 @@ A direct Feynman diagram computation gives\footnote{Recall that we take all the 
   \label{fig-qed}
 \end{figure}
 %
-\begin{equation*}
+\begin{equation}
 \begin{split}
 A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+) 
 = &
@@ -210,7 +210,7 @@ A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 \big( -|p_2]\langle p_2| - |q_1]\langle q_1|\big)
 \frac{\sqrt{2}}{[k', p_1]}|k'\rangle [p_1, q_2]
 \end{split}
-\end{equation*}
+\end{equation}
 The first term corresponds to the $u$-channel (cf. figure~\ref{fig-qed}) and the second one $s$-channel.
 By choosing the reference momentum $k'$ to be $q_1$, the second term above vanishes. 
 We can choose $k = q_2$ and get 
@@ -250,25 +250,25 @@ A_4^{\mathrm{tree}}(\bar{f}_2^- f_3^+3^-4^+)
 where $l_i$ stands for momentum of the outgoing fermion $f_i$.
 Under the triple cut parametrization,~\cref{triple_cut_1} and~\cref{triple_cut_2} lead to the same contribution. 
 In fact, the ratio of~\cref{4pt_qed1} to~\cref{4pt_qed2} gives
-\begin{equation*}
+\begin{equation}
 \frac{[42]^2}{[23][31]}\frac{\langle 41\rangle\langle 24\rangle}{\langle 32 \rangle^2} = \frac{\langle 31\rangle[42]}{\langle 32 \rangle[41]} 
-\end{equation*} 
+\end{equation} 
 Hence the ratio of~\cref{triple_cut_1} to~\cref{triple_cut_2} is
-\begin{equation*}
+\begin{equation}
 \frac{[4l_2]\langle 3l_3\rangle}{[4l_3]\langle 3l_2\rangle}
 \frac{[6l_1]\langle 5l_2\rangle}{[6l_2]\langle 5l_1\rangle}
 \frac{[2l_3]\langle 1l_1\rangle}{[2l_1]\langle 1l_3\rangle}
-\end{equation*}
+\end{equation}
 Since the contribution to triangle coefficient is given by taking the $\Inf$ of~\cref{triple_cut_1} and~\cref{triple_cut_2}, we are interested in the $\Inf$ part of the above under the parametrization~\cref{l_param}, which gives
-\begin{equation*}
+\begin{equation}
 \Inf\Big(\frac{([4K_2^\flat] + \frac{\alpha_{12}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{21}\langle 3K_2^\flat\rangle)}{([4K_2^\flat] + \frac{\alpha_{22}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{11}\langle 3K_2^\flat\rangle)}(\ldots)\Big)
 = 1
-\end{equation*} 
+\end{equation} 
 %
 Thus, the total contribution is twice of~\ref{triple_cut_1}, or in a more explicit form using~\cref{l_param}\footnote{
 Note that here we apply an offset of one to the indices \wrt the previous notation.
 }
-\begin{equation*}
+\begin{equation}
 \begin{split}
 -32ie^6 & \frac{(t\langle K_1^\flat 1 \rangle + \alpha_{01}\langle K_2^\flat 1\rangle)^2
 (t\langle K_1^\flat 5 \rangle + \alpha_{11}\langle K_2^\flat 5\rangle)^2
@@ -285,12 +285,12 @@ Note that here we apply an offset of one to the indices \wrt the previous notati
 (t\langle K_1^\flat 4 \rangle + \alpha_{21}\langle K_2^\flat 4 \rangle)
 }
 \end{split}
-\end{equation*}
+\end{equation}
 As a last step, we obtain the triangle coefficient by taking the $\Inf$ of the above and average over all possible solution for the $\gamma_\pm$~\cref{sol_for_gamma}
-\begin{equation*}
+\begin{equation}
 16ie^6\sum_{\gamma_\pm}\frac{\langle K_1^\flat 1 \rangle^2\langle K_1^\flat 5\rangle^5 \langle K_1^\flat 3 \rangle^2}{\langle K_1^\flat 2 \rangle^2\langle K_1^\flat 6\rangle^2 \langle K_1^\flat 4 \rangle^2}
-\end{equation*}
-Substituting $K_1^\flat$ by its expression~\cref{k_flat}, we obtain an agreement with~\cite{Forde:2007mi}.
+\end{equation}
+Substituting $K_1^\flat$ by its expression~\cref{k_flat}, we obtain an agreement with the result found in~\cite{Forde:2007mi}.
 
 
 

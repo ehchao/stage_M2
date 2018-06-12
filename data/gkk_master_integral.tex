@@ -26,7 +26,7 @@ I_n[P(l)] =
 where $P$ is a polynomial in $l$.
 Let us begin with integrals with high multiplicity, with five or more external legs.
 In this case, we can use the Gram determinant defined as
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & G\begin{pmatrix}
 p_1,\ldots, p_l \\
@@ -39,29 +39,29 @@ p_1,\ldots, p_l \\
 p_1,\ldots, p_l 
 \end{pmatrix}
 \end{split}
-\end{equation*} 
+\end{equation} 
 to reduce the integral.
 In fact, the Gram determinant vanishes if either $\{p_i\}$ or $\{q_i\}$ are linearly dependent.
 One can expand each of the four-vectors $v^\mu$ in a basis of four chosen external momenta (\ie , the $K_i$'s in~\cref{generic_loop_int}) $\{b_i\}_{i=1\ldots 4}$ with the help of Gram determinants.
 At one-loop, the terms $l\cdot b_i$ are reducible since we can write them as differences between terms appearing in the denominator of~\cref{generic_loop_int}.
 They will lead to a sum of integrals with fewer propagators or fewer powers in $l$. 
 In other words, 
-\begin{equation*}
+\begin{equation}
 I_n[(l\cdot v)^n] \rightarrow I_{n-1}[(l\cdot v)^{n-1}]\oplus I_n[(l\cdot v)^{n-1}]
-\end{equation*}
+\end{equation}
 To prove our statement, we have to compute the contribution of five- or higher-point integrals with trivial numerator. 
 We will show that they are of the order $\mathcal{O}(\epsilon)$.
 Let us first consider the reduction of six- or higher-point integrals, which can be done to all orders in $\epsilon$. 
 \\\\
 Since the external momenta are taken in four-dimensional,
 we can write the following equation involving the Gram determinant for the loop momentum $l$ and five other external momenta (denoted only by numbers) 
-\begin{equation*}
+\begin{equation}
 G\begin{pmatrix}
 l & 1 & 2 & 3 & 4\\
 5 & 1 & 2 & 3 & 4 
 \end{pmatrix}
  = 0
-\end{equation*}
+\end{equation}
 Accordingly, by~\cref{generic_loop_int}
 \begin{equation}\label{gram_induction}
 I_n\Big[G\begin{pmatrix}
@@ -79,9 +79,9 @@ As a result,~\cref{gram_induction} will give us a relationship between an $n$-po
 As for the five-point scalar integral, there might be a worry about the $\mathcal{O}(\epsilon^0)$ term or even the divergent terms.
 However, divergences appear only when the loop momentum $l$ is soft or collinear to one of the external momenta according to~\cref{generic_loop_int}, where the five-point Gram determinant also vanishes. 
 We conclude that
-\begin{equation*}
+\begin{equation}
 I_5[G(l,1,2,3,4)] = \mathcal{O}(\epsilon)
-\end{equation*}
+\end{equation}
 Hence, the five-point integral can also be reduced by expanding the Gram determinant into the lower order ones.
 The reduction of five- or higher-point integrals are given explicitly in~\cite{Gluza:2010ws}.
 %

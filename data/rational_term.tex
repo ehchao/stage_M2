@@ -7,32 +7,32 @@ Badger gives a systematic way to extract rational terms by using cuts~\cite{Badg
 \\\\
 We focus on the relationship between the $D = 4-2\epsilon$ dimensional representation and that associated with an effective mass $\mu^2$~\cite{Mahlon:1993si}.
 We decompose the loop-momentum as
-\begin{equation*}
+\begin{equation}
 l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
-\end{equation*}
+\end{equation}
 where $\bar{l}$ is the four-dimensional component and $l_{[-2\epsilon]}$ is the remaining $-2\epsilon$ dimensional part.
 Using the $D$-dimensional Passarino-Veltman reduction, we are able to reduce any amplitude on a basis of saclar integrals with rational coefficients
-\begin{equation*}
+\begin{equation}
 A_n^{(1),D} = \sum_{K_5} \tilde{C}_{5,K_5}(D) I^D_{5,K_5}
 +\sum_{K_4} \tilde{C}_{4,K_4}(D) I^D_{4,K_4}
 +\sum_{K_3} C_{3,K_3}(D) I^D_{3,K_3}
 +\sum_{K_2} C_{2,K_2}(D) I^D_{2,K_2}
 +C_1(D)I_1^D
-\end{equation*}
+\end{equation}
 where the terms $I_m$ represent $m$-point integrals and the summations are over all possibile configurations.
 In any renormalizable gauge theory, the maximal rank of an $n$-point tensor integral appearing in the amplitude is $n$.
 Hence, for the box functions, we can have up to $\mu^4$ in the coefficient and up to $\mu^2$ in the triangle.
 \\
 The integration measure can be split in the following way
-\begin{equation*}
+\begin{equation}
 \int\frac{\dd^D l}{(2\pi)^D} = 
 \int\frac{\dd^{-2\epsilon}(\mu^2)}{(2\pi)^{-2\epsilon}}\int\frac{\dd^4 \bar{l}}{(2\pi)^4}
-\end{equation*}
+\end{equation}
 As explained in~\cite{Bern:1995db}, the integral of the type
-\begin{equation*}
+\begin{equation}
 \int\frac{\dd^{4-2\epsilon} l}{(2\pi)^{4-2\epsilon}} (\mu^2)^rf(
 \bar{l}^\nu,\mu^2) 
-\end{equation*}
+\end{equation}
 can be computed in the following fashion
 \begin{equation}\label{formula_for_mu}
 \begin{split}
@@ -48,34 +48,34 @@ can be computed in the following fashion
 \end{split}
 \end{equation}
 Based on~\cref{formula_for_mu} and the resursion relations given in~\cite{Bern:1993kr}, we can write down the amplitude up to the order $\mathcal{O}(\epsilon)$ in $D = 4-2\epsilon$ dimension as
-\begin{equation*}
+\begin{equation}
 A_n^{(1),D} = \sum_{K_4}C_{4,K_4} I_{4,K_4}^{D} +
 \sum_{K_3}C_{3,K_3} I_{3,K_3}^{D}+
 \sum_{K_2}C_{2,K_2} I_{2,K_2}^{D}+
 C_1 I_1^{D} + R_n + \mathcal{O}(\epsilon)
-\end{equation*}
+\end{equation}
 where $R_n$ is the rational term. It comes from the $-2\epsilon$-dimsional component.
 \\
 Explicitly,
-\begin{equation*}
+\begin{equation}
 R_n = -\frac{1}{6}\sum_{K_4}C_{4,K_4}^{[4]} - \frac{1}{2}\sum_{K_3}C_{3,K_3}^{[2]} - 
 \frac{1}{6}\sum_{K_2}\big(K_2^2 - 3(m_1^2 + m_2^2)\big)C_{2,K_2}^{[2]}
-\end{equation*}
+\end{equation}
 The terms $C_m^{[k]}$ in $R_n$ come from the coefficients of the $m$-point integral with $\mu^k$ appearing at the numerator of the integrand in the $\epsilon\rightarrow 0 $ limit.
 We can extract these terms by applying cuts. 
 The on-shell condition to impose will become
-\begin{equation*}
+\begin{equation}
 \bar{l}_1^2 = \mu^2
-\end{equation*}
+\end{equation}
 \ie the cut propagators are now massive.
 %
 %
 \subsection{Coefficients $C_{4, K_4}^{[4]}$}
 It can be shown that, in using Forde's formalism~\cite{Forde:2007mi}, we can ignore the pentagon coefficient entirely.
 We may choose to parametrize the four-momentum $\bar{l}$ by
-\begin{equation*}
+\begin{equation}
 \bar{l} = a K_4^\flat + bK_1^\flat + c|K_4^\flat\rangle [K_1^\flat| + d|K_1^\flat\rangle[K_4^\flat|
-\end{equation*}
+\end{equation}
 where
 \begin{equation}\label{param_rat_box}
 K_4^\flat = \frac{\gamma_{14}(\gamma_{14}K_4 - S_4K_1)}{\gamma_{14}^2 - S_1S_4}
@@ -88,7 +88,7 @@ for $S_i = K_i^2$.
 We then apply a quadruple cut.
 The four on-shell conditions then fix the coefficients $a,b,c,d$.
 The quadruple cut can be expanded as
-\begin{equation*}
+\begin{equation}
 \begin{split}
 (4\pi)^{D/2}\int\frac{\dd^D l}{(2\pi)^D}(-2\pi i)^4 & \prod^4_{i=1}\delta(l_i^2)A_1A_2A_3A_4
 \\
@@ -96,20 +96,20 @@ The quadruple cut can be expanded as
 \sum_{\sigma}\Big(\Inf_{\mu^2}[A_1 A_2 A_3 A_4(\bar{l})] 
 + \sum_{\textrm{poles $\{i\}$}}\frac{\res_{\mu^2 = \mu_i^2}\big(A_1A_2A_3A_4(\bar{l}^\sigma)\big)}{\mu^2 - \mu_i^2}\Big)
 \end{split}
-\end{equation*}
+\end{equation}
 where $\sum_\sigma$ means the summation over all the solutions under the on-shell conditions. 
 The second term above can be regarded as a sum of a $(D + 2)$-dimensional pentagon contribution plus the boundary term for the box coefficient.
 Also, we can show by a straitforward computation that they do not contribute to the rational term. 
 Thus, by analogy to the quadruple cut for extracting box coefficient, the coefficient $C_4^{[4]}$ is given by
-\begin{equation*}
+\begin{equation}
 C_4^{[4]} = \frac{i}{2}\sum_{\sigma}\Inf_{\mu^2}[A_1A_2A_3A_4(\bar{l}^\sigma)]\big|_{\mu^4}
-\end{equation*}
+\end{equation}
 where the subscription means the extraction of the coefficient of $\mu^4$ in the expression.
 %
 %
 \subsection{Coefficients $C_{3,K_{3}}^{[2]}$}
 Consider a triply cut integral
-\begin{equation*}
+\begin{equation}
 \begin{split}
 \int \dd^{-2\epsilon}\mu \int \dd^4\bar{l}\prod_{i=1}^3\delta(\bar{l}_i^2 - \mu^2)A_1A_2A_3
 = &
@@ -120,45 +120,45 @@ Consider a triply cut integral
 + \sum_i\frac{\res_{\mu^2 = \mu_i^2(\Inf_t[A_1A_2A_3])}}{\mu^2 -\mu_i^2}
 +\sum_{i,j}\frac{\res{\mu^2 = \mu_i^2}\big(\res_{t=t_i}(A_1A_2A_3)\big)}{(t-t_i)(\mu^2 - \mu_j^2)}
 \end{split}
-\end{equation*}
+\end{equation}
 where the summations are over poles.
 As discussed in the usual triple cut case, the second and fourth terms contribute to the scalar box coefficient and the third term vanishes as in the previous case.
 We can choose to parametrize $l$ by
-\begin{equation*}
+\begin{equation}
 \bar{l} = a K_3^\flat + bK_1^\flat + c|K_3^\flat\rangle [K_1^\flat| + d|K_1^\flat\rangle[K_3^\flat|
-\end{equation*}
+\end{equation}
 where the null vectors $K_{1,3}^\flat$ are constructed in the same way as~\cref{param_rat_box} (up to a substitution $4\leftrightarrow 3$).
 Under this parametrization, only the $t^0$ term in $\Inf_tA_1A_2A_3$ leads to non-zero contribution (analog to the four-dimensional case).
 Therefore, the leading $\mu^2$ dependence of the triangle can be completely determined by 
-\begin{equation*}
+\begin{equation}
 C_3^{[2]} = \frac{1}{2}\sum_\sigma\Inf_{\mu^2}[\Inf_t[A_1A_2A_3(\bar{l}^\sigma)]\big|_{t^0}]\big|{\mu^2}
-\end{equation*}
+\end{equation}
 %
 %
 \subsection{Coefficient $C_{2,K_{2}}$}
 The coefficients $C_{2,K_{2}}$ can also be extracted in using the following parametrization
-\begin{equation*}
+\begin{equation}
 \bar{l} = y K_1^\flat + \frac{S_1(1-y)}{\gamma}\chi + t|K_1^\flat\rangle[\chi| 
 +\big(y(1-y)S_1 - \mu^2\big)\frac{|\chi\rangle[K_1^\flat}{\gamma t}
-\end{equation*}
+\end{equation}
 where $\chi$ is an null vector and 
-\begin{equation*}
+\begin{equation}
 K_1^\flat = K_1 - \frac{S_1}{\gamma}\chi
 \quad,\quad
 \gamma = 2K_1\cdot\chi
-\end{equation*}
+\end{equation}
 Again, if we decompose the cut integral as before, we will find (the computation of these terms are analog to the four-dimensional case)
-\begin{equation*}
+\begin{equation}
 C_2^{[2]} = C_2^{\mathrm{bub}[2]} + \sum_{K_3}C_2^{\mathrm{tri}(K_3)[2]}
-\end{equation*}
+\end{equation}
 where
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & C_2^{\mathrm{bub}[2]} = -i\Inf_{\mu^2}[\Inf_t[\Inf_y A_1 A_2(\bar{l}(y,t,\mu^2))]]]\big|_{\mu^2,t^0,y^i\rightarrow Y_i}
 \\
 & C_2^{\mathrm{tri}(K_3)[2]} = -\frac{1}{2}\sum_{\sigma}\Inf_{\mu^2}[\Inf_tA_1A_2A_3^{K_3}(\bar{l}, t, \mu^2)]]\big|_{\mu^2,t^i\rightarrow T_i}
 \end{split}
-\end{equation*}
+\end{equation}
 where $T_i$ and $Y_i$ can be found in~\cite{Kilgore:2007qr}.
 
 

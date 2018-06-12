@@ -10,10 +10,12 @@ The cut integral is given by
  \int\frac{\dd^{D-1}l_2}{(2\pi)^{D-1}}
 \frac{(2\pi)^D\delta^{D}(l_1 + l_2 - K_1- K_2)}{8(l_1\cdot K_2)(2l_1\cdot K_3 + (K_3)^2)l_1^0 l_2^0} 
 \\
+\iffalse
  = & 
 \int\frac{\dd^{D-1}l_1}{(2\pi)^{D-2}} 
 \frac{\delta(l_1^0 + l_2^0 - K_1^0 - K_2^0)}{8 l_1^0 l_2^0 (2l_1\cdot K_3 + (K_3)^2)(l_1\cdot K_2)}
 \\
+\fi
  = & \int\frac{|\vec{l}_1|^{D-2} \dd |\vec{l}_1|}{(2\pi)^{D-2}(2l_1^0 K_2^0)(K_{12}^0)^2}
 \frac{\dd \Omega_{D-1} \delta(l_1^0 + l_2^0 - K^0_{12})}{(2l_1^0 K_3^0 - 2l_1^0 \hat{l}\cdot\vec{K_3} + (K_3)^2)(1-\hat{l}\cdot \hat{K}_2)}
 \end{split}
@@ -40,16 +42,13 @@ we have
 \end{split}
 \end{equation}
 where 
-\begin{equation*}
+\begin{equation}
 a := \frac{|\vec{K}_3|K_{12}^0}{(K_3)^2 + K_{12}^0 K_3^0}
 = \frac{K_{12}^2}{\big((K_3)^2 + K_{12}\cdot K_3\big)^2}\Big( -K_3^2 + \frac{(K_2\cdot K_3)^2}{K_{12}^2}\Big)
-\end{equation*}
-In fact, 
-\begin{equation*}
-a = 1
-\end{equation*}
+=1
+\end{equation}
 This can be verified by computing
-\begin{equation*}
+\begin{equation}
 \begin{split}
 1-a^2 = &
 \frac{1}{\big((K_3)^2 + K_{12}\cdot K_3\big)^2}
@@ -64,7 +63,7 @@ This can be verified by computing
 \\
 = & 0
 \end{split}
-\end{equation*}
+\end{equation}
 and $a>0$.
 \\
 A way to evaluate~\cref{omega11} is given in~\cite{Somogyi:2011ir} (in the two-denominator massless case, eqn.(49) of the reference), where some non-trivial relationships of Mellin-Barnes representations of a hypergeometric function are used.
@@ -72,9 +71,9 @@ We will simply cite the result here.
 The proof of~\cref{omega11} following~\cite{Somogyi:2011ir} will be given in Appendix~\ref{appendix-omega11}.
 \\
 Let 
-\begin{equation*}
+\begin{equation}
 v = \frac{1}{2}(1-\cos\psi)
-\end{equation*}
+\end{equation}
 we have
 \begin{equation}\label{omega11}
 \begin{split}
@@ -93,10 +92,10 @@ we have
 \end{split}
 \end{equation}
 In terms of the kinematic invariants
-\begin{equation*}
+\begin{equation}
 \begin{split}
 v= &
-\frac{1}{2}\Big( 1 - \frac{1}{K_3\cdot K_4}\frac{K_{12}^2}{K_{12}\cdot K_2}\big(K_2\cdot K_3 - \frac{(K_3\cdot K_{12})(K_2\cdot K_{12})}{K_{12}^2} \Big)
+\frac{1}{2}\Big( 1 - \frac{1}{K_3\cdot K_4}\frac{K_{12}^2}{K_{12}\cdot K_2}\big(K_2\cdot K_3\big) - \frac{(K_3\cdot K_{12})(K_2\cdot K_{12})}{K_{12}^2} \Big)
 \\
 = &
 \frac{1}{2}\frac{1}{(K_3\cdot K_4)(K_1\cdot K_2)}
@@ -109,10 +108,10 @@ v= &
 = &
 \frac{st - K_1^2K_3^2}{(s-K_1^2)(s-K_3^2)}
 \end{split}
-\end{equation*}
+\end{equation}
 %
 All taken into account, we have
-\begin{equation*}
+\begin{equation}
 \begin{split}
 \Delta I_4 = & -\frac{1}{2}\big(\frac{K_{12}^0}{2}\big)^{2-2\epsilon}\frac{1}{(2\pi)^{2-2\epsilon}}\frac{1}{s (K_{12}\cdot K_2)}2^{1-2\epsilon}\frac{1}{(-K_3\cdot K_4)}\pi^{1-\epsilon} \frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}
 \frac{1}{v}\Big(\frac{1}{\epsilon} + \ln v + \mathcal{O}(\epsilon)\Big)
@@ -121,8 +120,8 @@ All taken into account, we have
 \frac{1}{\epsilon} + \ln\big(1-\frac{K_1^2K_3^2}{st}\big)
 -\ln\big(1-\frac{K_1^2}{s}\big) - \ln\big(1-\frac{K_3^2}{s}\big) + \ln\big(\frac{t}{s}\big)\Big)
 \end{split}
-\end{equation*}
+\end{equation}
 The first factor of $\frac{1}{2}$ comes from the delta function in the last line of~\cref{cuti4}.
-This expression is exactly the branch cut across $s < 0 $ of $I_4$ given in~\cref{i4bdk}. \\\\
+This expression matches the branch cut across $s < 0 $ of $I_4$ to the order of $\mathcal{O}(\epsilon^0)$ given in~\cref{i4bdk}. \\\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

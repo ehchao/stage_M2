@@ -1,5 +1,5 @@
-The 2-mass easy box integral with massless internal lines in $D=4-2\epsilon$ dimension corresponds to the integral (cf. right of figure~\ref{fig-cutkosky})
-\begin{equation*}
+Using a Feynman parametrization, the 2-mass easy box integral with massless internal lines in $D=4-2\epsilon$ dimension corresponds to the integral (cf. right of figure~\ref{fig-cutkosky})
+\begin{equation}
 \begin{split}
 I_4 & = \int\frac{\dd^D l }{(2\pi)^D}\frac{1}{ l^2(l-K_1)^2(l+K_4)^2 (l-K_{12}^2)}
 \\
@@ -8,58 +8,51 @@ I_4 & = \int\frac{\dd^D l }{(2\pi)^D}\frac{1}{ l^2(l-K_1)^2(l+K_4)^2 (l-K_{12}^2
 \int
 \frac{\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)}{\big[\alpha_1(l-K_1)^2 + \alpha_2(l+K_4)^2 + \alpha_3 (l-K_{12}^2) + \alpha_4\big]^4}
 \\
-&=
-3!\times\int\frac{\dd^D l }{(2\pi)^D}
-\int
-\frac{\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)}{\big[l^2 + \alpha_1\alpha_2 t + \alpha_3\alpha_4 s
--\alpha^2 K_1 - \alpha_3^2s + 2\alpha_1\alpha_4 - 2\alpha_1\alpha_3K_{12}\cdot K_1 + 2\alpha_2\alpha_3 K_{12}\cdot K_4
-\big]^4}
-\\
 &= \frac{i\Gamma(2+\epsilon)}{(4\pi)^{2-\epsilon}}\int\prod_{i=1}^4\dd\alpha_i \delta(\sum_{i=1}^4\alpha_i -1)\frac{1}{(-\alpha_1\alpha_2 t - \alpha_3\alpha_4 s 
 -\alpha_1\alpha_4 K_1^2 - \alpha_2\alpha_3 K_{3}^2)^{2+\epsilon}}
 \end{split}
-\end{equation*}
+\end{equation}
 where
-\begin{equation*}
+\begin{equation}
 s=K_{12}^2 \quad\mathrm{and}\quad t=K_{14}^2
-\end{equation*}
+\end{equation}
 Use the following change of variables
-\begin{equation*}
+\begin{equation}
 \alpha_1 = xy \quad
 \alpha_2 = z(1-y)\quad
 \alpha_3 = y(1-x)\quad
 \alpha_4 = (1-y)(1-z)
-\end{equation*}
+\end{equation}
 the above integral can be written as
-\begin{equation*}
+\begin{equation}
 I_4 = \frac{i\Gamma(2+\epsilon)}{(4\pi)^{2-\epsilon}} I
-\end{equation*}
+\end{equation}
 where
 \begin{equation}\label{box_int_I}
 I = \int\dd x\dd y \dd z y^{-1-\epsilon}(1-y)^{-1-\epsilon}s^{-2-\epsilon}
 \frac{1}{(-1 + A_1 x + A_3 z + C xz)^{2+\epsilon}}
 \end{equation}
 and
-\begin{equation*}
+\begin{equation}
 \chi = \frac{t}{s}\quad, \quad
 A_1 = 1 - \frac{K_1^2}{s}\quad, \quad
 A_3 = 1 - \frac{K_3^2}{s} \quad,\quad
 C = -1 - \chi  + \frac{K_1^2}{s} + \frac{K_3^2}{s}
-\end{equation*}
+\end{equation}
 The $y$ integral will give us a Beta function.
 Let us focus on the $x$ and $z$ dependent part of~\cref{box_int_I}.
 After integrating over $x$, we are left with 
-\begin{equation*}
+\begin{equation}
 J = \frac{1}{1+\epsilon}\Big(\int^1_0\dd z\frac{1}{(Cz + A_1)[-1 + A_3z]^{1+\epsilon}} - 
 \int^1_0\dd z\frac{1}{(Cz + A_1)[-1 + A_1  + (A_3 + C)z]^{1+\epsilon} }\Big)
-\end{equation*}
+\end{equation}
 The two integrals on the \rhs can be easily computed in applying adequate changes of variables.
 Let us define $J_1$ and $J_2$ as
-\begin{equation*}
+\begin{equation}
 J = \frac{1}{1+\epsilon}\big(J_1-J_2\big)
-\end{equation*}
+\end{equation}
 Then
-\begin{equation*}
+\begin{equation}
 \begin{split}
 J_1 = & \int^1_0 \dd z \frac{1}{A_3^{1+\epsilon}C(z + \frac{A_1}{C})(-\frac{1}{A_3} + z)^{1+\epsilon}} 
 \\
@@ -73,22 +66,25 @@ J_1 = & \int^1_0 \dd z \frac{1}{A_3^{1+\epsilon}C(z + \frac{A_1}{C})(-\frac{1}{A
 \Big[-(-z_0)^{-\epsilon}{}_2F_1\big(1,-\epsilon, 1-\epsilon; \frac{z_0}{z_0 + z_1}\big)
 + (1-z_0)^{-\epsilon}{}_2F_1\big(1, -\epsilon, 1-\epsilon; \frac{z_0 -1}{z_0 + z_1}\big)\Big]
 \end{split}
-\end{equation*}
+\end{equation}
 where
-\begin{equation*}
+\begin{equation}
 z_0 = \frac{1}{A_3} \quad, \quad z_1 = \frac{A_1}{C}
 \quad,\quad
 u=\frac{-z + z_0}{z_0}\quad,\quad
 v=\frac{z-z_0}{1-z_0}
-\end{equation*}
+\end{equation}
 $J_2$ is given by the same expression up to a factor in subsituting $z_0$ by $z_2 = \frac{1 - A_1}{A_3 + C}$. 
 The hypergeometric function can be expanded as
-\begin{equation*}
+\begin{equation}
 {}_2F_1 (1,-\epsilon, 1-\epsilon, a) = 
 1-\epsilon\ln(1-a) - \epsilon^2 \dilog (a) + \mathcal{O}(\epsilon^3)
-\end{equation*}
+\end{equation}
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 With this expansion, we have
-\begin{equation*}
+\begin{equation}
 \begin{split}
 I  = &
 -s^{-2-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(-2\epsilon)}
@@ -113,14 +109,15 @@ I  = &
 \Big]
 +\mathcal{O}(\epsilon)
 \end{split}
-\end{equation*}
-The $\mathcal{O}(\epsilon^{-1})$ term in fact vanishes. 
-Using this fact and the dilogarithm identity
-\begin{equation*}
+\end{equation}
+\fi
+%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%
+Using the dilogarithm identity
+\begin{equation}
 \dilog(1-z) +\dilog(z) = -\ln(z)\ln(1-z) + \frac{\pi^2}{6}
-\end{equation*}
-we can further simplify the terms involving two logarithms.
-At the end, we get, in terms of invariants
+\end{equation}
+we get, in terms of invariants
 \begin{equation}\label{i4final}
 \begin{split}
 I_4 = &\frac{2i\Gamma(1+\epsilon)}{(4\pi)^{2-\epsilon}}\frac{ \Gamma^2(1-\epsilon)}{\Gamma(1-2\epsilon)}\frac{1}{st-K_1^2K_3^2}\frac{1}{\epsilon^2}
@@ -135,9 +132,9 @@ I_4 = &\frac{2i\Gamma(1+\epsilon)}{(4\pi)^{2-\epsilon}}\frac{ \Gamma^2(1-\epsilo
 \end{split}
 \end{equation}
 where
-\begin{equation*}
+\begin{equation}
 f=\frac{C}{C+A_1A_3} = s\Big( \frac{-s-t + K_1^2 + K_3^2}{-st + K_1^2K_3^2}\Big)
-\end{equation*}
+\end{equation}
 \cref{i4final} is in agreement with~\cite{Duplancic:2000sk}. 
 Another more used expression is the one given in~\cite{Bern:1993kr}
 \begin{equation}\label{i4bdk}
@@ -170,7 +167,7 @@ This is discussed in detail in~\cite{Duplancic:2000sk}.
 We will test the Cutkosky rule with this explicit example. 
 We apply a cut in the s-channel.
 Instead of doing the phase-space integral, let us represent the delta functions in the cut integral (up to a factor) in a distributional way
-\begin{equation*}
+\begin{equation}
 \begin{split}
 \Delta I_{4}^{2m e} = &
 \int\prod_{i=1}^4 \dd \alpha_i \delta(\sum_{i=1}^4\alpha_i - 1)
@@ -181,10 +178,10 @@ Instead of doing the phase-space integral, let us represent the delta functions 
 \int\dd x \dd y \dd z
 \frac{y(1-y)}{[sy(1-y)(-1 + A_1x + A_3 z + Cxy) - iy(1-x)\eta - i(1-y)(1-z)\eta']^{2+\epsilon}} -\mathrm{c.c.}
 \end{split}
-\end{equation*}
+\end{equation}
 where the same notations as before are used and the limits $\eta\rightarrow 0$ and $\eta'\rightarrow 0$ are taken at the end.
 Let us first integrate \wrt $x$.
-\begin{equation*}
+\begin{equation}
 \begin{split}
 \Delta I_4^{2me} = &
 \int\dd x \dd y \dd z y^{-1-\epsilon}(1-y)s^{-2-\epsilon}
@@ -202,9 +199,9 @@ Let us first integrate \wrt $x$.
 &
 +\{(1-y)(-1 + A_3z) - i\eta - i\frac{1-y}{y}(1-z)\eta'\}^{-1-\epsilon}\Big)
 \end{split}
-\end{equation*}
+\end{equation}
 Call the first term on the \rhs $I_1$ and the second $I_2$. Then
-\begin{equation*}
+\begin{equation}
 \begin{split}
 I_1 = &
 -\frac{s^{-2-\epsilon}}{1+\epsilon}\int\dd y \dd z (1-y)^{-\epsilon}[(1-y)(A_1 + Cz) - i\eta]^{-1}
@@ -218,30 +215,30 @@ I_1 = &
 \\
 & + (1-z_0)^{-\epsilon}{}_2F_1\big(1,-\epsilon, 1-\epsilon; \frac{z_0 -1 }{z_0+z_1}\big)\Big]
 \end{split}
-\end{equation*}
+\end{equation}
 where
-\begin{equation*}
+\begin{equation}
 z_0 = \frac{-\chi y}{(A_3 + C)y +i\eta'}\quad,\quad
 z_1 = \frac{-(1-y)(A_1 + C)+i\eta}{(1-y)C}
-\end{equation*}
+\end{equation}
 As we know already from the expansion
-\begin{equation*}
+\begin{equation}
 {}_2F_1(1,-\epsilon,1-\epsilon,a) = 1-\epsilon\ln(1-a) - \epsilon^2\mathrm{Li}(a) + \mathcal{O}(\epsilon^{3})
-\end{equation*}
+\end{equation}
 let us now look at the terms which have branch cuts. 
 For its usefulness, we compute
-\begin{equation*}
+\begin{equation}
 z_0 + z_1 = \frac{-(A_1 + C)(A_3 + C) - C +i\eta + i\eta'}{C(A_3 + C + i\eta')y}
-\end{equation*}
+\end{equation}
 %
 \begin{equation}
 \frac{(-1)^{-1-\epsilon}}{(z_0+z_1)C[(A_3 + C )y + i\eta']^{1+\epsilon}}(-z_0)^{-\epsilon}
 = -\frac{(-\chi y)^{-\epsilon}}{r - i\eta-i\eta'}
 \end{equation}
 where
-\begin{equation*}
+\begin{equation}
 r = -(A_1 + C)(A_3 + C)-C = -\frac{K^2_1K_3^2}{s^2} +\chi 
-\end{equation*}
+\end{equation}
 %
 \begin{equation}
 \frac{(-1)^{-1-\epsilon}}{(z_0+z_1)C[(A_3 + C)y + i\eta']^{1+\epsilon}}(1-z_0)^{-\epsilon}
@@ -258,13 +255,13 @@ r = -(A_1 + C)(A_3 + C)-C = -\frac{K^2_1K_3^2}{s^2} +\chi
 %
 On the other hand, 
 $I_2$ takes exactly the same form as $I_1$ up to a factor and the substition of $z_0$ by
-\begin{equation*}
+\begin{equation}
 z_2 = \frac{1-A_3 + i\eta}{A_3-i\eta'}
-\end{equation*}
+\end{equation}
 The relevant computations are
-\begin{equation*}
+\begin{equation}
 z_1 + z_2 = \frac{-r + i\eta + i\eta'}{C(A_3 - i\eta')}
-\end{equation*}
+\end{equation}
 %
 \begin{equation}
 \frac{(-1)^{-1-\epsilon}}{(z_2+z_1)C[A_3 y - i\eta']^{1+\epsilon}}(-z_2)^{-\epsilon}

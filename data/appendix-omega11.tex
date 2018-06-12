@@ -22,34 +22,34 @@ With the aide of Feynman parametrization, \cref{omega11} equals to
 \end{split}
 \end{equation}
 where in the second last line we choose to take the polar axis in the $(x_1\hat{K}_2 + x_2\hat{K}_3)$-direction and
-\begin{equation*}
+\begin{equation}
 \beta^2 = x_1^2 + x_2^2 + 2x_1x_2\cos\psi
-\end{equation*}
+\end{equation}
 %(cf. \eg~\cite{Smirnov:2004ym})
 %%%%%%%
 %
 %
 %
 \iffalse %not used
-\begin{equation*}
+\begin{equation}
 \frac{1}{(x+y)^\lambda} = \frac{1}{\Gamma(\lambda)}
 \frac{1}{2\pi i}\int^{i\infty}_{-i\infty}\dd z \Gamma(\lambda + z)\Gamma(-z)\frac{y^z}{x^{\lambda+z}}
-\end{equation*}
+\end{equation}
 to write the above equation as
 \fi %%%%%%%%%%%%%%
 %
 %
 %
 Using the quadratic hypergeometric identity
-\begin{equation*}
+\begin{equation}
 {}_2F_1(a,b,2b,z)=\big(1-\frac{z}{2}\big)^{-a}{}_2F_1\big[\frac{a}{2},\frac{a+1}{2}, b+\frac{1}{2}, \big(\frac{z}{2-z}\big)^2\big]
-\end{equation*}
+\end{equation}
 and the following Mellin-Barnes representation for the hypergeometric function
-\begin{equation*}
+\begin{equation}
 {}_2F_1(a,b,c,x) = \frac{\Gamma(c)}{\Gamma(a)\Gamma(b)\Gamma(c-a)\Gamma(c-b)}\int_{-i\infty}^{i\infty}\frac{\dd z}{2\pi i}\Gamma(a+z)\Gamma(b+z)\Gamma(c-a-b-z)\Gamma(-z)(1-x)^z
-\end{equation*}
+\end{equation}
 \cref{omega11i} becomes
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & \int\dd x_1\dd x_2 
 \delta(x_1+x_2-1) 
@@ -65,19 +65,19 @@ and the following Mellin-Barnes representation for the hypergeometric function
 \int\dd x_1\dd x_2 \delta(x_1+x_2-1)
 2^{-2\epsilon}\pi^{1-\epsilon}\frac{1}{\Gamma(-2\epsilon)}\int^{i\infty}_{-i\infty}\frac{\dd z}{2\pi i}\Gamma(2+2z)\Gamma(-1-\epsilon-z)\Gamma(-z)\big(\frac{1-\beta^2}{4}\big)^z
 \end{split}
-\end{equation*}
+\end{equation}
 where the identity
-\begin{equation*}
+\begin{equation}
 \Gamma(2x) = \frac{2^{2x-1}}{\sqrt{\pi}}\Gamma(x)\Gamma(x+\frac{1}{2})
-\end{equation*}
+\end{equation}
 is used in the last line.
 \\Since
-\begin{equation*}
+\begin{equation}
 \frac{1}{4}(1-\beta)^2 = \frac{1}{2}(1-\cos\psi)x_1x_2 = vx_1x_2 
-\end{equation*}
+\end{equation}
 the integration \wrt the Feynman parameters will give us a beta function.
 Finally, we get the following value for~\cref{omega11i}
-\begin{equation*}
+\begin{equation}
 \frac{2^{-2\epsilon}\pi^{1-\epsilon}}{\Gamma(1-2\epsilon)}\int^{i\infty}_{-i\infty}\frac{\dd z}{2\pi i}\Gamma(-z)\Gamma(-1-\epsilon -z)\Gamma^2(1+z) v^z
-\end{equation*}
+\end{equation}
 which is exactly~\cref{omega11} after inverting the Mellin-Barnes integral to the hypergeometric function.

@@ -9,22 +9,25 @@ A more suitable representation of the Lorentz group is the two-dimensional spino
 We can trade a four-dimensional vector for a pair of spinors.
 To be more explicit, let us consider two spinors $\bar{u}(p)$ and $v(p)$ for an outgoing massless fermion and an outgoing massless anti-fermion of momentum $p$.
 They satisfy the Dirac equation and we can decompose them into two parts of different helicity:
-\begin{equation*}
-v_+(p) = \begin{pmatrix}
+\begin{equation}
+\begin{split}
+& v_+(p) = \begin{pmatrix}
 |p]_\alpha \\ 0
 \end{pmatrix} := \lambda_p^\alpha
 \quad,\quad
 v_-(p) = \begin{pmatrix}
 0 \\ |p\rangle^{\dot{\alpha}}
 \end{pmatrix} := \tilde{\lambda}_p^{\dot{\alpha}}
-\quad,\quad
-\bar{u}_-(p) = \begin{pmatrix} 
+\\
+& \bar{u}_-(p) = \begin{pmatrix} 
 0, & \langle p |_{\dot{\alpha}})\end{pmatrix}
 \quad,\quad
 \bar{u}_+(p) = \begin{pmatrix} [ p|^\alpha, & 0 \end{pmatrix}
-\end{equation*} 
+\end{split}
+\end{equation} 
 where $v_\pm = \frac{1}{2}(1\pm\gamma_5)v(p)$ (analog for the others) and $\alpha = 1,2$.
-The crossing symmetry is garanteed since $v_\pm = u_\mp$.
+One should note that $u$ and $v$ are four-dimensional spinors whereas $|p\rangle$ and $|p]$ are two-dimensional objects. 
+The crossing symmetry is garanteed because $v_\pm = u_\mp$.
 \\
 The contraction of a momentum $p$ with the gamma matrices gives
 \begin{equation}\label{slashedp}
@@ -34,20 +37,29 @@ p^{\dot{a}b} & 0
 \end{pmatrix}
 \end{equation}
 where 
-\begin{equation*}
+\begin{equation}
 p^{\dot{a}b} = p_\mu(\bar{\sigma^\mu})^{\dot{a}b}
 \quad,\quad
 p_{a\dot{b}} = p_\mu(\sigma^\mu)_{a\dot{b}}
-\end{equation*}
+\end{equation}
 The $\sigma$'s are the Pauli matrices.
-With a slight abuse of notation, the massless Dirac equation leads to
-\begin{equation*}
+With a slight abuse of notation\footnote{
+Note that $|p^\pm\rangle$ in~\cref{p_times_spinor} are two-dimensional objects, we have more precisely
+\begin{equation}
+\slashed{p}|p^-\rangle = p^{\dot{a}b}|p]_b
+\quad,\quad
+\slashed{p}|p^+\rangle = p_{a\dot{b}}|p\rangle^{\dot{b}}
+\end{equation}
+When multiplied with square or angle spinors, the gamma matrices are implicitly matched to the corresponding Pauli matrices.
+This abuse of notation also appears in~\cref{fierz_id} and~\cref{pol_vec}.
+}, the massless Dirac equation leads to
+\begin{equation}\label{p_times_spinor}
 \slashed{p}v_\pm (p) = \slashed{p}|p^\pm\rangle = 0
 \quad \mathrm{where}\quad
 |p^+\rangle := |p]
 \quad,\quad
 |p^-\rangle := |p\rangle
-\end{equation*}
+\end{equation}
 The raising and lowering of spinor indices are realized by the Levi-Civita tensor
 \begin{equation}\label{levi-civita}
 [p|^a = \epsilon^{ab}|p] \quad,\quad
@@ -62,15 +74,15 @@ With the help of spinors, we can form two kinds of Lorentz invariant object
 \end{split}
 \end{equation}
 In this formalism, the momentum can also be chosen complex. 
-In the case where the momentum is real, we note from~\cref{slashedp} that
-\begin{equation*}
+In the case where the momentum is real, we note from~\cref{slashedp} the relationship between the complex conjugate and the transpose of $\slashed{p}$
+\begin{equation}
 (\slashed{p})^* = {}^t\slashed{p}
-\end{equation*}
+\end{equation}
 The transposition corresponds to an exchange of the square and the angle spinors. 
 In other words, the chirality flip of all spinors in a spinor product is simply the complex conjugate of the spinor product
-\begin{equation*}
-[ij] = \langle ij \rangle^* \quad\textrm{when both momenta are real}
-\end{equation*}
+\begin{equation}
+[ij] = \langle ij \rangle^* \quad\textrm{when both momenta are real with positive energies}
+\end{equation}
 By~\cref{levi-civita}, the spinor products defined in~\cref{spinor_pdt} are antisymmetric and the product of an angle and an square spinors vanishes. 
 With this remark and a slight abuse of notation, one has, from the completeness relation of spinors,
 \begin{equation}\label{p_splinors}
@@ -78,34 +90,42 @@ With this remark and a slight abuse of notation, one has, from the completeness 
 \end{equation}
 For computational purpose, we give here two useful identities
 \begin{enumerate}
-\item \textbf{Fierz' identity} $\langle 1 |\gamma^\mu |2]\langle 3 |\gamma^\mu|4] = 2\langle 13 \rangle [42]$
-\item \textbf{Schouten's identity} $\langle ij \rangle \langle lk \rangle + \langle ik\rangle \langle jl\rangle + \langle il \rangle \langle kj \rangle = 0$
+\item \textbf{Fierz' identity} 
+\begin{equation}\label{fierz_id}
+\langle 1 |\gamma^\mu |2]\langle 3 |\gamma^\mu|4] = 2\langle 13 \rangle [42]
+\end{equation}
+\item \textbf{Schouten's identity} 
+\begin{equation}
+\langle ij \rangle \langle lk \rangle + \langle ik\rangle \langle jl\rangle + \langle il \rangle \langle kj \rangle = 0
+\end{equation}
 \end{enumerate}
+where $|i^\rangle$ stands for the angle spinor for the particle having momentum $p_i$ (analogously for the square spinor). 
 These identities can be easily shown.
 For the first one, the properties of the Pauli matrices are used.
 The second one can be derived from the fact that the spinors used here are two-dimensional objects, so a spinor can always be written as linear combination of two other independent ones.
 %
 \\\\
 In presence of massless vectors, we can write the corresponding polarization vectors by choosing an arbitrary reference momentum $q$ which is not collinear to the momentum $p$ of the vector field:
-\begin{equation*}
+\begin{equation}\label{pol_vec}
 \begin{split}
-& \varepsilon^+_\mu (p, q) = \frac{\langle q | \gamma |p]}{\sqrt{2}\langle qp \rangle}
+& \varepsilon^+_\mu (p, q) = \frac{\langle q | \gamma_\mu |p]}{\sqrt{2}\langle qp \rangle}
 \\
 & \varepsilon^-_\mu (p, q) = -\frac{[q|\gamma_\mu | p\rangle}{\sqrt{2}[qp]}
 \end{split}
-\end{equation*}
+\end{equation}
 One can check that these polarization vectors are transverse and give us the expected results from Feynman diagram computations. 
 %
 %
 \subsection*{Color-ordered amplitudes}
 In a Yang-Mills theory, the vertices become color-dependent. 
-However, in some specific cases, it is possible to factor out the color dependence of the total amplitude and write the rest as a linear combination of pieces defined as partial amplitudes by playing around with the structure constant.
+However, in some specific cases, it is possible to separate into 
+a color-dependent part and a kinematic-dependent partial amplitude using the property of the structure constant.
 To be more precise, an all-gluon QCD $n$-point amplitude at tree-level can be decomposed into~\cite{MANGANO1988461}
 \begin{equation}\label{color-ordered}
 \mathcal{A}_n^{\mathrm{tree}}(g_1, \ldots, g_n) = g'^{n-2}\sum_{\sigma\in\textrm{ permutation of }\{2,\ldots\}} A_n[1,\sigma(2),\ldots,\sigma(n))]\tr(T^{a_1} T^{a_{\sigma(2)}}\ldots T^{a_{\sigma(n)}})
 \end{equation}
 where $g'$ is the coupling constant, the $T^{a_i}$'s are generators of the gauge group and the $A_n[\ldots]$'s are the partial amplitudes.
-Partial amplitudes are called color-ordered amplitudes since the color configuaration determines the order of the species appearing in the argument.
+Partial amplitudes are called color-ordered amplitudes because the color configuaration determines the order of the species appearing in the argument.
 As one notices from the definition~\cref{color-ordered}, the cyclicity of the trace implies that color-ordered amplitudes are also cyclic. 
 In this report, we will essentially give examples of all-gluon amplitudes.
 As we are going to see, color-ordered all-gluon amplitudes have some nice and compact expressions.
@@ -116,13 +136,13 @@ As we are going to see, color-ordered all-gluon amplitudes have some nice and co
 The first non-trivial objects to compute at tree-level are three-point amplitudes $A_3[1^{h_1}2^{h_2}3^{h_3}]$, where the $h_i$'s denote the helicities.
 We can compute them directly by applying Feynman rules. 
 We list here the only two non-vanishing three-point gluon amplitudes (the coupling constant is omitted)
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & A^{\mathrm{tree}}_3[g_1^- g_2^- g_3^+] = \frac{\langle 12 \rangle^3}{\langle 13 \rangle \langle 32 \rangle}
 \\
 & A^{\mathrm{tree}}_3[g_1^+ g_2^+ g_3^-] = \frac{ [12]^3}{[13 ][ 32 ]}
 \end{split}
-\end{equation*}
+\end{equation}
 Meanwhile, their forms may be guessed even before explicit calculations.  
 By momentum conservation, we have $p_3^2 = (p_1 + p_2)^2 = \langle 12\rangle[21] = 0$. 
 If we allow complex momenta, the spinor products can be non simultaneously vanishing (since they are not related by complex conjugation any more). 
@@ -130,41 +150,41 @@ As a result, either the square or the angle product vanishes.
 Thus, a 3-point amplitude contains only square products or angle products. 
 Let us take the example of $A_3[1^{-}2^{-}3^{+}]$.
 We may write an ansatz for it\footnote{One might construct an ansatz with only square products. However, it should be discarded because it will not give the right dimension.} :
-\begin{equation*}
+\begin{equation}
 A_3[1^{-}2^{-}3^{+}] = c\langle 12 \rangle^{x_{12}}\langle 23 \rangle^{x_{23}}\langle 31 \rangle^{x_{31}}
-\end{equation*}
+\end{equation}
 \cref{p_splinors} implies that the momentum $p$ remains invariant under the following transformations, called \textbf{little group scaling}\footnote{This rule is valid for spin-0, $\frac{1}{2}$ and 1 particles. 
 For spin-0 ones, the validity of the relation is clear because scalar fields do not scale with the little group scaling.
 Whereas for spin-1 particles, one can verify the relationship by looking at how polarization vectors scale under the little group scaling.
 }
-\begin{equation*}
+\begin{equation}
 |p\rangle \rightarrow t| p\rangle \quad,\quad 
 |p]\rightarrow t^{-1} |p]
-\end{equation*} 
+\end{equation} 
 A consequence of this is the scaling rule for amplitudes while an external leg is rescaled
-\begin{equation*}
+\begin{equation}
 A_n \big(\{ |1\rangle, |1], h_1\},\ldots,\{t_i|i\rangle, t_i^{-1}|i], h_i\},\ldots\big) = 
 t_i^{-2h_i}A_n(\ldots, \{|i\rangle,|i], h_i\},\ldots)
-\end{equation*}
+\end{equation}
 Therefore, in the case of all-gluon, we have
-\begin{equation*}
+\begin{equation}
 A_3[g_1^-g_2^-g_3^+] = c\frac{\langle 12\rangle^3}{\langle 23 \rangle\langle 31\rangle}
-\end{equation*}
+\end{equation}
 This corresponds to the answer obtained from direct computations.
 %
 %
 \subsection*{Maximally-helicity-violating amplitudes and the Taylor-Parke formulae for gluons}
 Consider now $n$-point all-gluon amplitudes for $n\geq 4$. 
-By playing around with the polarization vectors and the reference vectors in their spinor expression, we can show (see p.31 of~\cite{Elvang:2013cua}) that the following all-gluon amplitudes vanishes at tree-level
-\begin{equation*}
+By well choosing the reference momenta for the polarization vectors, we can show (see p.31 of~\cite{Elvang:2013cua}) that the following all-gluon amplitudes vanishes at tree-level
+\begin{equation}
 A_n[g_1^\pm \ldots g_n^\pm] = A^{\mathrm{tree}}_n[g_1^\pm \ldots g_i^\mp \ldots g_n^\pm] = 0
-\end{equation*}
+\end{equation}
 for $n\geq 4$.
 In other words, when all the external legs have the same helicity or only one is different from the others, the tree-level amplitude vanishes.
 The first class of non-vanishing tree amplitudes is the \textbf{maximally-helicity-violating (MHV)} amplitudes.
 These are amplitudes which break maximally the helicity conservation, having exactly two external legs have helicity different from the rest.
 The MHV gluon amplitudes can be written in a surprisingly simple form
-\begin{equation*}
+\begin{equation}
 \begin{split}
 & A_n[1^+\ldots i^-\ldots j^-\ldots n^+] = 
 \frac{\langle ij \rangle^4}{\langle 12 \rangle\ldots \langle n1 \rangle}
@@ -172,7 +192,7 @@ The MHV gluon amplitudes can be written in a surprisingly simple form
 & A_n[1^-\ldots i^+\ldots j^+\ldots n^-] = 
 \frac{[ ij]^4}{[ 12 ]\ldots [n1 ]}
 \end{split}
-\end{equation*}
+\end{equation}
 These are called the \textbf{Parke-Taylor formulae}, first conjectured in~\cite{PhysRevLett.56.2459} and later proven by Berends and Giele by using the off-shell recursion~\cite{BERENDS1988759}. 
 A more recent approach to prove these formulae is the BCFW on-shell recursion~\cite{BRITTO2005499, PhysRevLett.94.181602}, which will be presented in the next section. 
 

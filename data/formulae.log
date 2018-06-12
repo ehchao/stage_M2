@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.3)  11 APR 2018 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.3)  11 JUN 2018 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -74,37 +74,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-! LaTeX Error: Environment equation* undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \begin{equation*}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no B in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no = in font nullfont!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 B(a,b) = \int
-                 _0^1 \dd x (1-x)^{a-1}x^{b-1} = \frac{\Gamma(a)\Gamma(b)}{\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]
+ []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
+(Font)              <5> on input line 4.
 ! Undefined control sequence.
 l.5 B(a,b) = \int_0^1 \dd
                           x (1-x)^{a-1}x^{b-1} = \frac{\Gamma(a)\Gamma(b)}{\...
@@ -115,47 +92,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \end{equation*}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 \end{equation*}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 3--7
-[]
- []
-
-
-Overfull \hbox (35.20142pt too wide) in paragraph at lines 3--7
-[][] \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (55.20155pt too wide) in paragraph at lines 3--7
-\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (32.64328pt too wide) in paragraph at lines 3--7
-[]$ 
+Overfull \hbox (179.76698pt too wide) detected at line 6
+\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ) = [][
+] \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x\
+OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = []
  []
 
 ! Undefined control sequence.
@@ -202,25 +142,9 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-! LaTeX Error: Environment equation* undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \begin{equation*}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 _
-      2F_1(a,b,c;z) = \frac{\Gamma(c)}{\Gamma(b)\Gamma(c-b)}\int_0^1\frac{t^...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
+[]
+ []
 
 ! Undefined control sequence.
 l.10 ...\frac{t^{b-1} (1-t)^{c-b-1}}{(1-tz)^a} \dd
@@ -232,28 +156,539 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{document} ended by \end{equation*}.
+Overfull \hbox (218.81319pt too wide) detected at line 11
+[]\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b; c\OT1/cmr/m/n/10 
+; \OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = [] [][] []\OML/cmm/m/it/10 t
+ []
+
+
+! LaTeX Error: Environment split undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \end{equation*}
-                    
+l.14 \begin{split}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 \end{equation*}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+! Misplaced alignment tab character &.
+l.15 _2F_1(a,b,c;z) &
+                      = (1-z)^{-a}(_2F_1)(a,c-b,c;\frac{z}{z-1})
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.17 &
+       = (1-z)^{-b}(_2F_1)(c-a,b,c;\frac{z}{z-1})
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.19 &
+       = (1-z)^{c-a-b}(_2F_1)(c-a,c-b,c;z)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{equation} on input line 13 ended by \end{split}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{split}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (495.75604pt too wide) detected at line 21
+[]\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b; c\OT1/cmr/m/n/10 
+; \OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/1
+0 z\OT1/cmr/m/n/10 )[]([]\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10
+ a; c \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b; c\OT1/cmr/m/n/10 ; [])[]  = (1 \
+OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )[]([]\OML/cmm/m/it/10 F[
+]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a; 
+b; c\OT1/cmr/m/n/10 ; [])[]  = (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 z\OT1/c
+mr/m/n/10 )[]([]\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 c \OMS/c
+msy/m/n/10 ^^@ \OML/cmm/m/it/10 a; c \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b; c
+\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (285.90094pt too wide) detected at line 26
+[]\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b; c\OT1/cmr/m/n/10 
+; \OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = 1 + [] + []\OML/cmm/m/it/10 z[] \OT1/cm
+r/m/n/10 + [] = [] [][]
+ []
+
+! Undefined control sequence.
+l.29 \paragraph
+               {$D$-dimensional sphere ($(D-1)$-sphere) measure }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \paragraph{$
+                 D$-dimensional sphere ($(D-1)$-sphere) measure }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (28.55695pt too wide) in paragraph at lines 29--30
+[]$\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (20.22365pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 1)$
+ []
+
+! Undefined control sequence.
+l.31 \int \dd
+              \Omega_{D} = \int^\pi_0 \dd \theta_{D-1}\sin^{D-2} \theta_{D-1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 \int \dd \Omega_{D} = \int^\pi_0 \dd
+                                          \theta_{D-1}\sin^{D-2} \theta_{D-1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 ..._{D-1} \times \ldots \times \int^\pi_0 \dd
+                                                   \theta_2 \sin\theta_2 \in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 ...dd \theta_2 \sin\theta_2 \int^{2\pi}_0 \dd
+                                                   \theta_1
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (244.25563pt too wide) detected at line 32
+[] \OT1/cmr/m/n/10 
+[] = [][] \OML/cmm/m/it/10 ^^R[] [][] ^^R[] \OMS/cmsy/m/n/10 ^^B [] ^^B [][] \O
+ML/cmm/m/it/10 ^^R[] [] ^^R[] [][] ^^R[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \begin{equation}
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--34
+[] 
+ []
+
+! Undefined control sequence.
+l.35 \Omega_D = \int \dd
+                         \Omega_D = \frac{2\pi^{D/2}}{\Gamma(\frac{D}{2})}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (96.08127pt too wide) detected at line 36
+\OT1/cmr/m/n/10 
+[] = [] 
+[] = []
+ []
+
+! Undefined control sequence.
+l.46 \paragraph
+               {Gamma function}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \paragraph{G
+                 amma function}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 46--47
+[]
+ []
+
+
+Overfull \hbox (86.38432pt too wide) detected at line 49
+\OT1/cmr/m/n/10 ^^@(\OML/cmm/m/it/10 ^^O\OT1/cmr/m/n/10 ) = [] \OMS/cmsy/m/n/10
+ ^^@ \OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 + \OMS/cmsy/m/n/10 O\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 ^^O\OT1/cmr/m/n/10 )
+ []
+
+! Undefined control sequence.
+l.51 \paragraph
+               {Feynman parametrization}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \paragraph{F
+                 eynman parametrization}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
+[]
+ []
+
+! Undefined control sequence.
+l.53 \frac{1}{\prod_{i=1}^n A_i} = \int_0^1 \dd
+                                                x_1 \ldots\int^1_0\dd x_n\fr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 ... A_i} = \int_0^1 \dd x_1 \ldots\int^1_0\dd
+                                                   x_n\frac{(n-1)!\delta(\su...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (220.5174pt too wide) detected at line 54
+[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 x[] [] [][] x[][]
+ []
+
+! Undefined control sequence.
+l.56 \paragraph
+               {Useful integrals}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \paragraph{U
+                 seful integrals}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
+[]
+ []
+
+! Undefined control sequence.
+<argument> \dd 
+               ^D k
+l.58 \int\frac{\dd^D k}{(2\pi)^D}
+                                 \frac{k^{2a}}{(k^2-\Delta)^b} = i(-1)^{a-b}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (336.55074pt too wide) detected at line 59
+[] [][] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 i\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^
+^@\OT1/cmr/m/n/10 1)[][][]
+ []
+
+! Undefined control sequence.
+l.61 \paragraph
+               {3-point MHV amplitudes}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \paragraph{3
+                 -point MHV amplitudes}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--62
+[]
+ []
+
+
+! LaTeX Error: Environment split undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \begin{split}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.64 &
+       A_3[1^-2^-3^+] = \frac{\langle 1 2 \rangle^3}{\langle 23 \rangle \lan...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.66 &
+       A_3[1^+2^+3^-] = \frac{[12]^3}{[23][31]}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{equation} on input line 62 ended by \end{split}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \end{split}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (203.38362pt too wide) detected at line 68
+\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 [1[]2[]3[]] = [][] \OML/cmm/m/it/10 A[]\OT1
+/cmr/m/n/10 [1[]2[]3[]] = []
+ []
+
+! Undefined control sequence.
+l.69 \paragraph
+               {Parke-Taylor}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+
+Overfull \hbox (176.70543pt too wide) detected at line 72
+\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 [1[] [] \OML/cmm/m/it/10 i[] [] j[] [] n[]\
+OT1/cmr/m/n/10 ] = []
+ []
 
 )
 ! Emergency stop.
@@ -263,11 +698,11 @@ my insertion and my current dilemma will both disappear.
 
  
 Here is how much of TeX's memory you used:
- 9 strings out of 494883
- 187 string characters out of 6178694
- 45957 words of memory out of 5000000
- 3410 multiletter control sequences out of 15000+600000
+ 11 strings out of 494883
+ 185 string characters out of 6178694
+ 50957 words of memory out of 5000000
+ 3412 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 19i,3n,12p,122b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,3n,12p,181b,82s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
