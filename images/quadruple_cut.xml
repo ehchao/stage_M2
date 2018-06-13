@@ -811,16 +811,20 @@
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.text.JaxoPSText" id="JaxoPSText0">
-     <void property="color">
-      <object idref="Color0"/>
+    <object class="net.sf.jaxodraw.object.text.JaxoLatexText" id="JaxoLatexText0">
+     <void property="allign">
+      <int>4</int>
      </void>
-     <void property="font">
-      <object class="java.awt.Font">
-       <null/>
+     <void property="color">
+      <object class="java.awt.Color" id="Color2">
        <int>0</int>
-       <int>18</int>
+       <int>0</int>
+       <int>0</int>
+       <int>255</int>
       </object>
+     </void>
+     <void property="latexTextSize">
+      <int>6</int>
      </void>
      <void id="PointArray15" property="points">
       <void id="Point30" index="0">
@@ -828,14 +832,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point30"/>
-         <int>244</int>
+         <int>250</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point30"/>
-         <int>154</int>
+         <int>149</int>
         </void>
        </void>
       </void>
@@ -844,21 +848,20 @@
       <object idref="PointArray15"/>
      </void>
      <void property="textString">
-      <string>A1</string>
+      <string>A_1</string>
      </void>
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.text.JaxoPSText" id="JaxoPSText1">
-     <void property="color">
-      <object idref="Color0"/>
+    <object class="net.sf.jaxodraw.object.text.JaxoLatexText" id="JaxoLatexText1">
+     <void property="allign">
+      <int>4</int>
      </void>
-     <void property="font">
-      <object class="java.awt.Font">
-       <null/>
-       <int>0</int>
-       <int>18</int>
-      </object>
+     <void property="color">
+      <object idref="Color2"/>
+     </void>
+     <void property="latexTextSize">
+      <int>6</int>
      </void>
      <void id="PointArray16" property="points">
       <void id="Point31" index="0">
@@ -866,14 +869,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point31"/>
-         <int>379</int>
+         <int>391</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point31"/>
-         <int>153</int>
+         <int>151</int>
         </void>
        </void>
       </void>
@@ -882,21 +885,20 @@
       <object idref="PointArray16"/>
      </void>
      <void property="textString">
-      <string>A2</string>
+      <string>A_2</string>
      </void>
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.text.JaxoPSText" id="JaxoPSText2">
-     <void property="color">
-      <object idref="Color0"/>
+    <object class="net.sf.jaxodraw.object.text.JaxoLatexText" id="JaxoLatexText2">
+     <void property="allign">
+      <int>4</int>
      </void>
-     <void property="font">
-      <object class="java.awt.Font">
-       <null/>
-       <int>0</int>
-       <int>18</int>
-      </object>
+     <void property="color">
+      <object idref="Color2"/>
+     </void>
+     <void property="latexTextSize">
+      <int>6</int>
      </void>
      <void id="PointArray17" property="points">
       <void id="Point32" index="0">
@@ -904,14 +906,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point32"/>
-         <int>382</int>
+         <int>249</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point32"/>
-         <int>287</int>
+         <int>282</int>
         </void>
        </void>
       </void>
@@ -920,21 +922,20 @@
       <object idref="PointArray17"/>
      </void>
      <void property="textString">
-      <string>A3</string>
+      <string>A_3</string>
      </void>
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.text.JaxoPSText" id="JaxoPSText3">
-     <void property="color">
-      <object idref="Color0"/>
+    <object class="net.sf.jaxodraw.object.text.JaxoLatexText" id="JaxoLatexText3">
+     <void property="allign">
+      <int>4</int>
      </void>
-     <void property="font">
-      <object class="java.awt.Font">
-       <null/>
-       <int>0</int>
-       <int>18</int>
-      </object>
+     <void property="color">
+      <object idref="Color2"/>
+     </void>
+     <void property="latexTextSize">
+      <int>6</int>
      </void>
      <void id="PointArray18" property="points">
       <void id="Point33" index="0">
@@ -942,14 +943,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point33"/>
-         <int>245</int>
+         <int>391</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point33"/>
-         <int>290</int>
+         <int>279</int>
         </void>
        </void>
       </void>
@@ -958,7 +959,7 @@
       <object idref="PointArray18"/>
      </void>
      <void property="textString">
-      <string>A4</string>
+      <string>A_4</string>
      </void>
     </object>
    </void>

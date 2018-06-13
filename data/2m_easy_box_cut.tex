@@ -47,6 +47,9 @@ a := \frac{|\vec{K}_3|K_{12}^0}{(K_3)^2 + K_{12}^0 K_3^0}
 = \frac{K_{12}^2}{\big((K_3)^2 + K_{12}\cdot K_3\big)^2}\Big( -K_3^2 + \frac{(K_2\cdot K_3)^2}{K_{12}^2}\Big)
 =1
 \end{equation}
+The above can be verified by a simple calculation.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 This can be verified by computing
 \begin{equation}
 \begin{split}
@@ -65,32 +68,40 @@ This can be verified by computing
 \end{split}
 \end{equation}
 and $a>0$.
-\\
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A way to evaluate~\cref{omega11} is given in~\cite{Somogyi:2011ir} (in the two-denominator massless case, eqn.(49) of the reference), where some non-trivial relationships of Mellin-Barnes representations of a hypergeometric function are used.
 We will simply cite the result here.
 The proof of~\cref{omega11} following~\cite{Somogyi:2011ir} will be given in Appendix~\ref{appendix-omega11}.
 \\
-Let 
+By setting
 \begin{equation}
-v = \frac{1}{2}(1-\cos\psi)
+v = \frac{1}{2}(1-\cos\psi) =\frac{st - K_1^2K_3^2}{(s-K_1^2)(s-K_3^2)}
 \end{equation}
-we have
+we have, after using~\cref{hypergeo_tranf}, 
 \begin{equation}\label{omega11}
 \begin{split}
-& \int \dd \Omega_{D-3}
+ \int \dd \Omega_{D-3} &
 \int_{-1}^1 \dd(\cos\theta)\int_{-1}^1\dd(\cos \chi)\frac{\sin^{-2\epsilon}\theta \sin^{-1-2\epsilon}\chi}{(1-a\cos\theta)(1-\cos\psi\cos\theta  - \sin\psi\sin\theta\cos\chi)}
-\\
-& = 
-2^{-2\epsilon}\pi^{1-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(1-\epsilon)\Gamma(-2\epsilon)}{}_2F_1(1,1,1-\epsilon, 1-v)
-\\
-& = 
-2^{-2\epsilon}\pi^{1-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(1-\epsilon)\Gamma(-2\epsilon)} \frac{1}{v}{}_2F_1(1,1,1-\epsilon, 1-\frac{1}{v})
+%%%%%%%%%%%%%%%%%%%%%%
+%\iffalse 
+%\\
+%& = 
+%2^{-2\epsilon}\pi^{1-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(1-\epsilon)\Gamma(-2\epsilon)}{}_2F_1(1,1,1-\epsilon, 1-v)
+%\\
+%& = 
+%2^{-2\epsilon}\pi^{1-\epsilon}\frac{\Gamma^2(-\epsilon)}{\Gamma(1-\epsilon)\Gamma(-2\epsilon)} \frac{1}{v}{}_2F_1(1,1,1-\epsilon, 1-\frac{1}{v})
+%\\
+%\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \\
 & = 
 -2^{1-2\epsilon}\pi^{1-\epsilon} \frac{\Gamma(1-\epsilon)}{\Gamma(1-2\epsilon)}\frac{1}{v}\Big(\frac{1}{\epsilon}
 +\ln v + \mathcal{O}(\epsilon)\Big)
 \end{split}
 \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 In terms of the kinematic invariants
 \begin{equation}
 \begin{split}
@@ -105,10 +116,12 @@ v= &
 =&
 \frac{1}{(2K_3\cdot K_4)(2K_1\cdot K_2)}\big(K_{12}^2K_{14}^2 - K_1^2K_3^2\big)
 \\
-= &
+ = &
 \frac{st - K_1^2K_3^2}{(s-K_1^2)(s-K_3^2)}
 \end{split}
 \end{equation}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 All taken into account, we have
 \begin{equation}

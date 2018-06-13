@@ -1,9 +1,8 @@
 \section{Spinor-helicity formalism and color-ordered amplitudes}\label{sect-spinor}
-The spinor-helicity formalism is widely used in amplitude literatures. 
-One can refer to~\cite{Dixon:1996wi,Elvang:2013cua} for good introductions\footnote{The convention may change according to the signature}.
-We present some useful properties under the convention used in QCD~\cite{Dixon:1996wi}.
+The spinor-helicity formalism is widely used in amplitude literatures~\cite{Dixon:1996wi,Elvang:2013cua}.
+We present some useful properties under the convention used in QCD\footnote{The convention may change according to the signature}~\cite{Dixon:1996wi}.
 \\\\
-From a physical point of view, ampitudes should depend only on Lorentz invariant quantities that can be formed from external momenta, \eg the square $p^2$ of a four-vector $p^\mu$.
+From a physical point of view, ampitudes should only depend on Lorentz invariant quantities that can be formed from external momenta, \eg the square $p^2$ of a four-vector $p^\mu$.
 However, in most interesting models, there are not only scalar fields but also particles which have spins. 
 A more suitable representation of the Lorentz group is the two-dimensional spinor representation.
 We can trade a four-dimensional vector for a pair of spinors.
@@ -13,19 +12,19 @@ They satisfy the Dirac equation and we can decompose them into two parts of diff
 \begin{split}
 & v_+(p) = \begin{pmatrix}
 |p]_\alpha \\ 0
-\end{pmatrix} := \lambda_p^\alpha
+\end{pmatrix} % := \lambda_p^\alpha
 \quad,\quad
 v_-(p) = \begin{pmatrix}
 0 \\ |p\rangle^{\dot{\alpha}}
-\end{pmatrix} := \tilde{\lambda}_p^{\dot{\alpha}}
+\end{pmatrix} % := \tilde{\lambda}_p^{\dot{\alpha}}
 \\
 & \bar{u}_-(p) = \begin{pmatrix} 
-0, & \langle p |_{\dot{\alpha}})\end{pmatrix}
+0, & \langle p |_{\dot{\alpha}}\end{pmatrix}
 \quad,\quad
 \bar{u}_+(p) = \begin{pmatrix} [ p|^\alpha, & 0 \end{pmatrix}
 \end{split}
 \end{equation} 
-where $v_\pm = \frac{1}{2}(1\pm\gamma_5)v(p)$ (analog for the others) and $\alpha = 1,2$.
+where $v_\pm = \frac{1}{2}(1\pm\gamma_5)v(p)$ (analogously for the others) and $\alpha = 1,2$.
 One should note that $u$ and $v$ are four-dimensional spinors whereas $|p\rangle$ and $|p]$ are two-dimensional objects. 
 The crossing symmetry is garanteed because $v_\pm = u_\mp$.
 \\
@@ -99,8 +98,8 @@ For computational purpose, we give here two useful identities
 \langle ij \rangle \langle lk \rangle + \langle ik\rangle \langle jl\rangle + \langle il \rangle \langle kj \rangle = 0
 \end{equation}
 \end{enumerate}
-where $|i^\rangle$ stands for the angle spinor for the particle having momentum $p_i$ (analogously for the square spinor). 
-These identities can be easily shown.
+where $|i\rangle$ stands for the angle spinor for the particle having momentum $p_i$ (analogously for the square spinor). 
+These identities can be shown easily.
 For the first one, the properties of the Pauli matrices are used.
 The second one can be derived from the fact that the spinors used here are two-dimensional objects, so a spinor can always be written as linear combination of two other independent ones.
 %
@@ -118,7 +117,7 @@ One can check that these polarization vectors are transverse and give us the exp
 %
 \subsection*{Color-ordered amplitudes}
 In a Yang-Mills theory, the vertices become color-dependent. 
-However, in some specific cases, it is possible to separate into 
+However, in some specific cases, it is possible to separate an amplitude into 
 a color-dependent part and a kinematic-dependent partial amplitude using the property of the structure constant.
 To be more precise, an all-gluon QCD $n$-point amplitude at tree-level can be decomposed into~\cite{MANGANO1988461}
 \begin{equation}\label{color-ordered}
