@@ -1,8 +1,8 @@
 \section{Triple cut, triangle and bubble coefficients in $D=4$}\label{sect-triple_cut}
 We are now left with triangle and bubble coefficients to determine. 
-Forde proposed a method using triple cut to determine the triangle and bubble coefficients in one-loop in four-dimension~\cite{Forde:2007mi}.
-This method consists in choosing a good parametrization for the loop momentum after applying cuts such that the triangle and bubble contributions can be distiguished from the box contributions.
-In this method, we consider four dimensional loop momentum.
+A method using triple cut to determine the triangle and bubble coefficients in one-loop in four-dimension was proposed by Forde~\cite{Forde:2007mi}.
+This method consists in choosing an appropriate parametrization for the loop momentum after applying cuts such that the triangle and bubble contributions can be distinguished from the box contributions.
+In this method, we consider four-dimensional loop momentum.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{triple_cut.eps}
@@ -11,7 +11,7 @@ In this method, we consider four dimensional loop momentum.
 \end{figure}
 %
 \subsection*{Triangle coefficient} 
-Upon applying a triple cut, the three delta functions leave only one degree of freedom in four-dimension. 
+Upon applying a triple cut, the three delta functions leave only one degree of freedom in four dimensions. 
 Let us denote it by $t$.
 The most general expression for a cut amplitude takes the form 
 \begin{equation}\label{tricut}
@@ -22,13 +22,13 @@ where the $A$'s are tree amplitudes and the first term on the right-hand side is
 \begin{equation}
 \lim_{t\rightarrow\infty}\big([\mathrm{Inf}_tA_1A_2A_3](t) - A_1A_2A_3(t)\big) = 0
 \end{equation}
-In most of cases, the propagators of the type $\frac{1}{(l-P)^2}$ contain two poles that can be expressed in terms of $t$. 
+In most of cases, propagators of the type $\frac{1}{(l-P)^2}$ contain two poles that can be expressed in terms of $t$. 
 The second part of~\cref{tricut} can hence be considered as contributions of cut boxes. 
 As a result, the information on the bubble and triangle contributions is only contained in the first term on the \rhs of~\cref{tricut}.
 According to Forde, we can choose a parametrization such that only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to the integral. 
 %
 \\\\
-Consider a triple cut leading to the constraints\footnote{Here we take $-K_2$ instead of $K_2$ in the triangle diagram of figure~\ref{tricut}, which is the choice used in Forde's original paper.}
+Consider a triple cut leading to the constraints\footnote{Here we take $-K_2$ instead of $K_2$ in the triangle diagram of figure~\ref{fig-triple_cut}, which is the choice used in Forde's original paper.}
 \begin{equation}
 l^2 = (l-K_1)^2 = (l - K_2)^2 = 0
 \end{equation}
@@ -38,7 +38,7 @@ K_1^\flat = K_1 - \frac{S_1}{\gamma}K_2^\flat \quad\quad
 K_2^\flat = K_2 - \frac{S_2}{\gamma}K_1^\flat
 \end{equation}
 %
-where $S_i = K_i^2$ and $\gamma = \langle K_1^\flat|K_2^\flat|K_1^\flat] =\langle K_2^\flat|K_1^\flat|K_2^\flat]$.
+where $S_i = K_i^2$ and $\gamma = \langle K_1^\flat|\slashed{K}_2^\flat|K_1^\flat] =\langle K_2^\flat|\slashed{K}_1^\flat|K_2^\flat]$.
 There are two possibilities for $\gamma$
 \begin{equation}\label{sol_for_gamma}
 \gamma_{\pm} = (K_1\cdot K_2) \pm\sqrt{\Delta}\quad
@@ -47,16 +47,17 @@ There are two possibilities for $\gamma$
 \end{equation}
 In terms of the spinor components, the constraints require
 \begin{equation}\label{l_param}
-\langle l | = t\langle K_1^\flat| + \alpha_{01}\langle K_2^\flat| \quad\quad
+\langle l | = t\langle K_1^\flat| + \alpha_{01}\langle K_2^\flat| 
+\quad,\quad
 [ l | = \frac{\alpha_{02}}{t}[ K_1^\flat| + [ K_2^\flat|
 \end{equation}
 where
 \begin{equation}
-\alpha_{01} = \frac{S_1(\gamma S_2)}{\gamma^2 - S_1S_2}\quad \quad
+\alpha_{01} = \frac{S_1(\gamma S_2)}{\gamma^2 - S_1S_2}\quad,\quad
 \alpha_{02} = \frac{S_2(\gamma S_1)}{\gamma^2 - S_1S_2}
 \end{equation}
 %
-and, as a four-vector,
+and, as four-vector,
 \begin{equation}
 l^\mu = \alpha_{02} K_1^{\flat,\mu} + \alpha_{01}K_2^{\flat,\mu} + \frac{t}{2}\langle K_1^\flat | \gamma^\mu |K_2^\flat] + \frac{\alpha_{01}\alpha_{02}}{2t}\langle K_2^\flat|\gamma^\mu |K_1^\flat]
 \end{equation}
@@ -77,14 +78,19 @@ The same technique can be applied to show that $(q\cdot v)^n$ is spurious for an
 \fi
 %%%%%%%%%%%%%%%%%%%5 end of not used
 %
-We can use the fact that $\langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 $ and $\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0$
+We can use 
+\begin{equation}
+langle K_1^{\flat,\pm} | K_{1,2}|K_2^{\flat,\pm}\rangle = 0 
+\quad\mathrm{and}\quad
+\langle K_1^{\flat,\pm}|\gamma^\mu|K_{2}^{\flat,\pm}\rangle\langle K_1^{\flat,\pm}|\gamma_\mu|K_{2}^{\flat,\pm}\rangle = 0
+\end{equation}
 to show that all only the constant term in the polynomial $\mathrm{Inf}_t(A_1A_2A_3)(t)$ contributes to~\cref{tricut}. 
 The other two loop-momenta, $l_1 = l-K_1$ and $l_2 = l-K_2$, are parametrize in a similar way in~\cref{l_param} by replacing $\alpha_{01}$ and $\alpha_{i2}$ by $\alpha_{i1}$ and $\alpha_{i2}$ given in~\cite{Forde:2007mi}.
 %
 %
-\subsection*{Two-particle cuts and scalar bubble coefficients}
+\subsection*{Double cuts and scalar bubble coefficients}
 Triple cuts can also be used to determine bubble coefficients. 
-Let us first consider a two-particle cut (cf. figure~\ref{fig-triple_cut}).
+Let us first consider a double cut (cf. figure~\ref{fig-triple_cut}).
 Contrary to the previous case, we will have two free parameters $y$ and $t$.
 \begin{equation}\label{2-part_cut}
 \begin{split}
@@ -112,7 +118,11 @@ K_1^\flat = K_1 - \frac{S_1}{\gamma}\chi^\mu ,\quad
 \end{equation}
 and $\chi$ is an arbitrary null vector (non-collinear to $K_1$).
 \\
-As in the triangle case, we can use $\langle K_1^\flat| \slashed{K}_1|\chi] = \langle K_1^\flat|\slashed{K}_1 | \gamma^\mu|\chi]\langle K_1^\flat|\gamma_\mu|\chi]= 0$ to show that
+As in the triangle case, we can use 
+\begin{equation}
+\langle K_1^\flat| \slashed{K}_1|\chi] = \langle K_1^\flat|\slashed{K}_1 | \gamma^\mu|\chi]\langle K_1^\flat|\gamma_\mu|\chi]= 0
+\end{equation}
+to show that
 \begin{equation}
 \int\dd t\dd y J_{t,y}t^n = \int \dd t \dd y \big(\frac{y}{t}\big)^n(1-y)^n = 0
 \quad\Rightarrow\quad
@@ -123,7 +133,7 @@ From the Passarino-Veltman reduction, we are able to conclude that all integrand
 Naively, one might think that the bubble coefficients come from the first term of~\cref{2-part_cut}.
 However, the loop momentum parametrization that has been used leads to more non-vanishing terms than in the triple cut case. 
 Furthermore, the second and the third terms in~\cref{2-part_cut} can be reduced to scalar bubble integrals plus triangle integrals. 
-In order to relate the contribution to the bubble coefficient of the residue piece, we apply an additional constraint: $(l+K_2)^2=0$ to the two-particle cut.
+In order to relate the contribution to the bubble coefficient of the residue piece, we apply an additional constraint: $(l+K_2)^2=0$ to the double cut (where $K_2$ is another external leg).
 This will then fix the free parameter $y$.
 The integral will then take the form
 \begin{equation}
@@ -172,7 +182,7 @@ This example is given in~\cite{Forde:2007mi}.
 \end{figure}
 First, we have to compute the tree-level four-point amplitude $A_4[1^{h_1}2^{h_2}3^{h_3}4^{h_4}]$. 
 Contrary to non-abelian theories, the four-photon amplitude vanishes at tree-level in QED.
-Thus, the relevant four-point amplitudes are following ones which containt two photons and two fermions
+Thus, the relevant four-point amplitudes are following ones which contain two photons and two fermions
 \begin{equation}
 A_4^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 \quad,\quad
@@ -211,7 +221,7 @@ A_{4}^{\mathrm{tree}}(\bar{f}_1^- f_2^+ \gamma_1^-\gamma_2^+)
 \frac{\sqrt{2}}{[k', p_1]}|k'\rangle [p_1, q_2]
 \end{split}
 \end{equation}
-The first term corresponds to the $u$-channel (cf. figure~\ref{fig-qed}) and the second one $s$-channel.
+The first term corresponds to the $u$-channel (cf. figure~\ref{fig-qed}) and the second to the $s$-channel.
 By choosing the reference momentum $k'$ to be $q_1$, the second term above vanishes. 
 We can choose $k = q_2$ and get 
 \begin{equation}\label{4pt_qed1}
@@ -248,6 +258,9 @@ A_4^{\mathrm{tree}}(\bar{f}_2^- f_3^+3^-4^+)
 -8ie^6\frac{[2l_1]^2[6l_2]^2[4l_3]^2}{[l_1 1 ][1l_3][l_2 5][5l_1][l_2 3][3l_3]}
 \end{equation}
 where $l_i$ stands for momentum of the outgoing fermion $f_i$.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 Under the triple cut parametrization,~\cref{triple_cut_1} and~\cref{triple_cut_2} lead to the same contribution. 
 In fact, the ratio of~\cref{4pt_qed1} to~\cref{4pt_qed2} gives
 \begin{equation}
@@ -259,7 +272,10 @@ Hence the ratio of~\cref{triple_cut_1} to~\cref{triple_cut_2} is
 \frac{[6l_1]\langle 5l_2\rangle}{[6l_2]\langle 5l_1\rangle}
 \frac{[2l_3]\langle 1l_1\rangle}{[2l_1]\langle 1l_3\rangle}
 \end{equation}
-Since the contribution to triangle coefficient is given by taking the $\Inf$ of~\cref{triple_cut_1} and~\cref{triple_cut_2}, we are interested in the $\Inf$ part of the above under the parametrization~\cref{l_param}, which gives
+\fi
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Because the contribution to triangle coefficient is given by taking the $\Inf$ of~\cref{triple_cut_1} and~\cref{triple_cut_2}, we are interested in the $\Inf$ part of the above under the parametrization~\cref{l_param}, which gives, after some spinor-helicity algebras,
 \begin{equation}
 \Inf\Big(\frac{([4K_2^\flat] + \frac{\alpha_{12}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{21}\langle 3K_2^\flat\rangle)}{([4K_2^\flat] + \frac{\alpha_{22}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{11}\langle 3K_2^\flat\rangle)}(\ldots)\Big)
 = 1

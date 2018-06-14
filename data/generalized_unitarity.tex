@@ -1,6 +1,6 @@
 \section{Generalized unitarity}\label{sect-unitarity}
-Bern, Dixon, Dunbar and Kosower proposed a procedure~\cite{Bern:1994zx} based on the Cutkosky rules (or generalized unitarity)~\cite{doi:10.1063/1.1703676} which allows to determine compute amplitudes in a gauge field theory in a more efficient way than the traditional diagrammatic methods. 
-Especially, in their paper~\cite{Bern:1994zx}, they showed how the generalized unitarity can be applied to the N=4 super Yang-Mills theory thanks to the fact that only scalar box integrals are involved in amplitudes after reduction.
+Bern, Dixon, Dunbar and Kosower proposed a procedure~\cite{Bern:1994zx} based on the Cutkosky rules (or generalized unitarity)~\cite{doi:10.1063/1.1703676} which allows to determine compute amplitudes in a gauge field theory in a more efficient way than the traditional diagrammatic method. 
+Especially, in their paper~\cite{Bern:1994zx}, they showed how generalized unitarity can be applied to the $\mathcal{N}=4$ super Yang-Mills theory thanks to the fact that only scalar box integrals are involved in amplitudes after reduction.
 \\\\
 Based on Landau's discussion on the singularities of the amplitudes calculated from an arbitrary Feynman diagram~\cite{LANDAU1959181}, 
 Cutkosky proposed a generalized version of the unitarity condition~\cite{doi:10.1063/1.1703676} which is based on the discontinuity across a cut starting from any of Landau's branch points.
@@ -10,7 +10,7 @@ Let us consider a generic one-loop amplitude with explicit dependence on the kin
 \begin{equation}
 A(K^2) = \int\frac{\dd^D l}{(2\pi)^D} A_L\frac{1}{l^{2} (l-K)^{2}}A_R
 \end{equation}
-where $A_{L,R}$ are rational fractions in the loop momentum $l$ and the external momenta. 
+where $A_{L,R}$ are rational fractions of the loop momentum $l$ and the external momenta. 
 In Cutkosky's language, a double cut amounts to choose two of the propagators in the loop on-shell.
 Mathematically, this means doing the following propagator subsitutions\footnote{One should be careful with the $i\epsilon$ prescription which is often omitted in amplitude computations}
 \begin{equation}\label{on-shell_propagator}
@@ -19,7 +19,7 @@ Mathematically, this means doing the following propagator subsitutions\footnote{
 \frac{1}{(l-K)^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big((l-K)^2\big)
 \end{equation}
 We call this a double cut in the $K^2$-channel.
-Cutkosky's rules states that we will get the branch cut, \ie the discontinuity of $A$ between approching the branch $K^2$ from above and approching from below on the complex plan
+The Cutkosky's rules state that we will get the branch cut, \ie the discontinuity of $A$ between approching the branch $K^2$ from above and approching from below on the complex plan
 \begin{equation}\label{cutkosky}
 A(K^2 + i\epsilon) - A(K^2 - i\epsilon) =
 -4\pi^2 \int\frac{\dd^D l}{(2\pi)^D}A^{\mathrm{tree}}_LA^{\mathrm{tree}}_R \delta^{(+)}(l^2)\delta^{(+)}\big((l-K)^2\big) 
@@ -33,18 +33,19 @@ We illustrate~\cref{cutkosky} by two different examples.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{cutkosky.eps}
-  \caption{One-mass triangle and two-mass-easy box integrals and their cuts}
+  \caption{One-mass triangle and easy-two-mass box integrals and their cuts, where massive legs are marked with double lines.}
   \label{fig-cutkosky}
 \end{figure}
 \subsection{Example: cut one-mass triangle}
 \input{data/1m_triangle_cut}
-\subsection{Example: cut two-mass-easy box}
+\subsection{Example: cut easy-two-mass box}
 \input{data/2m_easy_box_integral}
 \input{data/2m_easy_box_cut}
 %
 In the previous examples, we see that the branch cuts come from the logrithms and dilogrithms in the scalar triangle and box integral. 
-In effect, the master integrals in~\cref{master_equation} do have branch cuts which can be distinguished from the different kinematic invariant dependences between them (cf. \eg \cite{Bern:1993kr}).
-In effect, one can use double cuts to reconstruct an amplitude if the rational term in~\cref{master_equation} is missing since it has no branch cuts.
+In effect, the master integrals in~\cref{master_equation} do have branch cuts which can be distinguished from the different kinematic invariant dependences between them~\cite{Bern:1993kr}.
+In effect, one can use double cuts to reconstruct an amplitude if the rational term in~\cref{master_equation} is missing because it has no branch cuts.
 This class of amplitudes is called \textit{cut-constructible}~\cite{Bern:1994cg}. 
 \\\\
-A systematic way to determine the coefficients in~\cref{master_equation} is to use quadruple~\cite{BRITTO2005499} and triple cuts~\cite{Forde:2007mi}, which is a generalization of the Cutkosky rule.
+Note that the Cutkosky rules are not restricted to double cuts. 
+In fact, a systematic way to determine the coefficients in~\cref{master_equation} is to use quadruple~\cite{BRITTO2005499} and triple cuts~\cite{Forde:2007mi}, which is a generalization of the Cutkosky rule.

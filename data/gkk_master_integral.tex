@@ -1,7 +1,7 @@
 \section{Basis for one-loop integrals} 
 It is known that there exists a basis for one-loop integrals: one can write down an one-loop integral as linear combination of box (four-point), triangle (three-point), bubble (two-point) and tadpole (one-point) integrals (cf. figure~\ref{fig-mi}).
 These integrals are called master integrals. 
-They are however IR-divergent and we have to work in $D=4-2\epsilon$ dimensions.
+In massless cases, they are however IR-divergent and we have to work in $D=4-2\epsilon$ dimensions.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\linewidth]{master_integrals.jpg}
@@ -14,14 +14,14 @@ As a result, we can write an amplitude $A$ as
 \begin{equation}\label{master_equation}
 A = \sum_i c_i I_i + \mathrm{rational} + \mathcal{O}(\epsilon)
 \end{equation}
-where the $I_i$'s are box, triangle and bubble integrals and there may be finite polynomial term in kinematic invariants at the order of $\mathcal{O}(\epsilon^0)$
+where the $I_i$'s are box, triangle and bubble integrals and there may be finite polynomial term in kinematic invariants at the order of $\mathcal{O}(\epsilon^0)$.
 Let us follow the review done in~\cite{Gluza:2010ws} on such a basis.
 \\\\
-We consider integrals in $D= 4-2\epsilon$ dimension and keep external momenta to be four-dimensional.
+We consider integrals in $D= 4-2\epsilon$ dimensions and keep external momenta to be four-dimensional.
 A generic one-loop-integral can be written as
 \begin{equation}\label{generic_loop_int}
 I_n[P(l)] = 
--i\int\frac{\dd^D l}{(2\pi)^D}\frac{P(l)}{l^2(l-K_1)^2(l-K_{12})^2\ldots(l-K_{1\ldots (n-1)})^2}
+-i\int\frac{\dd^D l}{(2\pi)^D}\frac{P(l)}{l^2(l-K_1)^2(l-K_{12})^2\ldots(l-K_{1\ldots n-1})^2}
 \end{equation}
 where $P$ is a polynomial in $l$.
 Let us begin with integrals with high multiplicity, with five or more external legs.
@@ -42,7 +42,7 @@ p_1,\ldots, p_l
 \end{equation} 
 to reduce the integral.
 In fact, the Gram determinant vanishes if either $\{p_i\}$ or $\{q_i\}$ are linearly dependent.
-One can expand each of the four-vectors $v^\mu$ in a basis of four chosen external momenta (\ie , the $K_i$'s in~\cref{generic_loop_int}) $\{b_i\}_{i=1\ldots 4}$ with the help of Gram determinants.
+One can expand each of the four-vectors $v^\mu$ in a basis $\{b_i\}_{i=1\ldots 4}$ composed of four chosen external momenta (\ie , the $K_i$'s in~\cref{generic_loop_int}) with the help of Gram determinants.
 At one-loop, the terms $l\cdot b_i$ are reducible since we can write them as differences between terms appearing in the denominator of~\cref{generic_loop_int}.
 They will lead to a sum of integrals with fewer propagators or fewer powers in $l$. 
 In other words, 
@@ -53,8 +53,7 @@ To prove our statement, we have to compute the contribution of five- or higher-p
 We will show that they are of the order $\mathcal{O}(\epsilon)$.
 Let us first consider the reduction of six- or higher-point integrals, which can be done to all orders in $\epsilon$. 
 \\\\
-Since the external momenta are taken in four-dimensional,
-we can write the following equation involving the Gram determinant for the loop momentum $l$ and five other external momenta (denoted only by numbers) 
+Because the external momenta are taken in four dimensions,by the property of the determinant (external momenta are denoted only by numbers) 
 \begin{equation}
 G\begin{pmatrix}
 l & 1 & 2 & 3 & 4\\

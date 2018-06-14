@@ -8,7 +8,9 @@ This process was proposed first by Britto, Cachazo and Feng~\cite{Britto:2004nc}
 Analogous to the double cut case~\cref{cutkosky}, in the integrand of a quadruply cut generic amplitude, we will have four delta functions with positive energy and a product of four tree-level amplitudes, which are located at the ends of each cut. 
 Therefore, under a quadruple cut,~\cref{master_equation} takes the form
 \begin{equation}
-\int\dd^D l \delta^{(+)}(l^2) \delta^{(+)}\big((l-K_1)^2\big)\big((l-K_{12})^2\big)\big((l+K_4)^2\big)
+\int\dd^D l \delta^{(+)}(l^2) \delta^{(+)}\big((l-K_1)^2\big)
+\delta^{(+)}\big((l-K_{12})^2\big)
+\delta^{(+)}\big((l+K_4)^2\big)
 A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_3^{\mathrm{tree}}A_4^{\mathrm{tree}}=
 \int_{i\in\mathrm{box}} c_i \Delta I_i
 \end{equation}
@@ -21,7 +23,8 @@ where $\Delta I_i$ are the cut box integrals.
 \end{figure}
 The only box integral that survives such a quadruple cut should contain exactly the some propagators, which gives
 \begin{equation}\label{quadcut_box}
-\Delta I = \int \dd^D l \delta^{(+)}(l^2) \delta^{(+)}\big((l-K_1)^2\big)\big((l-K_{12})^2\big)\big((l+K_4)^2\big)
+\Delta I = \int \dd^D l \delta^{(+)}(l^2) \delta^{(+)}\big((l-K_1)^2\big)\delta^{(+)}\big((l-K_{12})^2\big)
+\delta^{(+)}\big((l+K_4)^2\big)
 \end{equation}
 We should note that the loop momentum $l$ should be treated as complex vector and the delta functions impose the integration contour on the complex plan~\cite{PhysRevD.75.025028, Kosower:2011ty}.
 In generic cases, where all the external momenta $K_i$'s are not collinear to each other, 
@@ -33,7 +36,7 @@ c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_
 where $\mathcal{S}$ represents the set of solutions for the loop momentum $l$ under the contraint of the four delta functions in~\cref{quadcut_box} and $n_J$ is the number of intermediate particles having spin $J$.
 \\\\
 As an example, we will compute the all-gluon one-loop five-point MHV amplitude in $\mathcal{N} = 4$ super Yang-Mills $A_5^{\textrm{1-loop}}[g_1^- g_2^- g_3^+ g_4^+ g_5^+]$. 
-In fact, by an argument of power counting using the background field method~\cite{Gates:1983nr} and the supersymmetric Ward identity\begin{equation}\label{super_wi}
+In fact, by an argument of power counting using the background field method~\cite{Gates:1983nr} and the supersymmetric Ward identities\begin{equation}\label{super_wi}
 \begin{split}
 A^{\mathrm{tree}}(\Lambda_1^-, g_2^+, \ldots, g_j, \ldots, \Lambda_n^+)
 = \frac{\langle jn \rangle}{\langle j 1 \rangle}
