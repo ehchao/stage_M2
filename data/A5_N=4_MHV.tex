@@ -34,7 +34,7 @@ By considering the trivalent vertices appearing in this configuration, the only 
 |l_4] = \beta |4]
 \end{equation}
 Hence, the coefficient determined by~\cref{box_coeff} is
-\begin{equation}
+\begin{equation}\label{coef_c_1}
 \begin{split}
 c_1 = &
 \frac{1}{2}\frac{\langle 12 \rangle^4}{\langle 1 2 \rangle \langle 2 l_2\rangle \langle l_2 l_1 \rangle\langle l_1 1 \rangle}
@@ -60,7 +60,19 @@ c_1 = &
 \end{split}
 \end{equation}
 We list here the results for the other contributions. 
-The explicit computations are given in Appendix~\ref{appendix-a5mhv}.
+The explicit computations are given in Appendix~\ref{appendix-a5mhv}\footnote{
+In fact, the knowledge of $c_1$ suffices to obtain the full amplitude.
+In a supersymmetric theory, we can derive any amplitude from a super-amplitude using the superspace formulation (see \eg ref~\cite{Elvang:2013cua} for an introduction). 
+In an $\mathcal{N} = 4$ theory, the relationship between an $n$-point MHV amplitude and the relevant super-amplitude $\mathcal{A}_n$ at all level is uniquely determined by the knowledge at tree-level and is given by~\cite{Elvang:2010xn} 
+\begin{equation}
+\mathcal{A}_n^{\mathrm{MHV}} = \delta^{8}(\tilde{Q})\frac{1}{\langle n-1, n\rangle^4}A_n^{\mathrm{tree}}[+,+,\ldots,+,-,-]
+\end{equation}
+where $\tilde{Q}$ represents the set of supersymmetry generators.
+As one can notice from this expression, the term on the right hand side should be cyclic. 
+As a result, to determine the five-point MHV amplitude, it suffices to take~\cref{coef_c_1}, multiply it with the box integral $I_1$ corresponding to the configuration, pull out the factor $\langle 12 \rangle^4$ and symmetrize the rest.
+The result matches exactly~\cref{final_result_a5mhv}.
+}
+.
 \begin{equation}
 \begin{split}
 & c_8 = \frac{1}{2} s_{51}s_{45} A_5^{\textrm{MHV-tree}}[12345]
@@ -353,7 +365,7 @@ Because it is impossible to have such a tree-level contribution with other inter
 we have only to consider consider configurations with intermediate gluons.
 \\\\
 In consequence, the five-point MHV all-gluon amplitude $A_5^{\mathrm{1-loop}}[--+++]$ is given by
-\begin{equation}
+\begin{equation}\label{final_result_a5mhv}
 A_5^{\mathrm{1-loop}}[--+++] = c_1 I_{1} + c_8 I_8 + c_{10}I_{10} + c_{11}I_{11} + c_{16}I_{16}
 \end{equation}
 where the $I_{k}$'s are the corresponding box integral for each configuration.
