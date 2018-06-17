@@ -1,86 +1,87 @@
 \section{Introduction}
-Nowadays, experiments at the Large Hadron Collider (LHC) are now being conducted at the TeV scale.
-The detection of new physics at the scale of electroweak symmetry breaking becomes of great interest. 
+Nowadays, experiments at the Large Hadron Collider (LHC) are being conducted at the TeV level.
+The detection of new physics at the scale of electroweak symmetry breaking has been gaining great interest. 
 In order to confront theories of fundamental interactions such as Quantum Chromodynamics (QCD) with experimental data,
-quantum corrections of physical observables at higher order become crucial. 
+quantum corrections of physical observables at higher order must be considered with caution. 
 Especially, at high energies, processes such as real gluon emission become relevant when computing differential cross sections. 
 On the other hand, the formation of jets, if to be understood perturbatively, will also require processes with high gluon multiplicity.
-All these processes are described perturbatively by scattering amplitudes, or S-matrix elements, of which the computational rules are known since long time ago as the so-called Feynman diagrams. 
+All these processes are described perturbatively by scattering amplitudes, or S-matrix elements, and the computational rules have been known since long time ago as the so-called Feynman diagrams. 
 \\\\
-To get higher precision, virtual loop corrections of amplitudes should be included.
+To get more precise values for physical observables, virtual loop corrections of amplitudes should be included.
 However, traditional diagrammatic amplitude computations become highly complicated in gauge theories at loop-level.
-Compared with abelian theories such as QED, non-abelian theories allow higher-point interactions such as the three- and four-point gluon vertices in QCD.
-The increased complexity comes from both the rapidly increasing number of diagrams to take into account and the IR-divergent loop integrals due to massless particles.  
-One-loop results in QCD were only known up to four external legs before the early nineties~\cite{Bern:1994zx}. 
-During the past twenty years, many breakthroughs in amplitude computations have been made at both tree-level and one-loop.
-The main propose of this internship report is to give an overview of modern amplitude computational techniques at tree-level and one-loop.
-Especially, we will focus on the so-called "on-shell" methods, which exploit the analyticity of amplitudes and allow to obtain both tree- and loop-level amplitudes by taking certain internal propagators on-shell.  
-The current frontier of amplitude computation is at the next-to-next-to-leading order (NNLO), which these techniques are being generalized to.
+Compared with abelian theories such as Quantum Electrodynamics (QED), non-abelian theories allow higher-point interactions such as the three- and four-point gluon vertices in QCD.
+The increased complexity comes from both the rapidly growing number of diagrams to be taken into account and the IR-divergent loop integrals due to massless particles.  
+For instance, one-loop results in QCD were known only up to four external legs until the early nineties~\cite{Bern:1994zx}. 
+The past twenty years have seen many breakthroughs in amplitude computations at both tree-level and one-loop.
+Specifically, in this report, we will focus on the so-called "on-shell" methods, which exploit the analyticity of amplitudes and allow to obtain both tree- and loop-level amplitudes by taking certain internal propagators on-shell.  
+The current frontier of amplitude computation is at the next-to-next-to-leading order (NNLO), to which these techniques are being generalized.
 \\\\
-Tree-level amplitude computations are simpler because they do not require any loop integrals.
-Nevertheless, in a gauge theory, the computational complexity still increases when the number of external legs increases.
+%TODO how this paragraph can be placed otherwise?
+Tree-level amplitudes contribute at the leading order. 
+They are simpler than loop ones because they do not require any loop integrals.
+Nevertheless, in a gauge theory, the computational complexity explodes when the number of external legs increases.
 For instance, in the gluon scattering $gg\rightarrow 8g$ in QCD, there are about $10^7$ different contributing diagrams.
 However, the gauge freedom of a theory often allows one to get compact amplitude expressions after getting rid of redundancies due to polarization vectors.
-Some of the tree-level results are surprisingly simple.
-For example, when only two particles have a helicity different from the others\footnote{This is called an maximally-helicity-violating (MHV) amplitude}, an all-gluon amplitude can be written in a simple way conjectured by Parke and Taylor~\cite{PhysRevLett.56.2459}.
-%
-The formula was later proven by Berends and Giele using a recursion relation~\cite{BERENDS1988759,KOSOWER199023}.
-Later, the BCFW recursion, due to Britto, Cachazo, Feng and Witten~\cite{BRITTO2005499, PhysRevLett.94.181602}, or known as on-shell recursion, makes use of complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function contructed out of an $n$-point amplitude.
+On the other hand, some tree-level results are surprisingly simple.
+A good example is the formula conjectured by Parke and Taylor~\cite{PhysRevLett.56.2459} for maximally-helicity-violating amplitudes\footnote{
+\ie when only two particles have helicity different from the others
+}
+(MHV).
+This formula was later proven by Berends and Giele using a recursion relation~\cite{BERENDS1988759,KOSOWER199023}.
+A more modern approach, which will be presented in this report, is the Britto-Cachazo-Feng-Witten (BCFW), or on-shell, recursion~\cite{BRITTO2005499, PhysRevLett.94.181602}.
+It uses complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function constructed out of an $n$-point amplitude.
 This method does not require any knowledge of individual Feynman diagram, but only needs the behavior of the analytic function when certain combinations of external momenta go "on-shell". 
-%
 To be more precise, it is known that a tree-level amplitude factorizes when of the internal momenta is put on-shell.
-%
-%a tree-level amplitude becomes singular when one of its propagators carries a momentum which is on the mass shell. 
 The BCFW recursion consists in building an amplitude from the form in which it factorizes upon applying specific shifts to the external momenta.
-%
 In a massless gauge theory, the recursion relation of color-ordered amplitudes can be written in a compact way using the spinor-helicity formalism.
-%
 In particular, we can recover the Taylor-Parke formula for MHV amplitudes.
-The BCFW recursion, as a more modern approach, will be reviewed in this report.
 \\\\
 At one-loop,
 it is known that an $m$-point integral can be reduced to integrals of lower degree (\eg by a Passarino-Veltman reduction~\cite{PASSARINO1979151}). 
-One can thus write an amplitude as linear combination of $n$-point integrals with $n\leq 4$.
-In presence of massless particles, in order to handle IR-divergence, a commonly used regularization prescription is the dimensional regularization, which has the advantage of keeping the gauge invariance of the amplitude manifest.
-It can be proven in $D = 4-2\epsilon$ dimension that loop integrals can be written in a basis composed of bubble, triangle and box integrals (\ie two-, three- and four-point integrals), called the master integrals, up to the order of $\mathcal{O}(\epsilon^0)$ (see \eg reference~\cite{Gluza:2010ws} for a review).
+One can, thus, write an amplitude as linear combination of $n$-point integrals with $n\leq 4$.
+In presence of massless particles, in order to handle IR-divergence, a commonly used regularization prescription is the dimensional regularization.
+It has the advantage of keeping the gauge invariance of the amplitude manifest.
+It can be proven in $D = 4-2\epsilon$ dimension that loop integrals can be written in a basis composed of bubble, triangle, and box integrals (\ie two-, three- and four-point integrals), called the master integrals, up to the order of $\mathcal{O}(\epsilon^0)$ (see \eg reference~\cite{Gluza:2010ws} for a review).
 As a result, in one-loop, the main task is to find the coefficient for each of the master integrals for an amplitude.
 Of course, one should find a way to cleverly avoid traditional diagrammatic computations because the complexity would be far higher than at tree-level.
 As we will see, this can also be done by putting certain internal propagators on-shell.
-In the early nineties, Bern, Dixon, Dunbar and Kosower proposed a method based~\cite{Bern:1994zx} on the Cutkosky rules~\cite{doi:10.1063/1.1703676},  
+\\\\
+In the early nineties, Bern, Dixon, Dunbar and Kosower proposed a method based~\cite{Bern:1994zx} on the Cutkosky rules~\cite{doi:10.1063/1.1703676}, or known as generalized unitarity, 
 which becomes later an important basis for one-loop amplitude computation tools.
 The method consists in "cutting" two propagators in the loop.
 By cutting, we mean putting two chosen propagators on-shell and integrate over the phase-space corresponding to the two intermediate on-shell particles.
 Mathematically, this will give us the branch cut discontinuity of the amplitude across the kinematic channel where the cut is performed. 
 After doing so, we are able to write the discontinuity as a product of several tree-level amplitudes integrated over the phase-space of all possible intermediate species.
 As will be detailed later in this report, the knowledge of cut amplitudes helps to construct a loop-level amplitude in terms of tree-level ones. 
-This procedure was first used to show that, in an $\mathcal{N}=4$ super-Yang-Mills (SYM) theory, an one-loop $n$-point MHV amplitude can be written with only scalar box integrals~\cite{Bern:1994zx}.
-In the same year, it was noticed that the branch cuts of different types of master integrals have totally different behaviors due to the logrithms and dilogarithms which are present in the origin master integrals~\cite{Bern:1994cg}. 
+This procedure was first used to show that, in an $\mathcal{N}=4$ super-Yang-Mills (SYM) theory, a one-loop $n$-point MHV amplitude can be written with only scalar box integrals~\cite{Bern:1994zx}.
+Later, it was noticed that the branch cuts of different types of master integrals have totally different behaviors due to the logarithms and dilogarithms which are present in the origin master integrals~\cite{Bern:1994cg}. 
 To be more precise, because the master integrals contain logarithms and dilogarithms, this equals to the imaginary part of the final loop amplitude when a certain kinematic invariant changes sign.
 \\\\
-During the last decade, methods to extract coefficients of master integrals have been developed.
-In this report, we will present the ones which were inspired by the Cutkosky rules, or known as generalized unitarity.
-In Cutkosky's original paper, the cases of cutting more than two internal propagators were discussed.
+%TODO better linked?
+%During the last decade, methods to extract coefficients of master integrals have been developed.
+%In this report, we will present the ones which were inspired by the Cutkosky rules, or known as generalized unitarity.
+%In Cutkosky's original paper, the cases of cutting more than two internal propagators were discussed.
 Even though multiple cuts may not always have physical meaning, they provide efficient mathematical ideas in amplitude computations.
 Generalized unitarity cuts consist in replacing propagators by delta functions with positive frequency.
 A procedure to extract the box coefficients using quadruple cuts, \ie with four internal propagators put on-shell, was proposed by Britto, Cachazo and Feng~\cite{Britto:2004nc}. 
 This procedure was originally formulated in four dimensions, where a quadruple cut leads to four delta functions, which makes the integral over the phase-space trivial to compute. 
 The simplicity of the method is due to the trivial expressions of quadruply cut box integrals, which are just constants.
-Bubble and triangle integrals vanish under quadruple cuts.
-Concretely, as we will see later, the branch cut discontinuity of an one-loop amplitude can be written as a sum of products of four tree amplitudes.
+In contrast, bubble and triangle integrals vanish under quadruple cuts.
+Concretely, as we will see later, the branch cut discontinuity of a one-loop amplitude can be written as a sum of products of four tree amplitudes.
 These tree amplitudes are computed by considering the intermediate particles on-shell.
-We have to sum over all the possible intermediate species, kinematic and helicity configurations that could appear in the loop.
+We have to sum over all the possible intermediate species, kinematic, and helicity configurations that could appear in the loop.
 \\\\
 As for triangle and bubble coefficients, the story is a little bit more complicated because box integrals still survive under lower multiplicity cuts.
 One way of solving this problem is to choose good parametrizations such that bubble or triangle contributions can be isolated from the rest while we look at the pole structure of a cut amplitude.
 By a wise choice of parametrization, Forde shows~\cite{Forde:2007mi} an efficient way to extract bubble and triangle coefficients using triple cuts in $D=4$.
 Contrary to the quadruple cut case, there will still be remaining degrees of freedom for two-particle and triple cuts. 
 Forde's parametrization reduces the number of relevant polynomial terms in these degrees of freedom which should be taken into account during the extraction. 
-In other words, most of integrand integrate to zero under this parametrization and we can get the bubble and triangle contributions with the rest of the polynomial terms.
+In other words, most of the integrands integrate to zero under this parametrization, and we can get the bubble and triangle contributions with the rest of the polynomial terms.
 \\\\
-Note that not all theories are cut-constructible, \ie whose amplitudes can be totally determined by cuts~\cite{Bern:1994cg}. 
+Note that not all theories are cut-constructible, \ie those which amplitudes can be totally determined by cuts~\cite{Bern:1994cg}. 
 A further ambiguity is the rational term, \ie an additional polynomial in kinetic invariants in the expression of an amplitude. 
 In reality, one often encounters theories containing rational terms, \eg QCD.
-Rational terms do not have branch cut in kinetic invariants, thus they will result in vanishing contributions in cut amplitudes.
+Rational terms do not have branch cut in kinetic invariants; thus, they will result in vanishing contributions in cut amplitudes.
 In fact, they are residual terms under the four-dimension limit ($\epsilon\rightarrow 0$) that one should take at the end of dimensional regularization.
 %
 %In a cut-constuctible theory, the issue of rational term still exists due to the dimensional regularization scheme. 
@@ -91,10 +92,11 @@ Based on previous works in four dimensions, Badger shows how rational terms can 
 Dimensional regularization can be regarded as giving massless particles a (squared) mass $\mu^2$ from the $-2\epsilon$ dimension~\cite{Bern:1995db}.
 As we will see, higher order terms in $\mu^2$ may not contribute at the four-dimension limit.
 Then, using the analyticity of a cut amplitude in $\mu^2$, one can find the associated rational term.
-This point will be made clear before the end of the report.
+We wil elaborate more on this point further in the report.
 \\\\
-The tools described above enable us to compute amplitudes for all helicities at one-loop.
-In this report, we will review them in the following order.
+The tools described above enable us to compute amplitudes for all helicities up to one-loop.
+The main purpose of this report is to give a brief review of them.
+It is organized as follows.
 We start with a brief introduction on the spinor-helicity formalism, general facts in color-ordered amplitudes (section~\ref{sect-spinor}) and BCFW on-shell recursion (section~\ref{sect-bcfw}).
 An explicit computation using the on-shell recursion will be done for a six-point next-to-MHV (NMHV) tree-level all-gluon amplitude. 
 Then, we sketch the idea of generalized unitarity and verify the statement of the Cutkosky rules with examples of cuts in the s-channel of a one-mass triangle and a two-mass-easy box, with massless internal propagators (section~\ref{sect-unitarity}).

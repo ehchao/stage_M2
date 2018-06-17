@@ -1,167 +1,251 @@
-\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{Bern:1994zx}
-Z.~Bern, L.~J. Dixon, D.~C. Dunbar, and D.~A. Kosower.
-\newblock {One Loop $n$ Point Gauge Theory Amplitudes, Unitarity and Collinear
-  Limits}.
-\newblock {\em Nucl. Phys.}, B425:217--260, 1994.
+Z.~Bern, L.~J. Dixon, D.~C. Dunbar, and D.~A. Kosower, ``{One Loop $n$ Point
+  Gauge Theory Amplitudes, Unitarity and Collinear Limits},''
+  \href{http://dx.doi.org/10.1016/0550-3213(94)90179-1}{{\em Nucl. Phys.}
+  {\bfseries B425} (1994) 217--260},
+\href{http://arxiv.org/abs/hep-ph/9403226}{{\ttfamily arXiv:hep-ph/9403226
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9403226;%%.
 
 \bibitem{PhysRevLett.56.2459}
-S.~J. Parke and T.~R. Taylor.
-\newblock {Amplitude for $n$-Gluon Scattering}.
-\newblock {\em Phys. Rev. Lett.}, 56:2459--2460, Jun 1986.
+S.~J. Parke and T.~R. Taylor, ``{Amplitude for $n$-Gluon Scattering},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.56.2459}{{\em Phys. Rev. Lett.}
+  {\bfseries 56} (Jun, 1986) 2459--2460}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.56.2459}.
 
 \bibitem{BERENDS1988759}
-F.A. Berends and W.T. Giele.
-\newblock {Recursive Calculations for Processes with $n$ Gluons}.
-\newblock {\em Nuclear Physics B}, 306(4):759 -- 808, 1988.
+F.~Berends and W.~Giele, ``{Recursive Calculations for Processes with $n$
+  Gluons},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(88)90442-7}{{\em
+  Nuclear Physics B} {\bfseries 306} no.~4, (1988) 759 -- 808}.
+  \url{http://www.sciencedirect.com/science/article/pii/0550321388904427}.
 
 \bibitem{KOSOWER199023}
-D.~A. Kosower.
-\newblock {Light-Cone Recurrence Relations for QCD Amplitudes}.
-\newblock {\em Nuclear Physics B}, 335(1):23 -- 44, 1990.
+D.~A. Kosower, ``{Light-Cone Recurrence Relations for QCD Amplitudes},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(90)90167-C}{{\em
+  Nuclear Physics B} {\bfseries 335} no.~1, (1990) 23 -- 44}.
+  \url{http://www.sciencedirect.com/science/article/pii/055032139090167C}.
 
 \bibitem{BRITTO2005499}
-R.~Britto, F.~Cachazo, and B.~Feng.
-\newblock {New Recursion Relations for Tree Amplitudes of Gluons}.
-\newblock {\em Nuclear Physics B}, 715(1):499 -- 522, 2005.
+R.~Britto, F.~Cachazo, and B.~Feng, ``{New Recursion Relations for Tree
+  Amplitudes of Gluons},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/j.nuclphysb.2005.02.030}{{\em
+  Nuclear Physics B} {\bfseries 715} no.~1, (2005) 499 -- 522}.
+  \url{http://www.sciencedirect.com/science/article/pii/S0550321305001744}.
 
 \bibitem{PhysRevLett.94.181602}
-R.~Britto, F.~Cachazo, B.~Feng, and E.~Witten.
-\newblock {Direct Proof of the Tree-Level Scattering Amplitude Recursion
-  Relation in Yang-Mills Theory}.
-\newblock {\em Phys. Rev. Lett.}, 94:181602, May 2005.
+R.~Britto, F.~Cachazo, B.~Feng, and E.~Witten, ``{Direct Proof of the
+  Tree-Level Scattering Amplitude Recursion Relation in Yang-Mills Theory},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.94.181602}{{\em Phys. Rev. Lett.}
+  {\bfseries 94} (May, 2005) 181602}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.94.181602}.
 
 \bibitem{PASSARINO1979151}
-G.~Passarino and M.~Veltman.
-\newblock {One-Loop Corrections for $e^+e^-$ Annihilation into $\mu^+\mu^-$ in
-  the Weinberg Model}.
-\newblock {\em Nuclear Physics B}, 160(1):151 -- 207, 1979.
+G.~Passarino and M.~Veltman, ``{One-Loop Corrections for $e^+e^-$ Annihilation
+  into $\mu^+\mu^-$ in the Weinberg Model},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(79)90234-7}{{\em
+  Nuclear Physics B} {\bfseries 160} no.~1, (1979) 151 -- 207}.
+  \url{http://www.sciencedirect.com/science/article/pii/0550321379902347}.
 
 \bibitem{Gluza:2010ws}
-J.~Gluza, K.~Kajda, and D.~A. Kosower.
-\newblock {Towards a Basis for Planar Two-Loop Integrals}.
-\newblock {\em Phys. Rev.}, D83:045012, 2011.
+J.~Gluza, K.~Kajda, and D.~A. Kosower, ``{Towards a Basis for Planar Two-Loop
+  Integrals},'' \href{http://dx.doi.org/10.1103/PhysRevD.83.045012}{{\em Phys.
+  Rev.} {\bfseries D83} (2011) 045012},
+\href{http://arxiv.org/abs/1009.0472}{{\ttfamily arXiv:1009.0472 [hep-th]}}.
+%%CITATION = ARXIV:1009.0472;%%.
 
 \bibitem{doi:10.1063/1.1703676}
-R.~E. Cutkosky.
-\newblock {Singularities and Discontinuities of Feynman Amplitudes}.
-\newblock {\em Journal of Mathematical Physics}, 1(5):429--433, 1960.
+R.~E. Cutkosky, ``{Singularities and Discontinuities of Feynman Amplitudes},''
+  \href{http://dx.doi.org/10.1063/1.1703676}{{\em Journal of Mathematical
+  Physics} {\bfseries 1} no.~5, (1960) 429--433}.
+  \url{https://doi.org/10.1063/1.1703676}.
 
 \bibitem{Bern:1994cg}
-Z.~Bern, L.~J. Dixon, D.~C. Dunbar, and D.~A. Kosower.
-\newblock {Fusing Gauge Theory Tree Amplitudes into Loop Amplitudes}.
-\newblock {\em Nucl. Phys.}, B435:59--101, 1995.
+Z.~Bern, L.~J. Dixon, D.~C. Dunbar, and D.~A. Kosower, ``{Fusing Gauge Theory
+  Tree Amplitudes into Loop Amplitudes},''
+  \href{http://dx.doi.org/10.1016/0550-3213(94)00488-Z}{{\em Nucl. Phys.}
+  {\bfseries B435} (1995) 59--101},
+\href{http://arxiv.org/abs/hep-ph/9409265}{{\ttfamily arXiv:hep-ph/9409265
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9409265;%%.
 
 \bibitem{Britto:2004nc}
-R.~Britto, F.~Cachazo, and B.~Feng.
-\newblock {Generalized Unitarity and One-Loop Amplitudes in $\mathcal{N}=4$
-  Super-Yang-Mills}.
-\newblock {\em Nucl. Phys.}, B725:275--305, 2005.
+R.~Britto, F.~Cachazo, and B.~Feng, ``{Generalized Unitarity and One-Loop
+  Amplitudes in $\mathcal{N}=4$ Super-Yang-Mills},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2005.07.014}{{\em Nucl. Phys.}
+  {\bfseries B725} (2005) 275--305},
+\href{http://arxiv.org/abs/hep-th/0412103}{{\ttfamily arXiv:hep-th/0412103
+  [hep-th]}}.
+%%CITATION = HEP-TH/0412103;%%.
 
 \bibitem{Forde:2007mi}
-Darren Forde.
-\newblock {Direct Extraction of One-Loop Integral coefficients}.
-\newblock {\em Phys. Rev.}, D75:125019, 2007.
+D.~Forde, ``{Direct Extraction of One-Loop Integral coefficients},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.75.125019}{{\em Phys. Rev.}
+  {\bfseries D75} (2007) 125019},
+\href{http://arxiv.org/abs/0704.1835}{{\ttfamily arXiv:0704.1835 [hep-ph]}}.
+%%CITATION = ARXIV:0704.1835;%%.
 
 \bibitem{Badger:2008cm}
-S.~D. Badger.
-\newblock {Direct Extraction of One Loop Rational Terms}.
-\newblock {\em JHEP}, 01:049, 2009.
+S.~D. Badger, ``{Direct Extraction of One Loop Rational Terms},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2009/01/049}{{\em JHEP} {\bfseries
+  01} (2009) 049},
+\href{http://arxiv.org/abs/0806.4600}{{\ttfamily arXiv:0806.4600 [hep-ph]}}.
+%%CITATION = ARXIV:0806.4600;%%.
 
 \bibitem{Bern:1995db}
-Z.~Bern and A.~G. Morgan.
-\newblock {Massive Loop Amplitudes from Unitarity}.
-\newblock {\em Nucl. Phys.}, B467:479--509, 1996.
+Z.~Bern and A.~G. Morgan, ``{Massive Loop Amplitudes from Unitarity},''
+  \href{http://dx.doi.org/10.1016/0550-3213(96)00078-8}{{\em Nucl. Phys.}
+  {\bfseries B467} (1996) 479--509},
+\href{http://arxiv.org/abs/hep-ph/9511336}{{\ttfamily arXiv:hep-ph/9511336
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9511336;%%.
 
 \bibitem{Dixon:1996wi}
-L.~J. Dixon.
-\newblock {Calculating Scattering Amplitudes Efficiently}.
-\newblock In {\em {QCD and beyond. Proceedings, Theoretical Advanced Study
-  Institute in Elementary Particle Physics, TASI-95, Boulder, USA, June 4-30,
-  1995}}, pages 539--584, 1996.
+L.~J. Dixon, ``{Calculating Scattering Amplitudes Efficiently},'' in {\em {QCD
+  and beyond. Proceedings, Theoretical Advanced Study Institute in Elementary
+  Particle Physics, TASI-95, Boulder, USA, June 4-30, 1995}}, pp.~539--584.
+\newblock 1996.
+\newblock \href{http://arxiv.org/abs/hep-ph/9601359}{{\ttfamily
+  arXiv:hep-ph/9601359 [hep-ph]}}.
+\newblock
+\url{http://www-public.slac.stanford.edu/sciDoc/docMeta.aspx?slacPubNumber=SLAC-PUB-7106}.
+\newblock
+%%CITATION = HEP-PH/9601359;%%.
 
 \bibitem{Elvang:2013cua}
-H.~Elvang and Y.-T. Huang.
-\newblock {Scattering Amplitudes}.
-\newblock 2013.
+H.~Elvang and Y.-T. Huang, ``{Scattering Amplitudes},''
+\href{http://arxiv.org/abs/1308.1697}{{\ttfamily arXiv:1308.1697 [hep-th]}}.
+%%CITATION = ARXIV:1308.1697;%%.
 
 \bibitem{MANGANO1988461}
-M.~Mangano.
-\newblock {The Color Structure of Gluon Emission}.
-\newblock {\em Nuclear Physics B}, 309(3):461 -- 475, 1988.
+M.~Mangano, ``{The Color Structure of Gluon Emission},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(88)90453-1}{{\em
+  Nuclear Physics B} {\bfseries 309} no.~3, (1988) 461 -- 475}.
+  \url{http://www.sciencedirect.com/science/article/pii/0550321388904531}.
+
+\bibitem{BERN1991389}
+Z.~Bern and D.~A. Kosower, ``{Color Decomposition of One-Loop Amplitudes in
+  Gauge Theories},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(91)90567-H}{{\em
+  Nuclear Physics B} {\bfseries 362} no.~1, (1991) 389 -- 448}.
+  \url{http://www.sciencedirect.com/science/article/pii/055032139190567H}.
+
+\bibitem{Benincasa:2007xk}
+P.~Benincasa and F.~Cachazo, ``{Consistency Conditions on the S-Matrix of
+  Massless Particles},''
+\href{http://arxiv.org/abs/0705.4305}{{\ttfamily arXiv:0705.4305 [hep-th]}}.
+%%CITATION = ARXIV:0705.4305;%%.
 
 \bibitem{ArkaniHamed:2008yf}
-N.~Arkani-Hamed and J.~Kaplan.
-\newblock {On Tree Amplitudes in Gauge Theory and Gravity}.
-\newblock {\em JHEP}, 04:076, 2008.
+N.~Arkani-Hamed and J.~Kaplan, ``{On Tree Amplitudes in Gauge Theory and
+  Gravity},'' \href{http://dx.doi.org/10.1088/1126-6708/2008/04/076}{{\em JHEP}
+  {\bfseries 04} (2008) 076},
+\href{http://arxiv.org/abs/0801.2385}{{\ttfamily arXiv:0801.2385 [hep-th]}}.
+%%CITATION = ARXIV:0801.2385;%%.
 
 \bibitem{Mangano:1990by}
-M.~L. Mangano and S.~J. Parke.
-\newblock {Multiparton Amplitudes in Gauge Theories}.
-\newblock {\em Phys. Rept.}, 200:301--367, 1991.
+M.~L. Mangano and S.~J. Parke, ``{Multiparton Amplitudes in Gauge Theories},''
+  \href{http://dx.doi.org/10.1016/0370-1573(91)90091-Y}{{\em Phys. Rept.}
+  {\bfseries 200} (1991) 301--367},
+\href{http://arxiv.org/abs/hep-th/0509223}{{\ttfamily arXiv:hep-th/0509223
+  [hep-th]}}.
+%%CITATION = HEP-TH/0509223;%%.
 
 \bibitem{LANDAU1959181}
-L.D. Landau.
-\newblock {On Analytic Properties of Vertex Parts in Quantum Field Theory}.
-\newblock {\em Nuclear Physics}, 13(1):181 -- 192, 1959.
+L.~Landau, ``{On Analytic Properties of Vertex Parts in Quantum Field
+  Theory},''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0029-5582(59)90154-3}{{\em
+  Nuclear Physics} {\bfseries 13} no.~1, (1959) 181 -- 192}.
+  \url{http://www.sciencedirect.com/science/article/pii/0029558259901543}.
 
 \bibitem{Duplancic:2000sk}
-G.~Duplancic and B.~Nizic.
-\newblock {Dimensionally Regulated One Loop Box Scalar Integrals with Massless
-  Internal Lines}.
-\newblock {\em Eur. Phys. J.}, C20:357--370, 2001.
+G.~Duplancic and B.~Nizic, ``{Dimensionally Regulated One Loop Box Scalar
+  Integrals with Massless Internal Lines},''
+  \href{http://dx.doi.org/10.1007/s100520100675}{{\em Eur. Phys. J.} {\bfseries
+  C20} (2001) 357--370},
+\href{http://arxiv.org/abs/hep-ph/0006249}{{\ttfamily arXiv:hep-ph/0006249
+  [hep-ph]}}.
+%%CITATION = HEP-PH/0006249;%%.
 
 \bibitem{Bern:1993kr}
-Z.~Bern, L.~J. Dixon, and D.~A. Kosower.
-\newblock {Dimensionally Regulated Pentagon Integrals}.
-\newblock {\em Nucl. Phys.}, B412:751--816, 1994.
+Z.~Bern, L.~J. Dixon, and D.~A. Kosower, ``{Dimensionally Regulated Pentagon
+  Integrals},'' \href{http://dx.doi.org/10.1016/0550-3213(94)90398-0}{{\em
+  Nucl. Phys.} {\bfseries B412} (1994) 751--816},
+\href{http://arxiv.org/abs/hep-ph/9306240}{{\ttfamily arXiv:hep-ph/9306240
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9306240;%%.
 
 \bibitem{Somogyi:2011ir}
-G.~Somogyi.
-\newblock {Angular Integrals in $d$ Dimensions}.
-\newblock {\em J. Math. Phys.}, 52:083501, 2011.
+G.~Somogyi, ``{Angular Integrals in $d$ Dimensions},''
+  \href{http://dx.doi.org/10.1063/1.3615515}{{\em J. Math. Phys.} {\bfseries
+  52} (2011) 083501},
+\href{http://arxiv.org/abs/1101.3557}{{\ttfamily arXiv:1101.3557 [hep-ph]}}.
+%%CITATION = ARXIV:1101.3557;%%.
 
 \bibitem{PhysRevD.75.025028}
-C.~Vergu.
-\newblock {Factorization of the Connected Prescription for Yang-Mills
-  Amplitudes}.
-\newblock {\em Phys. Rev. D}, 75:025028, Jan 2007.
+C.~Vergu, ``{Factorization of the Connected Prescription for Yang-Mills
+  Amplitudes},'' \href{http://dx.doi.org/10.1103/PhysRevD.75.025028}{{\em Phys.
+  Rev. D} {\bfseries 75} (Jan, 2007) 025028}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevD.75.025028}.
 
 \bibitem{Kosower:2011ty}
-D.~A. Kosower and K.~J. Larsen.
-\newblock {Maximal Unitarity at Two Loops}.
-\newblock {\em Phys. Rev.}, D85:045017, 2012.
+D.~A. Kosower and K.~J. Larsen, ``{Maximal Unitarity at Two Loops},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.85.045017}{{\em Phys. Rev.}
+  {\bfseries D85} (2012) 045017},
+\href{http://arxiv.org/abs/1108.1180}{{\ttfamily arXiv:1108.1180 [hep-th]}}.
+%%CITATION = ARXIV:1108.1180;%%.
 
 \bibitem{Gates:1983nr}
-S.~J. Gates, M.~T. Grisaru, M.~Rocek, and W.~Siegel.
-\newblock {Superspace Or One Thousand and One Lessons in Supersymmetry}.
-\newblock {\em Front. Phys.}, 58:1--548, 1983.
+S.~J. Gates, M.~T. Grisaru, M.~Rocek, and W.~Siegel, ``{Superspace Or One
+  Thousand and One Lessons in Supersymmetry},'' {\em Front. Phys.} {\bfseries
+  58} (1983) 1--548,
+\href{http://arxiv.org/abs/hep-th/0108200}{{\ttfamily arXiv:hep-th/0108200
+  [hep-th]}}.
+%%CITATION = HEP-TH/0108200;%%.
+
+\bibitem{Elvang:2010xn}
+H.~Elvang, D.~Z. Freedman, and M.~Kiermaier, ``{SUSY Ward identities,
+  Superamplitudes, and Counterterms},''
+  \href{http://dx.doi.org/10.1088/1751-8113/44/45/454009}{{\em J. Phys.}
+  {\bfseries A44} (2011) 454009},
+\href{http://arxiv.org/abs/1012.3401}{{\ttfamily arXiv:1012.3401 [hep-th]}}.
+%%CITATION = ARXIV:1012.3401;%%.
 
 \bibitem{Ossola:2006us}
-G.~Ossola, C.~G. Papadopoulos, and R.~Pittau.
-\newblock {Reducing Full One-Loop Amplitudes to Scalar Integrals at the
-  Integrand Level}.
-\newblock {\em Nucl. Phys.}, B763:147--169, 2007.
+G.~Ossola, C.~G. Papadopoulos, and R.~Pittau, ``{Reducing Full One-Loop
+  Amplitudes to Scalar Integrals at the Integrand Level},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2006.11.012}{{\em Nucl. Phys.}
+  {\bfseries B763} (2007) 147--169},
+\href{http://arxiv.org/abs/hep-ph/0609007}{{\ttfamily arXiv:hep-ph/0609007
+  [hep-ph]}}.
+%%CITATION = HEP-PH/0609007;%%.
 
 \bibitem{Mahlon:1993si}
-G.~Mahlon.
-\newblock {Multi - Gluon Helicity Amplitudes Involving a Quark Loop}.
-\newblock {\em Phys. Rev.}, D49:4438--4453, 1994.
+G.~Mahlon, ``{Multi - Gluon Helicity Amplitudes Involving a Quark Loop},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.49.4438}{{\em Phys. Rev.} {\bfseries
+  D49} (1994) 4438--4453},
+\href{http://arxiv.org/abs/hep-ph/9312276}{{\ttfamily arXiv:hep-ph/9312276
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9312276;%%.
 
 \bibitem{Kilgore:2007qr}
-W.~B. Kilgore.
-\newblock {One-loop Integral Coefficients from Generalized Unitarity}.
-\newblock 2007.
+W.~B. Kilgore, ``{One-loop Integral Coefficients from Generalized Unitarity},''
+\href{http://arxiv.org/abs/0711.5015}{{\ttfamily arXiv:0711.5015 [hep-ph]}}.
+%%CITATION = ARXIV:0711.5015;%%.
 
 \bibitem{Binosi:2003yf}
-D.~Binosi and L.~Theussl.
-\newblock {JaxoDraw: A Graphical User Interface for Drawing Feynman Diagrams}.
-\newblock {\em Comput. Phys. Commun.}, 161:76--86, 2004.
+D.~Binosi and L.~Theussl, ``{JaxoDraw: A Graphical User Interface for Drawing
+  Feynman Diagrams},'' \href{http://dx.doi.org/10.1016/j.cpc.2004.05.001}{{\em
+  Comput. Phys. Commun.} {\bfseries 161} (2004) 76--86},
+\href{http://arxiv.org/abs/hep-ph/0309015}{{\ttfamily arXiv:hep-ph/0309015
+  [hep-ph]}}.
+%%CITATION = HEP-PH/0309015;%%.
 
 \bibitem{1994CoPhC..83...45V}
-J.~A.~M. {Vermaseren}.
-\newblock {Axodraw}.
-\newblock {\em Computer Physics Communications}, 83:45--58, October 1994.
+J.~A.~M. {Vermaseren}, ``{Axodraw},''
+  \href{http://dx.doi.org/10.1016/0010-4655(94)90034-5}{{\em Computer Physics
+  Communications} {\bfseries 83} (Oct., 1994) 45--58}.
 
-\end{thebibliography}
+\end{thebibliography}\endgroup
