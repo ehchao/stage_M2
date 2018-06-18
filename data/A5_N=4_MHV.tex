@@ -1,7 +1,7 @@
 \subsection*{$A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills}\label{sect-a5mhv}
 Let us see how to use quadruple cuts to extract box coefficients by computing the all-gluon MHV amplitude $A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills. 
 There are five possible configurations for the external momenta under a quadruple cut.
-Each of the configurations corresponds to a one-mass box integral.
+Each configuration corresponds to a one-mass box integral.
 Among the four tree-level amplitudes that we obtain from a quadruple cut~\cref{box_coeff}, there is a four-point amplitude and three three-point ones.
 As already noted in the original quadruple cut paper~\cite{Britto:2004nc}, massless legs in quadruple cut would lead to inconsistent results if we choose loop-momentun to be real\footnote{This was handled in~\cite{Britto:2004nc} by working in the signature $(--++)$.}. 
 However, in the contour integral scheme with complex loop momentum that we mentioned earlier, this problem is not present.
@@ -63,6 +63,21 @@ We list here the results for the other contributions.
 The explicit computations are given in Appendix~\ref{appendix-a5mhv}\footnote{
 In fact, the knowledge of $c_1$ suffices to obtain the full amplitude.
 In a supersymmetric theory, we can derive any amplitude from a super-amplitude using the superspace formulation (see \eg ref~\cite{Elvang:2013cua} for an introduction). 
+In an $\mathcal{N} = 4$ theory, the relationship between an $n$-point MHV amplitude and the relevant super-amplitude $\mathcal{A}_n$ at all level is uniquely determined by the knowledge at tree-level~\cite{Elvang:2010xn}.
+The MHV super-amplitude takes the form 
+\begin{equation}
+\mathcal{A}_n^{\mathrm{MHV}} = \frac{\delta^{8}(\tilde{Q})}{\langle 12 \rangle \ldots \langle n 1\rangle}
+\end{equation}
+where $\tilde{Q}$ represents the set of supersymmetry generators.
+To get an MHV amplitude with the gluons $m_1$ and $m_2$ having negative helicity, it suffices to apply the appropriate Grassmann differential operators to the superamplitude, which will produce the factor $\langle m_1 m_2\rangle$ that was missing compared \cref{parke-taylor}.
+Equivalently, all the helicity configurations in a given cut are related and thus, the knowledge of $c_1$ suffices for determining the whole amplitude. 
+}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
+\footnote{
+In fact, the knowledge of $c_1$ suffices to obtain the full amplitude.
+In a supersymmetric theory, we can derive any amplitude from a super-amplitude using the superspace formulation (see \eg ref~\cite{Elvang:2013cua} for an introduction). 
 In an $\mathcal{N} = 4$ theory, the relationship between an $n$-point MHV amplitude and the relevant super-amplitude $\mathcal{A}_n$ at all level is uniquely determined by the knowledge at tree-level and is given by~\cite{Elvang:2010xn} 
 \begin{equation}
 \mathcal{A}_n^{\mathrm{MHV}} = \delta^{8}(\tilde{Q})\frac{1}{\langle n-1, n\rangle^4}A_n^{\mathrm{tree}}[+,+,\ldots,+,-,-]
@@ -72,6 +87,9 @@ As one can notice from this expression, the term on the right hand side should b
 As a result, to determine the five-point MHV amplitude, it suffices to take~\cref{coef_c_1}, multiply it with the box integral $I_1$ corresponding to the configuration, pull out the factor $\langle 12 \rangle^4$ and symmetrize the rest.
 The result matches exactly~\cref{final_result_a5mhv}.
 }
+\fi
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 .
 \begin{equation}\label{remaining_a5}
 \begin{split}
