@@ -1,15 +1,15 @@
 \section{Introduction}
-Nowadays, experiments at the Large Hadron Collider (LHC) are being conducted at the TeV level.
+Nowadays, experiments at the Large Hadron Collider (LHC) are being conducted at the TeV scale.
 The detection of new physics at the scale of electroweak symmetry breaking has been gaining great interest. 
 In order to confront theories of fundamental interactions such as Quantum Chromodynamics (QCD) with experimental data,
-quantum corrections of physical observables at higher order must be considered with caution. 
+quantum corrections of physical observables at higher order must be considered. 
 Especially, at high energies, processes such as real gluon emission become relevant when computing differential cross sections. 
-On the other hand, the formation of jets, if to be understood perturbatively, will also require processes with high gluon multiplicity.
+On the other hand, we will have to take into account processes with high gluon multiplicity, which lead to jet formation.
 All these processes are described perturbatively by scattering amplitudes, or S-matrix elements, and the computational rules have been known since long time ago as the so-called Feynman diagrams. 
 \\\\
 To get more precise values for physical observables, virtual loop corrections of amplitudes should be included.
 However, traditional diagrammatic amplitude computations become highly complicated in gauge theories at loop-level.
-Compared with abelian theories such as Quantum Electrodynamics (QED), non-abelian theories allow higher-point interactions such as the three- and four-point gluon vertices in QCD.
+Compared with abelian theories such as Quantum Electrodynamics (QED), non-abelian theories include higher-point interactions such as the three- and four-point gluon vertices in QCD.
 The increased complexity comes from both the rapidly growing number of diagrams to be taken into account and the IR-divergent loop integrals due to massless particles.  
 For instance, one-loop results in QCD were known only up to four external legs until the early nineties~\cite{Bern:1994zx}. 
 The past twenty years have seen many breakthroughs in amplitude computations at both tree-level and one-loop.
@@ -23,10 +23,10 @@ Nevertheless, in a gauge theory, the computational complexity explodes when the 
 For instance, in the gluon scattering $gg\rightarrow 8g$ in QCD, there are about $10^7$ different contributing diagrams.
 However, the gauge freedom of a theory often allows one to get compact amplitude expressions after getting rid of redundancies due to polarization vectors.
 On the other hand, some tree-level results are surprisingly simple.
-A good example is the formula conjectured by Parke and Taylor~\cite{PhysRevLett.56.2459} for maximally-helicity-violating amplitudes\footnote{
+A good example is the formula conjectured by Parke and Taylor~\cite{PhysRevLett.56.2459} for maximally-helicity-violating (MHV) amplitudes\footnote{
 \ie when only two particles have helicity different from the others
 }
-(MHV).
+.
 This formula was later proven by Berends and Giele using a recursion relation~\cite{BERENDS1988759,KOSOWER199023}.
 A more modern approach, which will be presented in this report, is the Britto-Cachazo-Feng-Witten (BCFW), or on-shell, recursion~\cite{BRITTO2005499, PhysRevLett.94.181602}.
 It uses complex analysis to relate a higher-point amplitude to lower-point ones by studying the poles of an analytic function constructed out of an $n$-point amplitude.
@@ -46,7 +46,7 @@ As a result, in one-loop, the main task is to find the coefficient for each of t
 Of course, one should find a way to cleverly avoid traditional diagrammatic computations because the complexity would be far higher than at tree-level.
 As we will see, this can also be done by putting certain internal propagators on-shell.
 \\\\
-In the early nineties, Bern, Dixon, Dunbar and Kosower proposed a method based~\cite{Bern:1994zx} on the Cutkosky rules~\cite{doi:10.1063/1.1703676}, or known as generalized unitarity, 
+In the early nineties, Bern, Dixon, Dunbar and Kosower proposed a method~\cite{Bern:1994zx} based on the Cutkosky rules~\cite{doi:10.1063/1.1703676}, or known as generalized unitarity, 
 which becomes later an important basis for one-loop amplitude computation tools.
 The method consists in "cutting" two propagators in the loop.
 By cutting, we mean putting two chosen propagators on-shell and integrate over the phase-space corresponding to the two intermediate on-shell particles.
@@ -78,11 +78,11 @@ Contrary to the quadruple cut case, there will still be remaining degrees of fre
 Forde's parametrization reduces the number of relevant polynomial terms in these degrees of freedom which should be taken into account during the extraction. 
 In other words, most of the integrands integrate to zero under this parametrization, and we can get the bubble and triangle contributions with the rest of the polynomial terms.
 \\\\
-Note that not all theories are cut-constructible, \ie those which amplitudes can be totally determined by cuts~\cite{Bern:1994cg}. 
+Note that not all theories are cut-constructible, \ie those whose amplitudes can be totally determined by cuts~\cite{Bern:1994cg}. 
 A further ambiguity is the rational term, \ie an additional polynomial in kinetic invariants in the expression of an amplitude. 
 In reality, one often encounters theories containing rational terms, \eg QCD.
 Rational terms do not have branch cut in kinetic invariants; thus, they will result in vanishing contributions in cut amplitudes.
-In fact, they are residual terms under the four-dimension limit ($\epsilon\rightarrow 0$) that one should take at the end of dimensional regularization.
+In fact, they are residual terms under the four-dimensional limit ($\epsilon\rightarrow 0$) that one should take at the end of dimensional regularization.
 %
 %In a cut-constuctible theory, the issue of rational term still exists due to the dimensional regularization scheme. 
 %Indeed, in dimension regularization, we have to take the limit $\epsilon\rightarrow 0$ at the end of the calculation. 
