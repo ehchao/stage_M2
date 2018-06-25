@@ -8,8 +8,9 @@
 \usepackage{listings}
 \usepackage{booktabs}
 \usepackage{amsmath,amsthm,amssymb,graphicx,mathrsfs}
-\usepackage{stmaryrd}
+%\usepackage{stmaryrd}
 \usepackage{slashed}
+\usepackage{appendixnumberbeamer}
 %\usepackage[hmargin={3.5cm,3.5cm},top=4cm,bottom=4cm]{geometry} %problem...
 
 \graphicspath{{images/}}
@@ -96,7 +97,7 @@
 \item Spinor-helicity formalism
 \item On-shell recursion
 \item Generalized unitarity
-\item Conclusion
+\item Summary
 
 \end{enumerate}
 
@@ -333,9 +334,10 @@ A(K^2 + i\epsilon) - A(K^2 - i\epsilon) =
 \begin{equation*}
 c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_3^{\mathrm{tree}}A_4^{\mathrm{tree}}
 \end{equation*}
+
 \end{column}
 \end{columns}
-
+\item<5-> Example:  $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in  $\mathcal{N}=4$ SYM
 
 \end{itemize}
 
@@ -383,6 +385,8 @@ The coefficient is determined with a double and a triple cut
 b = -i[\Inf_t[\Inf_y A_1 A_2](y)](t)\big|_{t\rightarrow 0 , y^m\rightarrow \frac{1}{m+1}}
 -\frac{1}{2}\sum_{C_{\mathrm{tri}}}[\Inf_t A_1A_2A_3](t)\big|_{t^j\rightarrow T(j)}
 \end{equation*} 
+
+\item<5-> Example: triangle coefficient for 6-$\gamma$ in QED
 
 \end{itemize}
 
@@ -436,7 +440,7 @@ l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
 \\
 & C_4^{[4]} = \frac{i}{2}\sum_{\sigma}\Inf_{\mu^2}[A_1A_2A_3A_4(\bar{l}^\sigma)]\big|_{\mu^4}
 \\
-& C_3^{[2]} = \frac{1}{2}\sum_\sigma\Inf_{\mu^2}[\Inf_t[A_1A_2A_3(\bar{l}^\sigma)]\big|_{t^0}]\big|{\mu^2}
+& C_3^{[2]} = \frac{1}{2}\sum_\sigma\Inf_{\mu^2}[\Inf_t[A_1A_2A_3(\bar{l}^\sigma)]\big|_{t^0}]\big|_{\mu^2}
 \\
 & C_2^{[2]} = -i\Inf_{\mu^2}[\Inf_t[\Inf_y A_1 A_2(\bar{l}(y,t,\mu^2))]]]\big|_{\mu^2,t^0,y^i\rightarrow Y_i} -\frac{1}{2}\sum_{\sigma}\Inf_{\mu^2}[\Inf_tA_1A_2A_3^{K_3}(\bar{l}, t, \mu^2)]]\big|_{\mu^2,t^i\rightarrow T_i}
 \end{split}
@@ -458,6 +462,115 @@ l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
 
 \end{frame}
 
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=20]
+\frametitle{Box coefficients for $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in  $\mathcal{N}=4$ SYM}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{A5mhv.eps}
+  \caption{The only non-vanishing contributions for $A_5^{\mathrm{1-loop}}[1^-2^-3^+4^+5^+]$ in $\mathcal{N}=4$ super Yang-Mills. The momenta in the loop are enumerated in the same way as the top-left one.}
+  \label{fig-a5mhv}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=10]
+\frametitle{}
+\begin{itemize}
+\item  Configuration $c_1$
+\small
+\begin{equation*}
+|l_1\rangle = \alpha |5\rangle \quad,\quad
+|l_2\rangle = \delta |3\rangle \quad,\quad
+|l_3\rangle = \gamma |l_3\rangle\quad,\quad
+|l_3] = \eta|4]\quad,\quad
+|l_4] = \beta |4]
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+c_1 = &
+\frac{1}{2}\frac{\langle 12 \rangle^4}{\langle 1 2 \rangle \langle 2 l_2\rangle \langle l_2 l_1 \rangle\langle l_1 1 \rangle}
+\frac{[3l_3]^3}{[l_3 l_2][l_2 3]}
+\frac{\langle l_3 l_4 \rangle^{3}}{\langle l_4 4 \rangle \langle 4 l_3\rangle}
+\frac{[l_4 5 ]^3}{[5l_1][l_1 l_4]}
+\\
+= & 
+\frac{1}{2}\frac{\langle 12 \rangle^3}{\langle 2 l_2 \rangle\langle l_2 l_1 \rangle\langle l_1 1\rangle}
+\frac{[34]^2\langle l_4 4\rangle}{[l_3 l_2][l_2 3]\langle 4 l_3\rangle}
+\frac{[l_4 5]^2}{[5l_1 ][l_1 l_4]}
+[3 l_3]\langle l_3 l_4 \rangle [l_4 5]
+\\
+= &
+\frac{1}{2}
+\frac{\langle 12 \rangle^3[34]^2[45]}{\langle 15 \rangle\langle2|\slashed{K}_{3}|4]}
+\\
+= &
+\frac{1}{2}\frac{\langle 12 \rangle^4 s_{34}s_{45}}{\langle 12 \rangle\langle 23 \rangle \langle 34\rangle \langle 45\rangle \langle 51\rangle}
+\\
+= &
+\frac{1}{2}s_{34}s_{45}A_5^{\textrm{MHV-tree}}[12345]
+\end{split}
+\end{equation*}
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Triangle coefficients for 6-$\gamma$ (-+-+-+)}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\linewidth]{6photons.eps}
+  \caption{Triple cut for the six-photon example}
+  \label{fig-6photons}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=20]
+\begin{itemize}
+\item The two contributing helicity configurations
+\small
+\begin{equation*}
+A_{4}^{\mathrm{tree}}(f_1^- 1^-2^+\bar{f}_3^+)
+A_4^{\mathrm{tree}}(\bar{f}_1^+f_2^-5^-6^+)
+A_4^{\mathrm{tree}}(\bar{f}_2^+ f_3^-3^-4^+)
+=
+-8ie^6\frac{\langle l_1 1\rangle^2 \langle 5l_2 \rangle^2\langle 3l_3\rangle^2}{\langle2 l_3\rangle\langle l_1 2\rangle\langle 6 l_1 \rangle\langle l_2 6\rangle\langle 4 l_2\rangle\langle l_3 4\rangle}
+\end{equation*}
+
+
+\begin{equation*}
+A_{4}^{\mathrm{tree}}(f_1^+ 1^-2^+\bar{f}_3^-)
+A_4^{\mathrm{tree}}(\bar{f}_1^-f_2^+5^-6^+)
+A_4^{\mathrm{tree}}(\bar{f}_2^- f_3^+3^-4^+)
+=
+-8ie^6\frac{[2l_1]^2[6l_2]^2[4l_3]^2}{[l_1 1 ][1l_3][l_2 5][5l_1][l_2 3][3l_3]}
+\end{equation*}
+
+\normalsize
+
+\item Their contributions are equal because
+
+
+\begin{equation*}
+\Inf\Big(\frac{([4K_2^\flat] + \frac{\alpha_{12}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{21}\langle 3K_2^\flat\rangle)}{([4K_2^\flat] + \frac{\alpha_{22}}{t}[4K_1^\flat])(t\langle 3K_1^\flat \rangle + \alpha_{11}\langle 3K_2^\flat\rangle)}(\ldots)\Big)
+= 1
+\end{equation*} 
+
+\item The triangle coefficient
+
+\begin{equation*}
+8ie^6\sum_{\gamma_\pm}\frac{\langle K_1^\flat 1 \rangle^2\langle K_1^\flat 5\rangle^5 \langle K_1^\flat 3 \rangle^2}{\langle K_1^\flat 2 \rangle^2\langle K_1^\flat 6\rangle^2 \langle K_1^\flat 4 \rangle^2}
+\end{equation*}
+
+\end{itemize}
+\end{frame}
 
 \end{document}
 
