@@ -343,7 +343,7 @@ c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink=20]
+\begin{frame}[shrink=10]
 \frametitle{Generalized unitarity}
 \framesubtitle{}
 \begin{itemize}
@@ -354,10 +354,17 @@ c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_
 \color{black}\normalsize
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\linewidth]{triple_cut.eps}
+  \includegraphics[width=0.5\linewidth]{triple_cut.eps}
 \end{figure}
 
-\item<2-> Parametrization of the loop momentum in a triple cut
+\item<2-> Generic triply cut amplitude
+\small
+\begin{equation*}
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2) A_1A_2A_3 = 
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2)\Big(\mathrm{Inf}_t(A_1A_2A_3)(t) + \sum_{\textrm{$t_j$ poles}}\frac{\res_{t = t_j}A_1 A_2 A_3}{t-t_j}\Big)
+\end{equation*}
+\normalsize
+\item<3-> Parametrization of the loop momentum in a triple cut
 
 \small
 \begin{equation*}
@@ -373,20 +380,20 @@ K_2^\flat = K_2 - \frac{S_2}{\gamma}K_1^\flat
 \normalsize
 $\Rightarrow$ the triangle coefficient is given by the $t^0$ term of $\mathrm{Inf}_t(A_1A_2A_3)(t)$
 
-\item<3-> Parametrization for bubble with a null vector $\chi$
+\item<4-> Parametrization for bubble with a null vector $\chi$
 \small
 \begin{equation*}
 l^\mu = yK_1^{\flat,\mu} + \frac{S_1}{\gamma}(1-y)\chi^\mu + \frac{t}{2}\langle K_1^\flat|\gamma^\mu|\chi] + \frac{S_1}{2\gamma}\frac{y}{t}(1-y)\langle \chi|\gamma^\mu|K_1^\flat]
 \end{equation*}
 \normalsize
-\item<4->[]
+\item<5->[]
 The coefficient is determined with a double and a triple cut
 \begin{equation*}
 b = -i[\Inf_t[\Inf_y A_1 A_2](y)](t)\big|_{t\rightarrow 0 , y^m\rightarrow \frac{1}{m+1}}
 -\frac{1}{2}\sum_{C_{\mathrm{tri}}}[\Inf_t A_1A_2A_3](t)\big|_{t^j\rightarrow T(j)}
 \end{equation*} 
 
-\item<5-> Example: triangle coefficient for 6-$\gamma$ in QED
+\item<6-> Example: triangle coefficient for 6-$\gamma$ in QED
 
 \end{itemize}
 
