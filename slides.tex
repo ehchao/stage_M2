@@ -108,26 +108,39 @@
 \framesubtitle{}
 
 \begin{itemize}
-\item<1-> Motivation: perturbative computation at high energies in QCD \\ \eg high gluon multiplicity for jet, real gluon emission, loop-correction
-\item<2-> Difficulties of traditional diagrammatic computation
+\item<1-> Motivation: perturbative computations for high energy collider \\ \eg high jet multiplicity, real gluon emission, loop-correction
+\item<2-> Difficulty of traditional diagrammatic computation :
+    %\begin{itemize}
+     high graph multiplicity in non-abelian theories \\
+     \eg more than $10^7$ Feynman diagrams for $2g\rightarrow 8g$ at tree-level 
+     \tiny\color{blue}[M. L. Mangano \& S. J. Parke, Phys.
+Rept. (1991)]\color{black}\normalsize
+    %\eg beyond 4-gluon tree amplitude \tiny\color{blue}[Z. Bern, L. J. Dixon, D. C. Dunbar, \& D. A. Kosower, Nucl. Phys. B425 (1994)]\color{black}\normalsize
+ %   \item<4-> Divergent loop integrals
+    %\end{itemize}
+\item<3-> Solution: use the analyticity and singularity structure of amplitudes
     \begin{itemize}
-    \item<3-> High graph multiplicity in non-abelian theories. \\ \eg beyond 4-gluon tree amplitude \tiny\color{blue}[Z. Bern, L. J. Dixon, D. C. Dunbar, \& D. A. Kosower, Nucl. Phys. B425 (1994)]\color{black}\normalsize
-    \item<4-> Divergent loop integrals
+    \item<4-> Tree-level: on-shell recursion (factorization of amplitudes)
+    \item<5-> One-loop: generalized unitarity (cut rules)
     \end{itemize}
-\item<5-> Solutions: use the analyticity and singularity structure of amplitudes
-    \begin{itemize}
-    \item<6-> Tree-level: on-shell recursion
-    \item<7-> One-loop: generalized unitarity
-    \end{itemize}
-\item<8-> \textbf{Convention}: signature $(+,-,-,-)$, dimensional regularization in $D=4-2\epsilon$, massless particles
 \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%
 \begin{frame}[shrink=20]
 \frametitle{Spinor-helicity formalism}
-\framesubtitle{\tiny\color{blue}[L. J. Dixon, Proceedings, TASI-95]\color{black}\normalsize}
+\framesubtitle{\tiny\color{blue}[L. J. Dixon, Proceedings, TASI-95]
+[H. Elvang \& Y.-T. Huang, arXiv:1308.1697]
+\color{black}\normalsize}
 \begin{itemize}
-\item<1-> 2-dimensional spinors from Dirac spinors in massless case
+\item<1-> \textbf{Convention}: signature $(+,-,-,-)$, massless particles
+%\item<2-> Dirac equation $\Rightarrow$ Weyl equations in massless cases. 
+%       \\ Contracted momentum
+%\begin{equation*}
+%\slashed{p} = p_\mu\sigma^\mu_{\alpha\dot{\beta}} +p_\mu\bar{\sigma^\mu}_{\dot{\alpha}\beta}
+%\end{equation*}
+
+
+\item<2-> 2-dimensional spinors from Dirac spinors in massless case
 \begin{equation*}
 \begin{split}
 & v_+(p) = \begin{pmatrix}
@@ -145,28 +158,18 @@ v_-(p) = \begin{pmatrix}
 \end{split}
 \end{equation*} 
 
-\item<2-> Lorentz invariant products
+\item<4-> Lorentz invariant products
 \begin{equation*}
  \langle ij \rangle = \bar{u}_-(i)u_+(j) 
 \quad,\quad
  [ij] = \bar{u}_+(i)u_-(j)
 \end{equation*}
 
-\item<3-> Momentum
+\item<5-> Polarization vectors
 \begin{equation*}
-\slashed{p} = \begin{pmatrix}
-0 & p_{a\dot{b}} \\ 
-p^{\dot{a}b} & 0
-\end{pmatrix} = |p\rangle [p| + |p]\langle p|
+\varepsilon^+_\mu (p, q) = \frac{\langle q | \bar{\sigma}_\mu |p]}{\sqrt{2}\langle qp \rangle}
 \quad,\quad
-(p+q)^2 = \langle pq\rangle[qp]
-\end{equation*}
-
-\item<4-> Polarization vectors
-\begin{equation*}
-\varepsilon^+_\mu (p, q) = \frac{\langle q | \gamma_\mu |p]}{\sqrt{2}\langle qp \rangle}
-\quad,\quad
-\varepsilon^-_\mu (p, q) = -\frac{[q|\gamma_\mu | p\rangle}{\sqrt{2}[qp]}
+\varepsilon^-_\mu (p, q) = -\frac{[q|\sigma_\mu | p\rangle}{\sqrt{2}[qp]}
 \end{equation*}
 
 \end{itemize}
@@ -174,35 +177,36 @@ p^{\dot{a}b} & 0
 \end{frame}
 %%%%%%%%%%%%%%%%%%
 \begin{frame}[shrink=30]
-\frametitle{Spinor-helicity formalism}
+\frametitle{Tree-level color-ordered amplitudes}
 \framesubtitle{}
 \begin{itemize}
-\item<1-> Color decomposition in a Yang-Mills theory
+\item<1-> Color decomposition in a Yang-Mills theory for all-gluon amplitudes
 \\
 \tiny\color{blue}[M. Mangano, Nucl. Phys. B 309
 no. 3, (1988)][Z. Bern \& D. A. Kosower, Nucl. Phys. B 362 no. 1, (1991)]\color{black}\normalsize
 
 \small
 \begin{equation*}
-\mathcal{A}_n^{\mathrm{tree}}(g_1, \ldots, g_n) = g'^{n-2}\sum_{\sigma\in\textrm{ permutation of }\{2,\ldots\}} A_n[1,\sigma(2),\ldots,\sigma(n))]\tr(T^{a_1} T^{a_{\sigma(2)}}\ldots T^{a_{\sigma(n)}})
+\mathcal{A}_n^{\mathrm{tree}}(1^{h_1}_1, \ldots, n^{h_n}) = g^{n-2}\sum_{\sigma\in\textrm{ permutation of }\{2,\ldots\}} A_n[1,\sigma(2),\ldots,\sigma(n))]\tr(T^{a_1} T^{a_{\sigma(2)}}\ldots T^{a_{\sigma(n)}})
 \end{equation*}
 \normalsize
 
 $A_n[\ldots]$: color-ordered amplitude. 
 
-\item<2-> Non-trivial 3-point all-gluon amplitudes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\item<2-> Non-trivial 3-point all-gluon amplitudes
+%\begin{equation*}
+%A^{\mathrm{tree}}_3[g_1^- g_2^- g_3^+] = \frac{\langle 12 \rangle^3}{\langle 13 \rangle \langle 32 \rangle}
+%\quad,\quad
+% A^{\mathrm{tree}}_3[g_1^+ g_2^+ g_3^-] = \frac{ [12]^3}{[13 ][ 32 ]}
+%\end{equation*}
+
+\item<2-> Vanishing helicity configuration for $n\geq 4$
 \begin{equation*}
-A^{\mathrm{tree}}_3[g_1^- g_2^- g_3^+] = \frac{\langle 12 \rangle^3}{\langle 13 \rangle \langle 32 \rangle}
-\quad,\quad
- A^{\mathrm{tree}}_3[g_1^+ g_2^+ g_3^-] = \frac{ [12]^3}{[13 ][ 32 ]}
+A^{\mathrm{tree}}_n[g_1^+ \ldots g_n^+] = A^{\mathrm{tree}}_n[g_1^+ \ldots g_i^- \ldots g_n^+] = 0
 \end{equation*}
 
-\item<3-> Vanishing helicity configuration for $n\geq 4$
-\begin{equation*}
-A^{\mathrm{tree}}_n[g_1^\pm \ldots g_n^\pm] = A^{\mathrm{tree}}_n[g_1^\pm \ldots g_i^\mp \ldots g_n^\pm] = 0
-\end{equation*}
-
-\item<4-> First non-vanishing class: maximally-helicity-violating (MHV), given by the Parke-Taylor formulae
+\item<3-> First non-vanishing class: maximally-helicity-violating (MHV), given by the Parke-Taylor formula ($n\geq 3$)
 \tiny\color{blue}[S. J. Parke \& T. R. Taylor, Phys. Rev. Lett.
 56 (1986)]
 [F. Berends \& W. Giele, Nucl. Phys. B 306 no. 4, (1988)]
@@ -213,79 +217,29 @@ A^{\mathrm{tree}}_n[g_1^\pm \ldots g_n^\pm] = A^{\mathrm{tree}}_n[g_1^\pm \ldots
 \begin{split}
 & A^{\mathrm{tree}}_n[1^+\ldots i^-\ldots j^-\ldots n^+] = 
 \frac{\langle ij \rangle^4}{\langle 12 \rangle\ldots \langle n1 \rangle}
-\\
-& A^{\mathrm{tree}}_n[1^-\ldots i^+\ldots j^+\ldots n^-] = 
-\frac{[ ij]^4}{[ 12 ]\ldots [n1 ]}
+%\\
+%& A^{\mathrm{tree}}_n[1^-\ldots i^+\ldots j^+\ldots n^-] = 
+%\frac{[ ij]^4}{[ 12 ]\ldots [n1 ]}
 \end{split}
 \end{equation*}
 
-
-\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink=20]
-\frametitle{On-shell recursion}
-\framesubtitle{
-}
-\begin{itemize}
-\item<1-> Momentum shift
+\item<4-> On-shell recursion 
 \\
 \tiny\color{blue}
 [R. Britto, F. Cachazo, \& B. Feng, Nucl. Phys. B 715 no. 1, (2005)] 
 [R. Britto, F. Cachazo, B. Feng, \& E. Witten, Phys. Rev. Lett. 94
-(2005)]
-\color{black}\normalsize
-\begin{equation*}
-|\hat{i}] = |i] + z |j], \quad |\hat{j}] = |j], \quad|\hat{i}\rangle = |i\rangle, \quad |\hat{j}\rangle = |j\rangle - z|i\rangle
-\end{equation*}  
-
-\item<2-> Cauchy's theorem $\Rightarrow$ relation between shifted and unshifted amplitudes
-\begin{equation*}
-A_n = - \sum_{z = z_I}\res\frac{\hat{A}_n(z)}{z} + B_n
-=\sum_{z = z_I} \hat{A}_L(z_I)\frac{1}{P_I^2}\hat{A}_R(z_I) + B_n
-\end{equation*} 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.5\linewidth]{bcfw.eps}
-\end{figure}
-
-\item<3-> $B_n$ vanishes under certain helicity configurations
-\tiny\color{blue}[N. Arkani-Hamed \& J. Kaplan, JHEP 04 (2008)]
-\color{black}\normalsize
+(2005)]\color{black}\normalsize
+\\
+ $\Rightarrow$ all helicity $n$-point amplitudes
 
 \end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%
-\begin{frame}[shrink=30]
-\frametitle{On-shell recursion}
-\framesubtitle{Example: $A_6[1^-2^-3^-4^+5^+6^+]$}
-
-\begin{itemize}
-\item<1-> Possible configurations
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\linewidth]{A6nmhv.eps}
-\end{figure}
-
-\item[]<2->
-\begin{equation*}
-\begin{split}
-A_6[1^-2^-3^-4^+5^+6^+] = & A_a + A_c 
-\\ =&
--\frac{\langle 3 |\slashed{P}_{12}|6]^3}{[61]\langle 34\rangle \langle 45\rangle\langle 5|\slashed{P}_{16}|2][12]s_{126}}
--\frac{[4|\slashed{P}_{56}|1\rangle^3}{s_{156}\langle 5|\slashed{P}_{16}|2][23][34]\langle 56\rangle\langle 61\rangle}
-\end{split}
-\end{equation*} 
-
-\end{itemize}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%
 \begin{frame}[shrink=20]
 \frametitle{Generalized unitarity}
 \framesubtitle{}
 \begin{itemize}
+\item<1-> Dimensional regularization in $D = 4-2\epsilon$
 \item<1-> Master equation for one-loop
 \begin{equation*}
 A = \sum_i c_i I_i + \mathrm{rational} + \mathcal{O}(\epsilon)
@@ -293,7 +247,7 @@ A = \sum_i c_i I_i + \mathrm{rational} + \mathcal{O}(\epsilon)
 \item<2-> Basis consists of master integrals
 \\
 \tiny\color{blue}
-[J. Gluza, K. Kajda, \& D. A. Kosower, Phys. Rev. D83 (2011)
+[G. Passarino \& M. Veltman, Nucl. Phys. B 160 (1979)
 ]
 \color{black}\normalsize
 
@@ -302,24 +256,158 @@ A = \sum_i c_i I_i + \mathrm{rational} + \mathcal{O}(\epsilon)
   \includegraphics[width=0.5\linewidth]{master_integrals.jpg}
 \end{figure}
 
-\item<3-> Cutkosky rules and generalized unitarity
+\item<3-> Generalized unitarity 
 \tiny\color{blue}
-[R. E. Cutkosky, Journal of Math. Phys. 1 no. 5, (1960)]
 [Z. Bern, L. J. Dixon, D. C. Dunbar, and D. A. Kosower, Nucl. Phys. B425 (1994)]
 \color{black}\normalsize
 \begin{equation*}
-\frac{1}{l^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big(l^2\big)
-\quad,\quad
-\frac{1}{(l-K)^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big((l-K)^2\big)
+\frac{1}{l^2 + i\epsilon} \rightarrow 2\pi i\delta^{(+)}\big(l^2\big) \Rightarrow \textrm{contour integral \tiny\color{blue}[C. Vergu, Phys. Rev. D 75 (2007)]\color{black}\normalsize
+}
 \end{equation*}
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=20]
+\frametitle{Generalized unitarity}
+\framesubtitle{}
+\begin{itemize}
+\item<1-> Quadruple cut for box coefficients
+    \tiny\color{blue}
+[R. Britto, F. Cachazo, and B. Feng, Nucl. Phys. B725 (2005)]
+\color{black}\normalsize
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\linewidth]{quadruple_cut.eps}
+\end{figure}\end{column}
+\begin{column}{0.7\textwidth}  %%<--- here
+
+\begin{itemize}
+
+\item<2-> []
 \small
 \begin{equation*}
-A(K^2 + i\epsilon) - A(K^2 - i\epsilon) =
--4\pi^2 \int\frac{\dd^D l}{(2\pi)^D}A^{\mathrm{tree}}_LA^{\mathrm{tree}}_R \delta^{(+)}(l^2)\delta^{(+)}\big((l-K)^2\big) 
-\end{equation*}
+\begin{split}
+\int\dd^D l \delta^{(+)}(l^2) \delta^{(+)}\big((l-K_1)^2\big)
+& 
+\delta^{(+)}\big((l-K_{12})^2\big)
+\delta^{(+)}\big((l+K_4)^2\big)
+A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_3^{\mathrm{tree}}A_4^{\mathrm{tree}}
+\\ & =
+\int_{i\in\mathrm{box}} c_i \Delta I_i
+\end{split}
+\end{equation*} 
 \normalsize
 
-\item<4-> Quadruple cut for box coefficients
+\item<3->[]
+\begin{equation*}
+c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_3^{\mathrm{tree}}A_4^{\mathrm{tree}}
+\end{equation*}
+
+%\item<3->[] Example: \\ $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in $\mathcal{N}=4$ SYM 
+
+\end{itemize}
+
+\end{column}
+\end{columns}
+
+\item<4-> Triple cut for bubble and triangle coefficients
+\tiny\color{blue}
+[D. Forde, Phys. Rev. D75]
+(2007)
+\color{black}\normalsize
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{triple_cut.eps}
+\end{figure}
+\begin{itemize}
+
+\item<4->[]
+\begin{equation*}
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2) A_1A_2A_3 = 
+(2\pi)^3\int\dd l^4 \prod_{i=0}^2 \delta(l_i^2)\Big(\mathrm{Inf}_t(A_1A_2A_3)(t) + \sum_{\textrm{$t_j$ poles}}\frac{\res_{t = t_j}A_1 A_2 A_3}{t-t_j}\Big)
+\end{equation*}
+
+\item<4-> \textbf{Triangle coefficient}: triple cut with nice loop-momentum parametrization 
+\item<5-> \textbf{Bubble coefficient}: double cut $+$ triple cut with a similar loop-momentum parametrization
+\end{itemize}
+
+\item<6-> Rational term: similar parametrization with the split measure in $D=4-2\epsilon$ \tiny\color{blue}[S. D. Badger, JHEP 01 (2009)]\color{black}\normalsize
+
+\begin{equation*}
+l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
+\quad,\quad
+\int\frac{\dd^D l}{(2\pi)^D} = 
+\int\frac{\dd^{-2\epsilon}(\mu^2)}{(2\pi)^{-2\epsilon}}\int\frac{\dd^4 \bar{l}}{(2\pi)^4}
+\end{equation*}
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Summary}
+\framesubtitle{}
+\begin{itemize}
+\item<1-> Spinor-helicty formalism provides a compact way of writing amplitudes
+\item<2-> The on-shell recursion uses the analyticity of amplitudes and avoids computing Feynman diagrams individually
+\item<3-> Generalized unitarity allows to construct one-loop amplitudes from tree-level ones
+
+\end{itemize}
+
+\end{frame}
+
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[shrink=10]
+\frametitle{On-shell recursion}
+\framesubtitle{
+\tiny\color{blue}
+[R. Britto, F. Cachazo, \& B. Feng, Nucl. Phys. B 715 no. 1, (2005)] 
+[R. Britto, F. Cachazo, B. Feng, \& E. Witten, Phys. Rev. Lett. 94
+(2005)]
+}
+\begin{itemize}
+
+
+\item<1-> Tree-level recursion for $n$-point amplitudes
+\item<2-> Holomorphicity of shifted amplitudes $\hat{A}(z)$, \ie replacing the external momenta $p^\mu_i$ by 
+\begin{equation*}
+\hat{p}^\mu_i = p^\mu_i + zr_i^\mu \quad\mathrm{where}\quad z\in\mathbb{C}
+\end{equation*}
+and the $r^\mu_i$'s are 4-vectors
+\item<3-> Cauchy's theorem $\Rightarrow$ factorization of $A$: 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{bcfw.eps}
+\end{figure}
+\begin{equation*}
+A_n = - \sum_{z = z_I}\res\frac{\hat{A}_n(z)}{z} + B_n
+=\sum_{z = z_I} \hat{A}_L(z_I)\frac{1}{P_I^2}\hat{A}_R(z_I) + B_n
+\end{equation*} 
+\item<4->[] $B_n$ is the residue at infinity, which drops off under certain condition 
+\tiny\color{blue}[N. Arkani-Hamed \& J. Kaplan, JHEP 04 (2008)]
+\color{black}\normalsize
+
+\item<5-> Example: $A_6[1^-2^-3^-4^+5^+6^+]$ (with P-T formula)
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[shrink=10]
+\frametitle{Generalized unitarity}
+\framesubtitle{}
+\begin{itemize}
+
+\item<1-> Quadruple cut for box coefficients
     \tiny\color{blue}
 [R. Britto, F. Cachazo, and B. Feng, Nucl. Phys. B725 (2005)]
 \color{black}\normalsize
@@ -337,12 +425,12 @@ c = \frac{1}{2}\sum_{\mathcal{S}, J}n_J A_1^{\mathrm{tree}}A_2^{\mathrm{tree}}A_
 
 \end{column}
 \end{columns}
-\item<5-> Example:  $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in  $\mathcal{N}=4$ SYM
-
+\item<2-> Example:  $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in  $\mathcal{N}=4$ SYM
 \end{itemize}
-
 \end{frame}
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{frame}[shrink=10]
 \frametitle{Generalized unitarity}
 \framesubtitle{}
@@ -436,7 +524,7 @@ l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
 \int\frac{\dd^{-2\epsilon}(\mu^2)}{(2\pi)^{-2\epsilon}}\int\frac{\dd^4 \bar{l}}{(2\pi)^4}
 \end{equation*}
 
-\item<4-> The rational term can be determined from the singularity structure using similar parametrizations as before
+\item<4-> The rational term can be determined from the singularity structure using similar parametrizations as before\\
 \tiny\color{blue}
 [S. D. Badger, JHEP 01 (2009)]
 \color{black}\small
@@ -457,21 +545,67 @@ l^\nu = \bar{l}^\nu + l_{[-2\epsilon]}^\nu = \bar{l}^2 - \mu^2
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Summary}
-\framesubtitle{}
+
+\begin{frame}[shrink=20]
+\frametitle{On-shell recursion}
+\framesubtitle{
+}
 \begin{itemize}
-\item<1-> Spinor-helicty formalism provides a compact way of writing amplitudes
-\item<2-> The on-shell recursion uses the analyticity of amplitudes and avoids computing Feynman diagrams individually
-\item<3-> Generalized unitarity allows to construct one-loop amplitudes from tree-level ones
+\item<1-> Momentum shift
+\\
+\tiny\color{blue}
+[R. Britto, F. Cachazo, \& B. Feng, Nucl. Phys. B 715 no. 1, (2005)] 
+[R. Britto, F. Cachazo, B. Feng, \& E. Witten, Phys. Rev. Lett. 94
+(2005)]
+\color{black}\normalsize
+\begin{equation*}
+|\hat{i}] = |i] + z |j], \quad |\hat{j}] = |j], \quad|\hat{i}\rangle = |i\rangle, \quad |\hat{j}\rangle = |j\rangle - z|i\rangle
+\end{equation*}  
+
+\item<2-> Cauchy's theorem $\Rightarrow$ relation between shifted and unshifted amplitudes
+\begin{equation*}
+A_n = - \sum_{z = z_I}\res\frac{\hat{A}_n(z)}{z} + B_n
+=\sum_{z = z_I} \hat{A}_L(z_I)\frac{1}{P_I^2}\hat{A}_R(z_I) + B_n
+\end{equation*} 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{bcfw.eps}
+\end{figure}
+
+\item<3-> $B_n$ vanishes under certain helicity configurations
+\tiny\color{blue}[N. Arkani-Hamed \& J. Kaplan, JHEP 04 (2008)]
+\color{black}\normalsize
 
 \end{itemize}
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}[shrink=30]
+\frametitle{On-shell recursion}
+\framesubtitle{Example: $A_6[1^-2^-3^-4^+5^+6^+]$}
 
-\appendix
+\begin{itemize}
+\item<1-> Possible configurations
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{A6nmhv.eps}
+\end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item[]<2->
+\begin{equation*}
+\begin{split}
+A_6[1^-2^-3^-4^+5^+6^+] = & A_a + A_c 
+\\ =&
+-\frac{\langle 3 |\slashed{P}_{12}|6]^3}{[61]\langle 34\rangle \langle 45\rangle\langle 5|\slashed{P}_{16}|2][12]s_{126}}
+-\frac{[4|\slashed{P}_{56}|1\rangle^3}{s_{156}\langle 5|\slashed{P}_{16}|2][23][34]\langle 56\rangle\langle 61\rangle}
+\end{split}
+\end{equation*} 
+
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+
 \begin{frame}[shrink=20]
 \frametitle{Box coefficients for $A_5^{\textrm{1-loop }}[g_1^-g_2^-g_3^+g_4^+g_5^+]$ in  $\mathcal{N}=4$ SYM}
 
